@@ -185,6 +185,10 @@ section.head {
  */
 
 .m-list--skills {
+  margin-top: 80px;
+}
+
+.m-list--skills ul {
   list-style-type: none;
 }
 
