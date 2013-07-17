@@ -6,10 +6,18 @@ html
     meta name="description" content=""
     meta name="keywords" content="tiste, baptiste, lecocq, web, ruby, php, nord, france, epsi, student, etudiant, it, school, design, flat, html"
     meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    = stylesheet_link_tag 'bootstrap'
+    = stylesheet_link_tag 'flat-ui'
+    = stylesheet_link_tag 'stylesheet'
+    = stylesheet_link_tag 'ss-social'
+    = stylesheet_link_tag 'bootstrap-responsive'
   body
+    .container-fluid
+      = partial 'header'
+      == yield
+      = partial 'footer'
 
-    == yield
-
+    = javascript_include_tag 'application'
     javascript:
       var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
