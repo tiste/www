@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title= data.page.title
+    meta name="description" content=""
+    meta name="keywords" content="tiste, baptiste, lecocq, web, ruby, php, nord, france, epsi, student, etudiant, it, school, design, flat, html"
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  body
+
+    == yield
+
+    javascript:
+      var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
