@@ -165,6 +165,22 @@ section.head {
   padding-top: 140px !important;
 }
 
+.m-list {
+  margin-top: 80px;
+}
+
+.m-list ul {
+  list-style-type: none;
+}
+
+.m-list li {
+  line-height: 1.5em;
+}
+
+.m-list .fui-check {
+  color: #1abc9c;
+}
+
 .typewriter-caret {
     background: #777;
 }
@@ -179,27 +195,6 @@ section.head {
   background-position: center 50px;
   height: 280px;
   width: 280px;
-}
-
-
-/**
- * Modules
- */
-
-.m-list--skills {
-  margin-top: 80px;
-}
-
-.m-list--skills ul {
-  list-style-type: none;
-}
-
-.m-list--skills li {
-  line-height: 1.5em;
-}
-
-.m-list--skills .fui-check {
-  color: #1abc9c;
 }
 
 

@@ -20,7 +20,7 @@ section
         p Recent graduate: scientific A level
       .span4
         .round.me.center
-      .span4.m-list--skills
+      .span4.m-list
         p Otherwise, I...
         ul
           li
@@ -35,11 +35,17 @@ section
           li
             span.fui-check.mrm
             | have the Justin Bieber haircut
-section.light-gray
-  .container
+section.l-skills.light-gray
+  .container.text-center
     .row-fluid
+      - [ ['HTML', 90], ['JavaScript', 80], ['Ruby On Rails', 60], ['PHP', 70], ['MySQL', 90], ['CSS', 50], ['C/C#', 30], ['JAVA', 20] ].each_with_index do |s, i|
+        .span3.margin-bottom
+          .skill data-value=(s[1])
+          h3 #{s[0]}
+        - i = i + 1
+        = '</div><div class="row-fluid">' if i.modulo(4) == 0
 
-section.light-gray.clearfix.no-padding
+section.clearfix.no-padding
   .m-project
     a href='/'
       img.m-project--overlay src='images/projects/tiste.png'

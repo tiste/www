@@ -55,6 +55,39 @@ function type_writer() {
   }, 1000);
 }
 
+function set_percent(language, percent) {
+  $({value: 0}).delay(1500).animate({value: percent}, {
+    duration: 1500,
+    easing: 'swing',
+    step: function () {
+      $(language).val(Math.ceil(this.value)).trigger('change');
+    }
+  });
+}
+
+$(document).ready(function() {
+  $('.skill').knob({
+    readOnly: true
+  }).trigger(
+    'configure', { 'fgColor': '#1abc9c', 'bgColor': '#FFFFFF' }
+  );
+
+  var flag = true;
+  $('.l-skills').scrollspy({
+    onEnter: function(element, position) {
+      if (flag) {
+        $('.skill').each(function () {
+          skill       = $(this);
+          skill_value = $(this).data('value');
+
+          set_percent(skill, skill_value);
+        });
+        flag = false;
+      }
+    }
+  });
+});
+
 $(window).load(function () {
   type_writer();
 
