@@ -15,10 +15,10 @@
         var windowTop = $(this).scrollTop();
 
         if ((windowTop >= 0) && ((windowTop + $(this).height()) >= offset.top) && (windowTop <= stop)) {
-          newCoord = windowTop * opt.coef;
+          newCoord = (windowTop * opt.coef - 50) * -1;
 
           $$.css({
-            'background-position': 'center -' + newCoord + 'px'
+            'background-position': 'center ' + newCoord + 'px'
           });
         }
       });
@@ -55,37 +55,16 @@ function type_writer() {
   }, 1000);
 }
 
-function set_percent(language, percent) {
-  i = 0;
-  clear = setInterval(function () {
-    i++;
-    $(language).val(i).trigger('change');
-
-    if (i >= percent) {
-      clearInterval(clear);
-    }
-  }, 25);
-}
-
-$(function() {
-  $('.skill')
-    .knob({
-      readOnly: true
-    })
-    .trigger(
-      'configure', { 'fgColor': '#1abc9c', 'bgColor': '#FFFFFF' }
-    );
-
-  $('.skill').each(function () {
-    skill       = $(this);
-    skill_value = $(this).data('value');
-
-    set_percent(skill, skill_value);
-  });
-});
-
 $(window).load(function () {
   type_writer();
 
-  $('.me').parallax({coef: 0.7});
+  $('.me').parallax({coef: 0.4});
+
+  $('.m-project').hover(function () {
+    $(this).find('p').removeClass('animated fadeOutDown');
+    $(this).find('p').addClass('animated fadeInDown');
+  }, function () {
+    $(this).find('p').removeClass('animated fadeInDown');
+    $(this).find('p').addClass('animated fadeOutDown');
+  });
 });

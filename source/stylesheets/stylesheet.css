@@ -125,10 +125,10 @@ body {
 }
 
 .border-gray {
-  border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  padding-top: 30px;
+  border-top: 1px solid #e7e7e7;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 
@@ -142,8 +142,8 @@ body {
 
 .navbar {
   box-shadow: 0 10px 0 rgba(0,0,0,0.05);
-  text-transform: uppercase;
   position: fixed;
+  text-transform: uppercase;
   width: 100%;
   z-index: 10;
 }
@@ -170,13 +170,15 @@ section.head {
 }
 
 .typewriter {
-  font-weight: bold;
   font-size: 2.5em;
+  font-weight: bold;
 }
 
 .me {
-  width: 350px;
-  height: 350px;
+  background-image: url(../images/me.jpg);
+  background-position: center 50px;
+  height: 280px;
+  width: 280px;
 }
 
 
@@ -198,4 +200,19 @@ section.head {
 
 .m-list--skills .fui-check {
   color: #1abc9c;
+}
+
+
+/**
+ * Responsive
+ */
+
+@media (max-width: 979px) {
+  .hide-on-small {
+    display: none !important;
+  }
+
+  .m-project {
+    width: 100%;
+  }
 }
