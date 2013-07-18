@@ -13,6 +13,10 @@
   -o-transition: all .7s ease 0s;
 }
 
+.m-project img {
+  width: 100%;
+}
+
 .m-project--overlay {
   margin: 0 auto;
   position: relative;
@@ -42,7 +46,7 @@
 
 .m-project--info p {
   color: #FEFEFE;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 .m-project:hover .m-project--overlay {
