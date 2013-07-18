@@ -1,3 +1,6 @@
+var realisticTypewriter = new RealisticTypewriter(),
+    typeWriterElement   = document.getElementById('typewriter');
+
 (function ($) {
   $.fn.parallax = function (options) {
     var defaults = {
@@ -33,9 +36,6 @@ function prompt(element, text) {
 }
 
 function type_writer() {
-  var realisticTypewriter = new RealisticTypewriter(),
-      typeWriterElement   = document.getElementById('typewriter');
-
   prompt(typeWriterElement, 'Hi !');
 
   setTimeout(function () {
@@ -53,6 +53,21 @@ function type_writer() {
       }, 1000);
     });
   }, 1000);
+}
+
+function matrix() {
+  $('html, body').animate({
+    scrollTop: $('.head').offset().top
+  }, 500);
+  $('.head').addClass('matrix');
+  $('#typewriter').empty();
+
+  realisticTypewriter.type('Follow the white rabbit.', typeWriterElement, function () {
+    setTimeout(function () {
+      $('#typewriter').empty();
+      realisticTypewriter.type('Knock, knock, Neo.', typeWriterElement);
+    }, 1500);
+  });
 }
 
 function set_percent(language, percent) {
@@ -74,6 +89,12 @@ $(document).ready(function() {
     }, 500);
 
     return false;
+  });
+
+  $(window).konami({
+    cheat: function() {
+      matrix();
+    }
   });
 
   $('.skill').knob({

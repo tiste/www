@@ -134,6 +134,12 @@ body {
   color: #a7a8a3;
 }
 
+.matrix {
+  background-color: black;
+  color: #00CC00;
+  font-family: Courier, "Courier New", FreeMono;
+}
+
 .border-gray {
   border-bottom: 1px solid #e7e7e7;
   border-top: 1px solid #e7e7e7;
