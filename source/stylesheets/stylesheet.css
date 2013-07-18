@@ -63,6 +63,11 @@ body {
   cursor: pointer;
 }
 
+.hr {
+  height: 10px;
+  box-shadow: 0 10px 0 rgba(0,0,0,0.05);
+}
+
 .cover {
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -197,7 +202,7 @@ section.head {
 
 .me {
   background-image: url(../images/me.jpg);
-  background-position: center 50px;
+  background-position: center top;
   height: 280px;
   width: 280px;
 }

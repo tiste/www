@@ -15,7 +15,7 @@
         var windowTop = $(this).scrollTop();
 
         if ((windowTop >= 0) && ((windowTop + $(this).height()) >= offset.top) && (windowTop <= stop)) {
-          newCoord = (windowTop * opt.coef - 50) * -1;
+          newCoord = (windowTop * opt.coef) * -1;
 
           $$.css({
             'background-position': 'center ' + newCoord + 'px'
@@ -87,6 +87,7 @@ $(document).ready(function() {
 
   var flag = true;
   $('.l-skills').scrollspy({
+    min: $('.l-about').offset().top,
     onEnter: function(element, position) {
       if (flag) {
         $('.skill').each(function () {
