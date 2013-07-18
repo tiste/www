@@ -50,7 +50,7 @@
 }
 
 .m-project:hover .m-project--overlay {
-  opacity: 0.2;
+  opacity: .1;
 }
 
 .m-project:hover .m-project--info {

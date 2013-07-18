@@ -2,11 +2,11 @@
 title: Baptiste Lecocq (Tiste), IT student
 ---
 
-section.yellow.head
+section.l-home.yellow.head
   .container.typewriter
     span#typewriter
     span.typewriter-caret.blink &nbsp;
-section
+section.l-about
   .container
     .row-fluid
       .span4.margin-top
@@ -45,29 +45,34 @@ section.l-skills.light-gray
         - i = i + 1
         = '</div><div class="row-fluid">' if i.modulo(4) == 0
 
-section.clearfix.no-padding
+section.l-projects.clearfix.no-padding
+  .m-project
+    a href='http://tiste.fr'
+      = image_tag 'projects/tiste.png', class: 'm-project--overlay'
+    .m-project--info.yellow
+      p Tiste
   .m-project
     a href='http://epnet.fr'
-      img.m-project--overlay src='images/projects/epnet.png'
+      = image_tag 'projects/epnet.png', class: 'm-project--overlay'
     .m-project--info.red
       p EPNet
   .m-project
     a href='http://beta.epsilive.com'
-      img.m-project--overlay src='images/projects/epsilive.png'
+      = image_tag 'projects/epsilive.png', class: 'm-project--overlay'
     .m-project--info.green
       p EPSI Live
   .m-project
-    a href='http://www.iEPSI.fr'
-      img.m-project--overlay src='images/projects/iepsi.png'
-    .m-project--info.yellow
-      p iEPSI
-  .m-project
     a href='http://www.twamily.fr'
-      img.m-project--overlay src='images/projects/twamily.png'
+      = image_tag 'projects/twamily.png', class: 'm-project--overlay'
     .m-project--info.blue
       p Twamily
   .m-project
+    a href='http://www.iEPSI.fr'
+      = image_tag 'projects/iepsi.png', class: 'm-project--overlay'
+    .m-project--info.yellow
+      p iEPSI
+  .m-project
     a href='http://www.ypnose.com'
-      img.m-project--overlay src='images/projects/ypnose.png'
+      = image_tag 'projects/ypnose.png', class: 'm-project--overlay'
     .m-project--info.red
       p Ypnose

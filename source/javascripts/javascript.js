@@ -66,8 +66,21 @@ function set_percent(language, percent) {
 }
 
 $(document).ready(function() {
+  $('.navbar a').on('click', function () {
+    var anchor = $(this).data('scroll');
+
+    $('html, body').animate({
+      scrollTop: $(anchor).offset().top - 90
+    }, 500);
+
+    return false;
+  });
+
   $('.skill').knob({
-    readOnly: true
+    readOnly: true,
+    thickness: '.2',
+    width: '150',
+    height: '150'
   }).trigger(
     'configure', { 'fgColor': '#1abc9c', 'bgColor': '#FFFFFF' }
   );
