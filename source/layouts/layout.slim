@@ -1,11 +1,11 @@
 doctype html
 html
   head
-    meta charset="utf-8"
+    meta charset='utf-8'
     title= data.page.title
-    meta name="description" content=""
-    meta name="keywords" content="tiste, baptiste, lecocq, web, ruby, php, nord, france, epsi, student, etudiant, it, school, design, flat, html"
-    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    meta name='keywords' content='tiste, baptiste, lecocq, web, ruby, php, nord, france, epsi, student, etudiant, it, school, design, flat, html'
+    meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+    link href='favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'
     = stylesheet_link_tag 'application'
   body
     .container-fluid
@@ -13,6 +13,7 @@ html
       == yield
       = partial 'footer'
 
+    script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
     = javascript_include_tag 'application'
     javascript:
       var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];

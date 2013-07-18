@@ -1,33 +1,28 @@
 var realisticTypewriter = new RealisticTypewriter(),
     typeWriterElement   = document.getElementById('typewriter');
+realisticTypewriter.minimumCharactersPerSecond = 15;
+realisticTypewriter.maximumCharactersPerSecond = 25;
 
-(function ($) {
-  $.fn.parallax = function (options) {
-    var defaults = {
-      'coef': 0.7
-    };
-
-    var opt = $.extend(defaults, options);
-
-    return this.each(function () {
-      var $$ = $(this);
-
-      $(window).bind('scroll', function () {
-        var offset = $$.offset();
-        var stop = offset.top + $$.height();
-        var windowTop = $(this).scrollTop();
-
-        if ((windowTop >= 0) && ((windowTop + $(this).height()) >= offset.top) && (windowTop <= stop)) {
-          newCoord = (windowTop * opt.coef) * -1;
-
-          $$.css({
-            'background-position': 'center ' + newCoord + 'px'
-          });
-        }
-      });
-    });
+function is_mob() {
+ if (navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)
+ ) {
+    return true;
+  } else {
+    return false;
   }
-})(jQuery);
+}
+
+function go_to(anchor) {
+  $('html, body').animate({
+    scrollTop: $(anchor).offset().top - 90
+  }, 500);
+}
 
 function prompt(element, text) {
   var span = document.createElement('span');
@@ -36,29 +31,27 @@ function prompt(element, text) {
 }
 
 function type_writer() {
-  prompt(typeWriterElement, 'Hi !');
-
-  setTimeout(function () {
-    prompt(typeWriterElement, '<br/>');
-    realisticTypewriter.type("I'm Baptiste Lecocq.", typeWriterElement, function () {
-      setTimeout(function () {
-        prompt(typeWriterElement, '<br/>');
-        realisticTypewriter.type('A 20yo french student developer.', typeWriterElement, function () {
+  realisticTypewriter.type('Hi !', typeWriterElement, function () {
+    setTimeout(function () {
+      prompt(typeWriterElement, '<br/>');
+      realisticTypewriter.type("I'm Baptiste Lecocq.", typeWriterElement, function () {
+        setTimeout(function () {
           prompt(typeWriterElement, '<br/>');
-          setTimeout(function () {
+          realisticTypewriter.type('A 20yo french student developer.', typeWriterElement, function () {
             prompt(typeWriterElement, '<br/>');
-            realisticTypewriter.type('Oh, I love web development.', typeWriterElement);
-          }, 1000);
-        });
-      }, 1000);
-    });
-  }, 1000);
+            setTimeout(function () {
+              prompt(typeWriterElement, '<br/>');
+              realisticTypewriter.type('Oh, I love web development.', typeWriterElement);
+            }, 1000);
+          });
+        }, 1000);
+      });
+    }, 1000);
+  });
 }
 
 function matrix() {
-  $('html, body').animate({
-    scrollTop: $('.head').offset().top
-  }, 500);
+  go_to('.head');
   $('.head').addClass('matrix');
   $('#typewriter').empty();
 
@@ -83,19 +76,14 @@ function set_percent(language, percent) {
 $(document).ready(function() {
   $('.navbar a').on('click', function () {
     var anchor = $(this).data('scroll');
-
-    $('html, body').animate({
-      scrollTop: $(anchor).offset().top - 90
-    }, 500);
+    go_to(anchor);
 
     return false;
   });
 
-  $(window).konami({
-    cheat: function() {
-      matrix();
-    }
-  });
+  if (!is_mob()) {
+    skrollr.init();
+  }
 
   $('.skill').knob({
     readOnly: true,
@@ -108,7 +96,7 @@ $(document).ready(function() {
 
   var flag = true;
   $('.l-skills').scrollspy({
-    min: $('.l-about').offset().top,
+    min: $('.l-skills').position().top - 900,
     onEnter: function(element, position) {
       if (flag) {
         $('.skill').each(function () {
@@ -125,8 +113,6 @@ $(document).ready(function() {
 
 $(window).load(function () {
   type_writer();
-
-  $('.me').parallax({coef: 0.4});
 
   $('.m-project').hover(function () {
     $(this).find('p').removeClass('animated fadeOutDown');
