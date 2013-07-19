@@ -12,10 +12,14 @@ section#about.l-about
       .span4.margin-top
         p
           span.big I
-          | 'm an EPSI student, computer engineering school located on the North of France.
+          | 'm an 
+          abbr title='École privée des sciences informatiques' EPSI
+          |  student, computer engineering school located on the North of France.
         p
           | I have a passion for web development and web design.
-          br I always try to stay in touch with new technologies.
+          br I always try to stay in touch with 
+          strong new technologies
+          | .
         p Apple & UNIX lover.
         p Recent graduate: scientific A level.
       .span4
@@ -49,13 +53,11 @@ section
           | Most of the time, she's my
           i.fui-heart.margin style='color: #e74c3c'
         p
-          | I&nbsp;
-          strong create&nbsp;
-          | and&nbsp;
-          strong participate&nbsp;
-          | every kinds of open source projects like&nbsp;
+          | I create and participate every kinds of 
+          strong open source
+          |  projects like 
           = link_to 'jQuery modal', 'https://github.com/baptistelecocq/jquery-modal-rails'
-          | ,&nbsp;
+          | , 
           = link_to 'Sentencify', 'https://github.com/baptistelecocq/sentencify'
           | , etc...
 
@@ -67,17 +69,17 @@ section
 section#skills.l-skills.light-gray
   .container.text-center
     .row-fluid
-      - [ ['HTML', 90], ['JavaScript', 80], ['Ruby On Rails', 60], ['PHP', 70], ['MySQL', 90], ['CSS', 50], ['C/C#', 30], ['JAVA', 20] ].each_with_index do |s, i|
+      - data.skills.each_with_index do |s, i|
         .span3.margin-bottom
-          .skill data-value=(s[1])
-          h3 #{s[0]}
+          .skill data-value=(s.percent)
+          h3 #{s.title}
         - i = i + 1
         = '</div><div class="row-fluid">' if i.modulo(4) == 0
 
 section#projects.l-projects.clearfix.no-padding
   - data.projects.each do |p|
     .m-project
-      a href=#{p.url}
+      a href=(p.url)
         = image_tag p.image, alt: p.title, class: 'm-project--overlay'
-      .m-project--info.#{p.color}
-        p #{p.title}
+      div class="m-project--info #{p.color}"
+        p= p.title

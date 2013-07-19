@@ -82,7 +82,9 @@ $(document).ready(function() {
   });
 
   if (!is_mob()) {
-    skrollr.init();
+    skrollr.init({
+      forceHeight: false
+    });
   }
 
   $('.skill').knob({
@@ -95,9 +97,11 @@ $(document).ready(function() {
   );
 
   var flag = true;
-  $('.l-skills').scrollspy({
-    min: $('.l-skills').position().top - 900,
-    onEnter: function(element, position) {
+
+  $(window).scroll(function () {
+    var skills_top = $('#skills').position().top - 700;
+
+    if ($(window).scrollTop() > skills_top) {
       if (flag) {
         $('.skill').each(function () {
           skill       = $(this);
