@@ -64,7 +64,7 @@ function matrix() {
 }
 
 function set_percent(language, percent) {
-  $({value: 0}).delay(1500).animate({value: percent}, {
+  $({value: 0}).delay(700).animate({value: percent}, {
     duration: 1500,
     easing: 'swing',
     step: function () {

@@ -221,6 +221,8 @@ footer a {
   font-size: 4em;
   line-height: .5em;
   color: #636363;
+  display: block;
+  margin-bottom: 1em;
 }
 
 footer span {

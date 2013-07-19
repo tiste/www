@@ -963,7 +963,6 @@ blockquote:after {
 
 address {
   display: block;
-  margin-top: 30px;
   font-style: normal;
   line-height: 20px;
 }
