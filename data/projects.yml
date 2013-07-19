@@ -1,0 +1,30 @@
+-
+  color: 'yellow'
+  image: 'projects/tiste.png'
+  title: 'Tiste'
+  url: 'http://tiste.fr'
+-
+  color: 'red'
+  image: 'projects/epnet.png'
+  title: 'EPNet'
+  url: 'http://epnet.fr'
+-
+  color: 'green'
+  image: 'projects/epsilive.png'
+  title: 'EPSI Live'
+  url: 'http://beta.epsilive.com'
+-
+  color: 'blue'
+  image: 'projects/twamily.png'
+  title: 'Twamily'
+  url: 'http://www.twamily.fr'
+-
+  color: 'yellow'
+  image: 'projects/iepsi.png'
+  title: 'iEPSI'
+  url: 'http://www.iEPSI.fr'
+-
+  color: 'red'
+  image: 'projects/ypnose.png'
+  title: 'Ypnose'
+  url: 'http://www.ypnose.com'

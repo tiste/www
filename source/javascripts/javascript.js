@@ -75,7 +75,7 @@ function set_percent(language, percent) {
 
 $(document).ready(function() {
   $('.navbar a').on('click', function () {
-    var anchor = $(this).data('scroll');
+    var anchor = $(this).attr('href');
     go_to(anchor);
 
     return false;
