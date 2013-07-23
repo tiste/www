@@ -3,21 +3,6 @@ var realisticTypewriter = new RealisticTypewriter(),
 realisticTypewriter.minimumCharactersPerSecond = 15;
 realisticTypewriter.maximumCharactersPerSecond = 25;
 
-function is_mob() {
- if (navigator.userAgent.match(/Android/i)
-  || navigator.userAgent.match(/webOS/i)
-  || navigator.userAgent.match(/iPhone/i)
-  || navigator.userAgent.match(/iPad/i)
-  || navigator.userAgent.match(/iPod/i)
-  || navigator.userAgent.match(/BlackBerry/i)
-  || navigator.userAgent.match(/Windows Phone/i)
- ) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function go_to(anchor) {
   $('html, body').animate({
     scrollTop: $(anchor).offset().top - 90
@@ -81,11 +66,9 @@ $(document).ready(function() {
     return false;
   });
 
-  if (!is_mob()) {
-    skrollr.init({
-      forceHeight: false
-    });
-  }
+  $.stellar({
+    horizontalScrolling: false
+  });
 
   $('.skill').knob({
     readOnly: true,
@@ -101,8 +84,8 @@ $(document).ready(function() {
   $(window).scroll(function () {
     var skills_top = $('#skills').position().top - 700;
 
-    if ($(window).scrollTop() > skills_top) {
-      if (flag) {
+    if (flag) {
+      if ($(window).scrollTop() > skills_top) {
         $('.skill').each(function () {
           skill       = $(this);
           skill_value = $(this).data('value');

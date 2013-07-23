@@ -208,7 +208,7 @@ section.head {
 
 .me {
   background-image: url(../images/me.jpg);
-  background-position: center top;
+  background-position: center -160px;
   height: 280px;
   width: 280px;
 }
