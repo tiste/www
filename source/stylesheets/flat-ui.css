@@ -404,7 +404,7 @@ h1 {
   font-weight: 900;
 }
 h2 {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -738,7 +738,7 @@ h6 {
   color: #526476;
   font-weight: 700;
   font-size: 1.2em;
-  padding: 29px 20px 27px;
+  padding: 29px 20px 35px;
   text-shadow: none;
   -webkit-transition: background-color .25s, color .25s, border-bottom-color .25s;
   -moz-transition: background-color .25s, color .25s, border-bottom-color .25s;

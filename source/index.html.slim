@@ -23,7 +23,8 @@ section#about.l-about
         p Apple & UNIX lover.
         p Recent graduate: scientific A level.
       .span4
-        .round.me.center data-stellar-background-ratio='0.6'
+        .round.brand.center
+          = image_tag 'brand.png'
       .span4.m-list
         p Otherwise, I...
         ul
@@ -49,7 +50,7 @@ section
   .container
     .row-fluid
       .span7
-        h1
+        h2
           | Most of the time, she's my
           i.fui-heart.margin style='color: #e74c3c'
         p
@@ -81,5 +82,5 @@ section#projects.l-projects.clearfix.no-padding
     .m-project
       a href=(p.url)
         = image_tag p.image, alt: p.title, class: 'm-project--overlay'
-      div class="m-project--info #{p.color}"
-        p= p.title
+        div class="m-project--info #{p.color}"
+          p= p.title

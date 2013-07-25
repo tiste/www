@@ -5,7 +5,7 @@ realisticTypewriter.maximumCharactersPerSecond = 25;
 
 function go_to(anchor) {
   $('html, body').animate({
-    scrollTop: $(anchor).offset().top - 90
+    scrollTop: $(anchor).offset().top - 85
   }, 500);
 }
 
@@ -76,7 +76,7 @@ $(document).ready(function() {
     width: '150',
     height: '150'
   }).trigger(
-    'configure', { 'fgColor': '#1abc9c', 'bgColor': '#FFFFFF' }
+    'configure', { 'fgColor': '#3498db', 'bgColor': '#FFFFFF' }
   );
 
   var flag = true;
@@ -101,7 +101,9 @@ $(document).ready(function() {
 $(window).load(function () {
   type_writer();
 
-  $('.m-project').hover(function () {
+  $('.m-project').each(function () {
+    $(this).hoverdir();
+  }).hover(function () {
     $(this).find('p').removeClass('animated fadeOutDown');
     $(this).find('p').addClass('animated fadeInDown');
   }, function () {

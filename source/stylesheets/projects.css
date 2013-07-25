@@ -7,10 +7,6 @@
   overflow: hidden;
   position: relative;
   width: 33.3333%;
-  transition: all .7s ease 0s;
-  -webkit-transition: all .7s ease 0s;
-  -moz-transition: all .7s ease 0s;
-  -o-transition: all .7s ease 0s;
 }
 
 .m-project img {
@@ -22,10 +18,10 @@
   position: relative;
   width: 100%;
   z-index: 200;
-  transition: opacity .7s ease 0s;
-  -webkit-transition: opacity .7s ease 0s;
-  -moz-transition: opacity .7s ease 0s;
-  -o-transition: opacity .7s ease 0s;
+  transition: opacity .5s ease 0s;
+  -webkit-transition: opacity .5s ease 0s;
+  -moz-transition: opacity .5s ease 0s;
+  -o-transition: opacity .5s ease 0s;
 }
 
 .m-project--info {
@@ -38,10 +34,10 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  transition: all .7s ease 0s;
-  -webkit-transition: all .7s ease 0s;
-  -moz-transition: all .7s ease 0s;
-  -o-transition: all .7s ease 0s;
+  transition: opacity .5s ease 0s;
+  -webkit-transition: opacity .5s ease 0s;
+  -moz-transition: opacity .5s ease 0s;
+  -o-transition: opacity .5s ease 0s;
 }
 
 .m-project--info p {

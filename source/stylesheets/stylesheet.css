@@ -164,12 +164,12 @@ body {
   z-index: 500;
 }
 
-.brand {
+.logo-type {
   display: block;
   float: left;
-  height: 80px;
-  padding: 7px;
-  width: 80px;
+  height: 0;
+  overflow: hidden;
+  text-transform: none;
 }
 
 section {
@@ -206,11 +206,13 @@ section.head {
   font-weight: bold;
 }
 
-.me {
-  background-image: url(../images/me.jpg);
-  background-position: center -160px;
+.brand {
   height: 280px;
   width: 280px;
+}
+
+.brand img {
+  width: 100%;
 }
 
 footer {

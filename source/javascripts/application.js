@@ -1,3 +1,4 @@
+//= require vendor/jquery.hoverdir
 //= require vendor/jquery.knob
 //= require vendor/jquery.stellar
 //= require vendor/realistic-typewriter
