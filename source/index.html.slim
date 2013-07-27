@@ -2,8 +2,8 @@
 title: Baptiste Lecocq (Tiste), IT student
 ---
 
-section#home.l-home.yellow.head.hide-on-small
-  .container.typewriter
+section#home.l-home.yellow.hidden-phone
+  .container.typewriter.hidden-tablet
     span#typewriter
     span.typewriter-caret.blink &nbsp;
 section#about.l-about
@@ -40,7 +40,7 @@ section#about.l-about
           li
             span.fui-check.mrm
             | have Justin Bieber's haircut
-          li.hide-on-small
+          li.hidden-phone
             span.fui-lock.mrm
             | up, up, down, down, left...
 
@@ -63,6 +63,8 @@ section
           | , etc...
 
         iframe src='http://ghbtns.com/github-btn.html?user=baptistelecocq&type=follow&count=true&size=large' allowtransparency='true' frameborder='0' scrolling='0' width='280' height='30' class='margin-top'
+
+        = partial 'code'
 
       .span5.text-right
         = link_to(image_tag('octocat.png'), 'http://github.com/baptistelecocq')

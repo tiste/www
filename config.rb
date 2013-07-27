@@ -1,9 +1,12 @@
 activate :gzip
 activate :livereload
+activate :syntax
 
 set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :js_dir, 'javascripts'
+set :markdown, fenced_code_blocks: true
+set :markdown_engine, :redcarpet
 
 configure :build do
   activate :minify_css

@@ -36,8 +36,8 @@ function type_writer() {
 }
 
 function matrix() {
-  go_to('.head');
-  $('.head').addClass('matrix');
+  go_to('.l-home');
+  $('.l-home').addClass('matrix');
   $('#typewriter').empty();
 
   realisticTypewriter.type('Follow the white rabbit.', typeWriterElement, function () {

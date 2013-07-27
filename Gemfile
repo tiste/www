@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'middleman',            '~>3.1.3'
 gem 'middleman-gh-pages'
 gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-syntax'
+gem 'redcarpet'
 gem 'slim'
 
 platforms :mri_18 do
