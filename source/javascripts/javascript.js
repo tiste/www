@@ -101,13 +101,13 @@ $(document).ready(function() {
 $(window).load(function () {
   type_writer();
 
-  $('.m-project').each(function () {
+  $('.m-project--content').each(function () {
     $(this).hoverdir();
   }).hover(function () {
-    $(this).find('p').removeClass('animated fadeOutDown');
-    $(this).find('p').addClass('animated fadeInDown');
+    $(this).find('h3').removeClass('animated fadeOutDown');
+    $(this).find('h3').addClass('animated fadeInDown');
   }, function () {
-    $(this).find('p').removeClass('animated fadeInDown');
-    $(this).find('p').addClass('animated fadeOutDown');
+    $(this).find('h3').removeClass('animated fadeInDown');
+    $(this).find('h3').addClass('animated fadeOutDown');
   });
 });

@@ -50,7 +50,7 @@ section
   .container
     .row-fluid
       .span7
-        h2
+        h2.h3
           | Most of the time, she's my
           i.fui-heart.margin style='color: #e74c3c'
         p
@@ -73,14 +73,15 @@ section#skills.l-skills.light-gray
       - data.skills.each_with_index do |s, i|
         .span3.margin-bottom
           .skill data-value=(s.percent)
-          h3 #{s.title}
+          h4 #{s.title}
         - i = i + 1
         = '</div><div class="row-fluid">' if i.modulo(4) == 0
 
 section#projects.l-projects.clearfix.no-padding
   - data.projects.each do |p|
-    .m-project
-      a href=(p.url)
-        = image_tag p.image, alt: p.title, class: 'm-project--overlay'
+    div class="m-project #{p.color}"
+      .m-project--content
+        a href=(p.url)
+          = image_tag p.image, alt: p.title, class: 'm-project--overlay'
         div class="m-project--info #{p.color}"
-          p= p.title
+          h3= p.title
