@@ -3,6 +3,8 @@ title: Baptiste Lecocq (Tiste), IT student
 ---
 
 section#home.l-home.yellow.hidden-phone
+  = image_tag 'cup.png', alt: 'cup', class: 'pos-absolute m-banner--cup', 'data-parallaxify-range-x' => '70'
+  = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', 'data-parallaxify-range-x' => '120'
   .container.typewriter.hidden-tablet
     span#typewriter
     span.typewriter-caret.blink &nbsp;
@@ -17,14 +19,15 @@ section#about.l-about
           |  student, computer engineering school located on the North of France.
         p
           | I have a passion for web development and web design.
-          br I always try to stay in touch with 
+          br
+          | I always try to stay in touch with 
           strong new technologies
           | .
         p Apple & UNIX lover.
         p Recent graduate: scientific A level.
       .span4
         .round.brand.center
-          = image_tag 'brand.png'
+          = image_tag 'brand.png', alt: 'Tiste'
       .span4.m-list
         p Otherwise, I...
         ul
@@ -67,7 +70,7 @@ section
         = partial 'code'
 
       .span5.text-right
-        = link_to(image_tag('octocat.png'), 'http://github.com/baptistelecocq')
+        = link_to(image_tag('octocat.png', alt: 'Octocat'), 'http://github.com/baptistelecocq')
 
 section#skills.l-skills.light-gray
   .container.text-center

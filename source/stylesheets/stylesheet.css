@@ -4,6 +4,7 @@
 
 body {
   background-color: #F9F9F9;
+  overflow-x: hidden;
 }
 
 ::selection, *::-moz-selection {
@@ -57,6 +58,10 @@ body {
 
 .no-padding {
   padding: 0;
+}
+
+.pos-absolute {
+  position: absolute;
 }
 
 .pointer {
@@ -140,6 +145,10 @@ body {
   font-family: Courier, "Courier New", FreeMono;
 }
 
+.matrix .m-banner--cup, .matrix .m-banner--mac {
+  display: none;
+}
+
 .border-gray {
   border-bottom: 1px solid #e7e7e7;
   border-top: 1px solid #e7e7e7;
@@ -164,12 +173,17 @@ body {
   z-index: 500;
 }
 
-.logo-type {
-  display: block;
-  float: left;
-  height: 0;
-  overflow: hidden;
-  text-transform: none;
+.m-list [class*="fui"] {
+  color: #1abc9c;
+}
+
+.brand {
+  height: 280px;
+  width: 280px;
+}
+
+.brand img {
+  width: 100%;
 }
 
 section {
@@ -178,8 +192,35 @@ section {
 }
 
 .l-home {
-  background: #f1c40f url(/images/banner.png) right 200% no-repeat;
   padding-top: 140px !important;
+}
+
+.m-banner--cup {
+  top: 317px;
+  right: 580px;
+}
+
+.m-banner--mac {
+  top: 100px;
+  right: -50px;
+}
+
+.typewriter-caret {
+    background: #777;
+}
+
+.typewriter {
+  font-size: 2.3em;
+  font-weight: bold;
+  position: relative;
+}
+
+.logo-type {
+  display: block;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  text-transform: none;
 }
 
 .m-list {
@@ -192,28 +233,6 @@ section {
 
 .m-list li {
   line-height: 1.5em;
-}
-
-.m-list [class*="fui"] {
-  color: #1abc9c;
-}
-
-.typewriter-caret {
-    background: #777;
-}
-
-.typewriter {
-  font-size: 2.3em;
-  font-weight: bold;
-}
-
-.brand {
-  height: 280px;
-  width: 280px;
-}
-
-.brand img {
-  width: 100%;
 }
 
 footer {

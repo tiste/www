@@ -1,7 +1,16 @@
 var realisticTypewriter = new RealisticTypewriter(),
-    typeWriterElement   = document.getElementById('typewriter');
+    typeWriterElement   = document.getElementById('typewriter'),
+    konami_keys         = [];
 realisticTypewriter.minimumCharactersPerSecond = 15;
 realisticTypewriter.maximumCharactersPerSecond = 25;
+
+function konami(e) {
+  konami_keys.push(e.keyCode);
+  if (konami_keys.toString().indexOf('38,38,40,40,37,39,37,39,66,65') >= 0) {
+    $(this).unbind('keydown', konami);
+    matrix();
+  }
+}
 
 function go_to(anchor) {
   $('html, body').animate({
@@ -66,8 +75,9 @@ $(document).ready(function() {
     return false;
   });
 
-  $.stellar({
-    horizontalScrolling: false
+  $.parallaxify({
+    positionProperty: 'transform',
+    responsive: true
   });
 
   $('.skill').knob({
@@ -80,7 +90,6 @@ $(document).ready(function() {
   );
 
   var flag = true;
-
   $(window).scroll(function () {
     var skills_top = $('#skills').position().top - 700;
 
@@ -96,6 +105,8 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(document).keydown(konami);
 });
 
 $(window).load(function () {
