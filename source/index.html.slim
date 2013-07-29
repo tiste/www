@@ -53,7 +53,7 @@ section
   .container
     .row-fluid
       .span7
-        h2.h3
+        h3
           | Most of the time, she's my
           i.fui-heart.margin style='color: #e74c3c'
         p
@@ -67,7 +67,14 @@ section
 
         iframe src='http://ghbtns.com/github-btn.html?user=baptistelecocq&type=follow&count=true&size=large' allowtransparency='true' frameborder='0' scrolling='0' width='280' height='30' class='margin-top'
 
-        = partial 'code'
+        .m-code.light-gray
+          = partial 'code'
+          pre.light-gray
+            | Finished in 0.02142 seconds
+            br
+            .s1 1 example, 0 failures
+          .m-code--overlay.red
+            p.h1.text-center.margin-top-large Rails lover
 
       .span5.text-right
         = link_to(image_tag('octocat.png', alt: 'Octocat'), 'http://github.com/baptistelecocq')
