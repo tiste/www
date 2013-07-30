@@ -411,10 +411,10 @@ textarea {
 a {
   color: #16a085;
   text-decoration: none;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s;
   -webkit-backface-visibility: hidden;
 }
 a:hover {
@@ -675,11 +675,11 @@ a.muted:focus {
   filter: alpha(opacity=70);
 }
 .btn.btn-huge {
-  font-size: 21.994px;
+  font-size: 28.994px;
   /* 22px */
 
-  line-height: 22px;
-  padding: 15px 20px 16px;
+  line-height: 29px;
+  padding: 25px 35px 28px;
 }
 .btn.btn-huge > [class^="fui-"] {
   top: 1px;
