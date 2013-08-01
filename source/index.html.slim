@@ -13,13 +13,13 @@ section#about.l-about
       .span4.mtm
         p
           span.big I
-          | 'm an 
+          | 'm an&nbsp;
           abbr title='École privée des sciences informatiques' EPSI
           |  student, computer engineering school located on the North of France.
         p
           | I have a passion for web development and web design.
           br
-          | I always try to stay in touch with 
+          | I always try to stay in touch with&nbsp;
           strong new technologies
           | .
         p Apple & UNIX lover.
@@ -56,11 +56,11 @@ section
           | Most of the time, she's my
           i.fui-heart.margin style='color: #e74c3c'
         p
-          | I create and participate every kinds of 
+          | I create and participate every kinds of&nbsp;
           strong open source
-          |  projects like 
+          |  projects like&nbsp;
           = link_to 'jQuery modal', 'https://github.com/baptistelecocq/jquery-modal-rails'
-          | , 
+          | ,&nbsp;
           = link_to 'Sentencify', 'https://github.com/baptistelecocq/sentencify'
           | , etc...
 
@@ -103,7 +103,9 @@ section#contact.l-contact.light-gray
   .container
     .row-fluid.text-center.mbl
       address
-        = link_to '<i class="fui-mail"></i> Contact me', 'mailto:baptiste.lecocq@gmail.com', class: 'btn btn-primary btn-huge btn-embossed'
+        = link_to 'mailto:baptiste.lecocq@gmail.com', class: 'btn btn-primary btn-huge btn-embossed'
+          i.fui-mail &nbsp;
+          | Contact me
     .m-social.row-fluid.text-center
       .span4
         a.ss-octocat href='http://github.com/baptistelecocq'

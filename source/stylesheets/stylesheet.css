@@ -177,6 +177,10 @@ section {
   z-index: 10;
 }
 
+.to_top i {
+  padding: 20px !important;
+}
+
 .up {
   position: relative;
   -webkit-transition: top 0.3s;

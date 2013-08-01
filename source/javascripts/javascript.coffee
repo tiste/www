@@ -60,6 +60,9 @@ $ ->
     positionProperty: 'transform'
     responsive: true
 
+  $('.to_top').to_top
+    limit: 500
+
   $('.skill').knob(
     readOnly: true
     thickness: '.2'
