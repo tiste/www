@@ -49,6 +49,9 @@ body
 .pos-absolute
   position: absolute
 
+.pos-fixed
+  position: fixed
+
 .hr
   height: 10px
   box-shadow: 0 10px 0 rgba(0,0,0,0.05)
@@ -143,10 +146,10 @@ section
   box-shadow: 0 10px 0 rgba(0,0,0,0.05)
   position: relative
   text-transform: uppercase
-  z-index: 10
 
 .to_top
   opacity: .6
+  z-index: 30
 
   i
     padding: 20px !important
@@ -158,6 +161,10 @@ section
 
   &:hover
     top: -6px
+
+.m-ribbon
+  top: 100px
+  z-index: 30
 
 
 /**
@@ -251,7 +258,7 @@ section
   margin: 0 auto
   position: relative
   width: 100%
-  z-index: 200
+  z-index: 20
   transition: opacity .5s ease 0s
   -webkit-transition: opacity .5s ease 0s
   -moz-transition: opacity .5s ease 0s
@@ -264,7 +271,7 @@ section
   position: absolute
   top: 0
   width: 100%
-  z-index: 100
+  z-index: 10
   transition: opacity .5s ease 0s
   -webkit-transition: opacity .5s ease 0s
   -moz-transition: opacity .5s ease 0s
