@@ -8,20 +8,12 @@ body
   background: #f6223f
   color: #FEFEFE
 
-.text-center
-  text-align: center
+img
+  width: 100%
 
-.text-right
-  text-align: right
-
-.text-left
-  text-align: left
-
-.center
-  margin: auto
-
-.right
-  float: right !important
+pre
+  margin-bottom: 0
+  border: 0
 
 .margin-top-huge
   margin-top: 150px
@@ -35,21 +27,6 @@ body
 .margin
   margin: 15px
 
-.padding
-  padding: 15px
-
-.no-margin
-  margin: 0
-
-.no-padding
-  padding: 0
-
-.pos-absolute
-  position: absolute
-
-.pos-fixed
-  position: fixed
-
 .hr
   height: 10px
   box-shadow: 0 10px 0 rgba(0,0,0,0.05)
@@ -61,10 +38,7 @@ body
   -o-background-size: cover
   background-size: cover
 
-.round
-  border-radius: 50%
-
-.big
+.lead-letter
   color: #1abc9c
   font-size: 3em
 
@@ -130,15 +104,13 @@ body
 // Main
 
 section
-  min-height: 400px
+  min-height: 480px
   padding: 40px 0px
-
-.container-fluid:first-child
-  padding: 0
 
 .navbar
   box-shadow: 0 10px 0 rgba(0,0,0,0.05)
   position: relative
+  border-radius: 0
   text-transform: uppercase
 
 .to_top
@@ -172,6 +144,7 @@ section
 .m-banner--mac
   top: 55px
   right: -55px
+  width: auto
 
 .typewriter-caret
   background: #777
@@ -180,6 +153,7 @@ section
   font-size: 2.3em
   font-weight: bold
   position: relative
+  line-height: 50px
 
 .logo-type
   display: block
@@ -191,14 +165,7 @@ section
 
 // About
 
-.brand
-  height: 280px
-  width: 280px
-
-.brand img
-  width: 100%
-
-.m-list
+.m-about--list
   margin-top: 70px
 
   [class*="fui"]
@@ -206,9 +173,6 @@ section
 
   ul
     list-style-type: none
-
-  li
-    line-height: 1.5em
 
 
 // Code
@@ -235,6 +199,12 @@ section
   width: 100%
   -webkit-transition: opacity 0.3s
   -moz-transition: opacity 0.3s
+
+
+// Skills
+
+.l-skills .row:first-child
+  margin-top: 40px
 
 
 // Projects
@@ -270,6 +240,7 @@ section
   -o-transition: opacity .5s ease 0s
 
   h3, p
+    margin: 7px 0px
     color: #FEFEFE
     font-weight: normal
     text-align: center

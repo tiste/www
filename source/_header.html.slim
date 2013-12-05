@@ -1,23 +1,20 @@
-.navbar
-  .navbar-inner
-    .container
-      .logo-type
-        h1 = link_to('Tiste', '/')
-      button.btn.btn-navbar type="button" data-toggle="collapse" data-target="#nav-collapse"
+nav.navbar role="navigation"
+  .navbar-header
+    button.navbar-toggle.btn.btn-navbar.hidden-lg.hidden-md.hidden-sm data-toggle="collapse" type="button" data-target=".navbar-collapse"
 
-      #nav-collapse.nav-collapse.collapse
-        ul.nav.pull-right
-          li.up
-            = link_to 'Home', '#home'
-          li.up
-            = link_to 'About', '#about'
-          li.up
-            = link_to 'Skills', '#skills'
-          li.up
-            = link_to 'Projects', '#projects'
-          li.up
-            = link_to 'Contact', '#contact'
+  .navbar-collapse.collapse
+    ul.nav.navbar-nav.navbar-right
+      li.up
+        = link_to 'Home', '#home'
+      li.up
+        = link_to 'About', '#about'
+      li.up
+        = link_to 'Skills', '#skills'
+      li.up
+        = link_to 'Projects', '#projects'
+      li.up
+        = link_to 'Contact', '#contact'
 
-= link_to(image_tag('ribbons/awwwards_nominee_black_left.png'), 'http://www.awwwards.com/best-websites/tiste', class: 'm-ribbon m-ribbon--awwwards hidden-phone', target: '_blank')
+= link_to(image_tag('ribbons/awwwards_nominee_black_left.png'), 'http://www.awwwards.com/best-websites/tiste', class: 'm-ribbon m-ribbon--awwwards hidden-xs', target: '_blank')
 
-= link_to(image_tag('ribbons/one-page-love-award.png'), 'http://onepagelove.com/tiste', class: 'm-ribbon m-ribbon--opl hidden-phone', target: '_blank')
+= link_to(image_tag('ribbons/one-page-love-award.png'), 'http://onepagelove.com/tiste', class: 'm-ribbon m-ribbon--opl hidden-xs', target: '_blank')
