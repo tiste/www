@@ -19,25 +19,25 @@
   title: '<h3>Silicon Salad</h3><p>Internship, 05/06/13-08/06/13</p>'
   url: 'http://www.siliconsalad.com'
 -
-  color: 'red'
-  image: 'projects/epnet.png'
-  title: '<h3>EPNet</h3>'
-  url: 'http://epnet.fr'
--
   color: 'green'
   image: 'projects/epsilive.png'
   title: '<h3>EPSI Live</h3>'
   url: 'http://beta.epsilive.com'
 -
-  color: 'blue'
-  image: 'projects/twamily.png'
-  title: '<h3>Twamily</h3>'
-  url: 'http://www.twamily.fr'
+  color: 'red'
+  image: 'projects/epnet.png'
+  title: '<h3>EPNet</h3>'
+  url: 'http://epnet.fr'
 -
   color: 'blue'
   image: 'projects/roquette.png'
   title: '<h3>Roquette</h3><p>Internship, 05/14/12-08/10/12<p>'
   url: 'http://www.roquette.com'
+-
+  color: 'blue'
+  image: 'projects/twamily.png'
+  title: '<h3>Twamily</h3>'
+  url: 'http://www.twamily.fr'
 -
   color: 'yellow'
   image: 'projects/iepsi.png'
