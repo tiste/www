@@ -83,7 +83,7 @@ section
 section#skills.l-skills.light-green
   .container.text-center.mtl
     - data.skills.each do |s|
-      .col-md-3.col-sm-4.col-xs-6.mbm
+      .col-md-3.col-sm-4.col-xs-12.mbm
         .skill data-value=(s.percent)
         h4 #{s.title}
 
@@ -107,6 +107,10 @@ section#contact.l-contact.light-gray
           = link_to 'mailto:contact@tiste.io', class: 'btn btn-primary btn-hg btn-embossed'
             i.fui-mail &nbsp;
             | Contact me
+          br
+          small
+            | or download my&nbsp;
+            = link_to 'CV', 'baptiste_lecocq_cv_en.pdf'
       .col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-4
         a.ss-octocat href='http://github.com/tiste'
           br
