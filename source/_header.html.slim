@@ -1,19 +1,19 @@
-nav.navbar role="navigation"
+nav.navbar role='navigation'
   .navbar-header
-    button.navbar-toggle.btn.btn-navbar.hidden-lg.hidden-md.hidden-sm data-toggle="collapse" type="button" data-target=".navbar-collapse"
+    button.navbar-toggle.btn.btn-navbar.hidden-lg.hidden-md.hidden-sm data-toggle='collapse' type='button' data-target='.navbar-collapse'
 
   .navbar-collapse.collapse
     ul.nav.navbar-nav.navbar-right
       li.up
-        = link_to 'Home', '#home'
+        = link_to t('nav.home'), '#home'
       li.up
-        = link_to 'About', '#about'
+        = link_to t('nav.about'), '#about'
       li.up
-        = link_to 'Skills', '#skills'
+        = link_to t('nav.skills'), '#skills'
       li.up
-        = link_to 'Projects', '#projects'
+        = link_to t('nav.projects'), '#projects'
       li.up
-        = link_to 'Contact', '#contact'
+        = link_to t('nav.contact'), '#contact'
 
 = link_to(image_tag('ribbons/awwwards_nominee_black_left.png'), 'http://www.awwwards.com/best-websites/tiste', class: 'm-ribbon m-ribbon--awwwards hidden-xs', target: '_blank')
 

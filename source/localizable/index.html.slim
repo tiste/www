@@ -11,40 +11,15 @@ section#about.l-about
   .container
     .row
       .col-md-4.col-sm-12.col-xs-12.mtm
-        p
-          span.lead-letter I
-          | 'm an&nbsp;
-          abbr title='École privée des sciences informatiques' EPSI
-          |  student, computer engineering school located on the North of France.
-        p
-          | I have a passion for web development and web design.
-          br
-          | I always try to stay in touch with&nbsp;
-          strong new technologies
-          | .
+        p= t('about.introduction')
+        p= t('about.passion')
         p Apple & UNIX lover.
-        p Recent graduate: scientific A level.
+        p= t('about.graduation')
       .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
         .pull-center
           = image_tag 'brand.png', alt: 'Tiste'
       .m-about--list.col-md-4.col-sm-12.col-xs-12
-        p Otherwise, I...
-        ul
-          li
-            span.fui-check.mrm
-            | keep calm
-          li
-            span.fui-check.mrm
-            strike drink beers
-          li
-            span.fui-check.mrm
-            | play guitar
-          li
-            span.fui-check.mrm
-            | have Justin Bieber's haircut
-          li.hidden-xs
-            span.fui-lock.mrm
-            | up, up, down, down, left...
+        = t('about.list')
 
 .hr
 
@@ -53,12 +28,10 @@ section
     .row
       .col-md-7
         h3.mtn
-          | Most of the time, she's my
+          = t('about.love_octocat')
           i.fui-heart.margin style='color: #e74c3c'
         p
-          | I create and participate every kinds of&nbsp;
-          strong open source
-          |  projects like&nbsp;
+          = t('about.open_source')
           = link_to 'beerify', 'https://github.com/epnet/beerify', target: '_blank'
           | ,&nbsp;
           = link_to 'jQuery modal', 'https://github.com/tiste/jquery-modal-rails', target: '_blank'
@@ -105,12 +78,15 @@ section#contact.l-contact.light-gray
       .col-md-4.col-sm-4
         address
           = link_to 'mailto:contact@tiste.io', class: 'btn btn-primary btn-hg btn-embossed'
-            i.fui-mail &nbsp;
-            | Contact me
+            i.fui-mail
+            = t('contact.me')
           br
           small
-            | or download my&nbsp;
-            = link_to 'CV', 'baptiste_lecocq_cv_en.pdf'
+            = t('contact.download')
+            - if I18n.locale == :fr
+              = link_to 'CV', 'baptiste_lecocq_cv_fr.pdf'
+            - else
+              = link_to 'CV', 'baptiste_lecocq_cv_en.pdf'
       .col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-4
         a.ss-octocat href='http://github.com/tiste'
           br

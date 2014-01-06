@@ -1,4 +1,5 @@
 activate :gzip
+activate :i18n, langs: [:en, :fr]
 activate :livereload
 activate :syntax
 
