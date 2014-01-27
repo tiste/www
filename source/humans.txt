@@ -1,6 +1,7 @@
 # TEAM
-  Baptiste Lecocq -- Author -- @Tiste
+  Baptiste Lecocq -- Author -- @tiste
 
 # TECHNOLOGY COLOPHON
   HTML5, CSS3
+  Ruby, Middleman
   jQuery
