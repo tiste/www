@@ -1,0 +1,16 @@
+{
+  "name": "tiste",
+  "version": "0.0.1",
+  "homepage": "http://tiste.io",
+  "authors": [
+    "tiste <contact@tiste.io>"
+  ],
+  "private": false,
+  "dependencies": {
+    "animate.css": "3.1.0",
+    "jquery": "~1.10.2",
+    "jquery-knob": "1.2.3",
+    "scrollReveal.js": "0.0.2",
+    "typewriter": "v0.1"
+  }
+}
