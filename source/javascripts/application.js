@@ -3,5 +3,6 @@
 //= require vendor/jquery.parallaxify
 //= require vendor/jquery.to_top
 //= require vendor/realistic-typewriter
-//= require vendor/bootstrap
+//= require vendor/scrollReveal
+//= require bootstrap
 //= require javascript

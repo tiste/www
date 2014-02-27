@@ -1,4 +1,6 @@
-// General
+/**
+ * General
+ */
 
 body
   background-color: #F9F9F9
@@ -31,30 +33,24 @@ pre
   height: 10px
   box-shadow: 0 10px 0 rgba(0,0,0,0.05)
 
-.cover
-  background: no-repeat center center
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-
 .lead-letter
   color: #1abc9c
   font-size: 3em
 
 .blink
-  -webkit-animation: blink 1.3s linear infinite
+  @include animation(blink 1.3s linear infinite)
 
-@-webkit-keyframes blink
-  0%
+@include keyframes(blink)
+  from
     opacity: 1
-  50%
+
+  to
     opacity: 0
-  100%
-    opacity: 1
 
 
-// Colors
+/**
+ * Colors
+ */
 
 .red
   background-color: #f6223f
@@ -101,7 +97,9 @@ pre
   padding-top: 30px
 
 
-// Main
+/**
+ * Main
+ */
 
 section
   min-height: 480px
@@ -122,11 +120,10 @@ section
 
 .up
   position: relative
-  -webkit-transition: top 0.3s
-  -moz-transition: top 0.3s
+  @include transition(margin-top 0.3s)
 
   &:hover
-    top: -6px
+    margin-top: -6px
 
 .m-ribbon
   position: fixed
@@ -139,7 +136,9 @@ section
   top: 250px
 
 
-// Home
+/**
+ * Home
+ */
 
 .m-banner--mac
   top: 55px
@@ -163,7 +162,9 @@ section
   text-transform: none
 
 
-// About
+/**
+ * About
+ */
 
 .m-about--list
   margin-top: 70px
@@ -175,7 +176,9 @@ section
     list-style-type: none
 
 
-// Code
+/**
+ * Code
+ */
 
 .m-code
   position: relative
@@ -197,17 +200,20 @@ section
   position: absolute
   top: 0
   width: 100%
-  -webkit-transition: opacity 0.3s
-  -moz-transition: opacity 0.3s
+  @include transition(opacity 0.3s)
 
 
-// Skills
+/**
+ * Skills
+ */
 
 .l-skills .row:first-child
   margin-top: 40px
 
 
-// Projects
+/**
+ * Projects
+ */
 
 .m-project
   overflow: hidden
@@ -221,10 +227,7 @@ section
   position: relative
   width: 100%
   z-index: 20
-  transition: opacity .5s ease 0s
-  -webkit-transition: opacity .5s ease 0s
-  -moz-transition: opacity .5s ease 0s
-  -o-transition: opacity .5s ease 0s
+  @include transition(opacity .5s ease 0s)
 
 .m-project--info
   left: 0
@@ -234,10 +237,7 @@ section
   top: 0
   width: 100%
   z-index: 10
-  transition: opacity .5s ease 0s
-  -webkit-transition: opacity .5s ease 0s
-  -moz-transition: opacity .5s ease 0s
-  -o-transition: opacity .5s ease 0s
+  @include transition(opacity .5s ease 0s)
 
   h3, p
     margin: 7px 0px
@@ -254,7 +254,9 @@ section
       opacity: 1
 
 
-// Contact
+/**
+ * Contact
+ */
 
 .l-contact
   min-height: inherit

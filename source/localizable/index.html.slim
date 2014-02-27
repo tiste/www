@@ -3,22 +3,22 @@ title: Baptiste Lecocq (Tiste), IT student
 ---
 
 section#home.l-home.yellow.hidden-xs
-  = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', 'data-parallaxify-range-x' => '120'
+  = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', data: { 'parallaxify-range-x' => '120' }
   .container.typewriter.hidden-sm
     span#typewriter
     span.typewriter-caret.blink &nbsp;
 section#about.l-about
   .container
     .row
-      .col-md-4.col-sm-12.col-xs-12.mtm
+      .col-md-4.col-sm-12.col-xs-12.mtm data-scrollReveal='enter left'
         p= t('about.introduction')
         p= t('about.passion')
         p Apple & UNIX lover.
         p= t('about.graduation')
-      .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1
+      .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1 data-scrollReveal='enter bottom'
         .pull-center
           = image_tag 'brand.png', alt: 'Tiste'
-      .m-about--list.col-md-4.col-sm-12.col-xs-12
+      .m-about--list.col-md-4.col-sm-12.col-xs-12 data-scrollReveal='enter right'
         = t('about.list')
 
 .hr
@@ -41,7 +41,7 @@ section
           = link_to 'to_top', 'https://github.com/tiste/to_top', target: '_blank'
           | , etc...
 
-        .m-code.light-gray.mbl
+        .m-code.light-gray.mbl data-scrollReveal='wait .5s and then enter left'
           = partial 'code'
           pre.light-gray
             | Finished in 0.02142 seconds

@@ -2,14 +2,14 @@ doctype html
 html
   head
     meta charset='utf-8'
-    title= data.page.title
+    title= current_page.data.title
     meta name='description' content="I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple & UNIX lover. Recent graduate: scientific A level."
     meta name='keywords' content='tiste, baptiste, lecocq, web, ruby, php, html, north, arras, lille, nord, france, epsi, student, etudiant, it, school, design, flat'
     meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
     meta property='og:description' content="I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple & UNIX lover. Recent graduate: scientific A level."
     meta property='og:image' content='http://tiste.io/images/brand.png'
     meta property='og:site_name' content='Tiste'
-    meta property='og:title' content=(data.page.title)
+    meta property='og:title' content=(current_page.data.title)
     meta property='og:type' content='website'
     meta property='og:url' content='http://tiste.io'
 
@@ -17,15 +17,14 @@ html
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,700'
     = stylesheet_link_tag 'application'
   body
-    .container-fluid
+    .container-fluid.pln.prn
       = partial 'header'
-      == yield
+      = yield
       = partial 'footer'
       .to_top
         i.fui-triangle-up.btn.btn-large.btn-warning
 
     script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
-    script src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js'
     = javascript_include_tag 'application'
     javascript:
       var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];

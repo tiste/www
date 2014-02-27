@@ -86,6 +86,8 @@ $ ->
 
   $(document).keydown konami
 
+  window.scrollReveal = new scrollReveal()
+
 $(window).load ->
   type_writer()
   for element in $('.m-project--content')
