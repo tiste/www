@@ -123,4 +123,3 @@ DEPENDENCIES
   middleman-syntax
   redcarpet
   slim
-  wdm (~> 0.1.0)
