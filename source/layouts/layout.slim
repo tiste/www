@@ -2,14 +2,12 @@ doctype html
 html
   head
     meta charset='utf-8'
-    title= current_page.data.title
-    meta name='description' content="I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple & UNIX lover. Recent graduate: scientific A level."
-    meta name='keywords' content='tiste, baptiste, lecocq, web, ruby, php, html, north, arras, lille, nord, france, epsi, student, etudiant, it, school, design, flat'
+    = display_meta_tags site: 'Baptiste Lecocq (Tiste), IT student'
     meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
     meta property='og:description' content="I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple & UNIX lover. Recent graduate: scientific A level."
     meta property='og:image' content='http://tiste.io/images/brand.png'
     meta property='og:site_name' content='Tiste'
-    meta property='og:title' content=(current_page.data.title)
+    meta property='og:title' content='Baptiste Lecocq (Tiste), IT student'
     meta property='og:type' content='website'
     meta property='og:url' content='http://tiste.io'
 
@@ -25,9 +23,4 @@ html
         i.fui-triangle-up.btn.btn-large.btn-warning
 
     = javascript_include_tag 'application'
-    javascript:
-      var _gaq=[['_setAccount','UA-42477577-1'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.async=true;
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+    = google_analytics_tag

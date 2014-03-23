@@ -60,11 +60,15 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
+    middleman-google-analytics (0.0.3)
+      middleman-core (>= 3.0.6)
     middleman-livereload (3.2.1)
       em-websocket (~> 0.5.0)
       middleman-core (~> 3.2)
       multi_json (~> 1.8.4)
       rack-livereload (~> 0.3.15)
+    middleman-meta-tags (0.0.1)
+      middleman-core (>= 3.0.0)
     middleman-sprockets (3.2.0)
       middleman-core (~> 3.2)
       sprockets (~> 2.1)
@@ -119,7 +123,9 @@ DEPENDENCIES
   bourbon
   middleman (~> 3.2)
   middleman-deploy
+  middleman-google-analytics
   middleman-livereload
+  middleman-meta-tags
   middleman-syntax
   redcarpet
   slim

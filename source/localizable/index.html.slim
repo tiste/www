@@ -1,6 +1,5 @@
----
-title: Baptiste Lecocq (Tiste), IT student
----
+- description %q(I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple and UNIX lover. Recent graduate: scientific A level.)
+- keywords %w(tiste baptiste lecocq web ruby php html north arras lille nord france epsi student etudiant it school design flat middleman seo sentencify beerify nameday).join(', ')
 
 section#home.l-home.yellow.hidden-xs
   = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', data: { 'parallaxify-range-x' => '120' }
@@ -32,13 +31,15 @@ section
           i.fui-heart.margin style='color: #e74c3c'
         p
           = t('about.open_source')
-          = link_to 'beerify', 'https://github.com/epnet/beerify', target: '_blank'
+          = link_to 'middleman-meta-tags', 'https://github.com/tiste/middleman-meta-tags', target: '_blank'
           | ,&nbsp;
-          = link_to 'jQuery modal', 'https://github.com/tiste/jquery-modal-rails', target: '_blank'
+          = link_to 'nameday', 'https://github.com/tiste/nameday', target: '_blank'
           | ,&nbsp;
           = link_to 'sentencify', 'https://github.com/tiste/sentencify', target: '_blank'
           | ,&nbsp;
-          = link_to 'to_top', 'https://github.com/tiste/to_top', target: '_blank'
+          = link_to 'beerify', 'https://github.com/epnet/beerify', target: '_blank'
+          | ,&nbsp;
+          = link_to 'jQuery modal', 'https://github.com/tiste/jquery-modal-rails', target: '_blank'
           | , etc...
 
         .m-code.light-gray.mbl data-scrollReveal='wait .5s and then enter left'
@@ -84,9 +85,9 @@ section#contact.l-contact.light-gray
           small
             = t('contact.download')
             - if I18n.locale == :fr
-              = link_to 'CV', 'baptiste_lecocq_cv_fr.pdf'
+              = link_to 'CV', '/baptiste_lecocq_cv_fr.pdf'
             - else
-              = link_to 'CV', 'baptiste_lecocq_cv_en.pdf'
+              = link_to 'CV', '/baptiste_lecocq_cv_en.pdf'
       .col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-4
         a.ss-octocat href='http://github.com/tiste'
           br
@@ -99,3 +100,7 @@ section#contact.l-contact.light-gray
         a.ss-facebook href='http://www.facebook.com/baptiste.lecocq'
           br
           span Facebook
+      .col-md-2.col-sm-2.col-xs-4.hidden
+        a href='https://plus.google.com/+BaptisteLecocq?rel=author'
+          br
+          span Google

@@ -1,12 +1,17 @@
 activate :gzip
 activate :i18n, langs: [:en, :fr]
 activate :livereload
+activate :meta_tags
 activate :syntax
 
 activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'master'
   deploy.build_before = true
+end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-42477577-1'
 end
 
 set :css_dir, 'stylesheets'
