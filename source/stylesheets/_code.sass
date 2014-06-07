@@ -1,0 +1,21 @@
+.m-code
+  position: relative
+  border-radius: 7px
+
+  pre
+    border-radius: 7px
+
+  &:hover .m-code--overlay
+    opacity: 1
+
+.m-code--overlay
+  background: url(/images/rails.png) center center no-repeat
+  border-radius: 7px
+  color: #FEFEFE
+  height: 100%
+  left: 0
+  opacity: 0
+  position: absolute
+  top: 0
+  width: 100%
+  @include transition(opacity 0.3s)

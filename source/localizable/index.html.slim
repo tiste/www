@@ -1,7 +1,7 @@
 - description %q(I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple and UNIX lover. Recent graduate: scientific A level.)
 - keywords %w(tiste baptiste lecocq web ruby php html north arras lille nord france epsi student etudiant it school design flat middleman seo sentencify beerify nameday).join(', ')
 
-section#home.l-home.yellow.hidden-xs
+section#home.l-home.sun-flower.hidden-xs
   = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', data: { 'parallaxify-range-x' => '120' }
   .container.typewriter.hidden-sm
     span#typewriter
@@ -54,7 +54,7 @@ section
       .text-right.col-md-5.col-md-offset-0.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
         = link_to(image_tag('octocat.png', alt: 'Octocat'), 'http://github.com/tiste', target: '_blank')
 
-section#skills.l-skills.light-green
+section#skills.l-skills.turquoise
   .container.text-center.mtl
     - data.skills.each do |s|
       .col-md-3.col-sm-4.col-xs-12.mbm

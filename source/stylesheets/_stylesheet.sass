@@ -1,7 +1,3 @@
-/**
- * General
- */
-
 body
   background-color: #F9F9F9
   overflow-x: hidden
@@ -47,41 +43,6 @@ pre
   to
     opacity: 0
 
-
-/**
- * Colors
- */
-
-.red
-  background-color: #f6223f
-  color: #FEFEFE
-
-.blue
-  background-color: #3498db
-  color: #FEFEFE
-
-.yellow
-  background-color: #f1c40f
-  color: #FEFEFE
-
-.light-green
-  background-color: #45C0A1
-  color: #FEFEFE
-
-.green
-  background-color: #1abc9c
-  color: #FEFEFE
-
-.dark-gray
-  background-color: #353535
-  color: #a7a8a3
-
-.light-gray
-  background-color: #ecf0f1
-
-.white
-  background-color: #fdfdfd
-
 .matrix
   background: black !important
   color: #00CC00
@@ -95,11 +56,6 @@ pre
   border-top: 1px solid #e7e7e7
   padding-bottom: 30px
   padding-top: 30px
-
-
-/**
- * Main
- */
 
 section
   min-height: 480px
@@ -160,121 +116,3 @@ section
   height: 0
   overflow: hidden
   text-transform: none
-
-
-/**
- * About
- */
-
-.m-about--list
-  margin-top: 70px
-
-  [class*="fui"]
-    color: #1abc9c
-
-  ul
-    list-style-type: none
-
-
-/**
- * Code
- */
-
-.m-code
-  position: relative
-  border-radius: 7px
-
-  pre
-    border-radius: 7px
-
-  &:hover .m-code--overlay
-    opacity: 1
-
-.m-code--overlay
-  background: url(/images/rails.png) center center no-repeat
-  border-radius: 7px
-  color: #FEFEFE
-  height: 100%
-  left: 0
-  opacity: 0
-  position: absolute
-  top: 0
-  width: 100%
-  @include transition(opacity 0.3s)
-
-
-/**
- * Skills
- */
-
-.l-skills .row:first-child
-  margin-top: 40px
-
-
-/**
- * Projects
- */
-
-.m-project
-  overflow: hidden
-  position: relative
-
-  img
-    width: 100%
-
-.m-project--overlay
-  margin: 0 auto
-  position: relative
-  width: 100%
-  z-index: 20
-  @include transition(opacity .5s ease 0s)
-
-.m-project--info
-  left: 0
-  opacity: 0
-  padding-top: 20%
-  position: absolute
-  top: 0
-  width: 100%
-  z-index: 10
-  @include transition(opacity .5s ease 0s)
-
-  h3, p
-    margin: 7px 0px
-    color: #FEFEFE
-    font-weight: normal
-    text-align: center
-
-.m-project--content
-  &:hover
-    .m-project--overlay
-      opacity: .1
-
-    .m-project--info
-      opacity: 1
-
-
-/**
- * Contact
- */
-
-.l-contact
-  min-height: inherit
-
-.m-social
-  a
-    margin-top: .8em
-
-  [class*="ss-"]
-    color: #bbbbbb
-    display: block
-    font-size: 4em
-    line-height: .5em
-    margin-bottom: .2em
-    margin-top: .5em
-
-  span
-    color: #767675
-    font-size: .2em
-    letter-spacing: 2px
-    text-transform: uppercase
