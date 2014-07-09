@@ -1,6 +1,6 @@
-realisticTypewriter = new RealisticTypewriter()
-typeWriterElement = document.getElementById('typewriter')
-konami_keys = []
+realisticTypewriter                            = new RealisticTypewriter()
+typeWriterElement                              = document.getElementById('typewriter')
+konami_keys                                    = []
 realisticTypewriter.minimumCharactersPerSecond = 15
 realisticTypewriter.maximumCharactersPerSecond = 25
 
@@ -9,14 +9,17 @@ konami = (e) ->
   if konami_keys.toString().indexOf('38,38,40,40,37,39,37,39,66,65') >= 0
     $(this).unbind 'keydown', konami
     matrix()
+
 go_to = (anchor) ->
   $('html, body').animate
     scrollTop: $(anchor).offset().top
   , 500
+
 prompt = (element, text) ->
   span = document.createElement('span')
   span.innerHTML = text
   element.appendChild span
+
 type_writer = ->
   realisticTypewriter.type 'Hi !', typeWriterElement, ->
     setTimeout (->
@@ -32,6 +35,7 @@ type_writer = ->
             ), 1000
         ), 1000
     ), 1000
+
 matrix = ->
   go_to '.l-home'
   $('.l-home').addClass 'matrix'
@@ -41,6 +45,7 @@ matrix = ->
       $('#typewriter').empty()
       realisticTypewriter.type 'Knock, knock, Neo.', typeWriterElement
     ), 1500
+
 set_percent = (language, percent) ->
   $(value: 0).delay(700).animate
     value: percent
@@ -78,7 +83,7 @@ $ ->
     if flag
       if $(window).scrollTop() > skills_top
         $('.skill').each ->
-          skill = $(this)
+          skill       = $(this)
           skill_value = $(this).data('value')
           set_percent skill, skill_value
 
@@ -90,6 +95,7 @@ $ ->
 
 $(window).load ->
   type_writer()
+
   for element in $('.m-project--content')
     $(element).hoverdir()
 

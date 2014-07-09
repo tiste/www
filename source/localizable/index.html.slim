@@ -6,18 +6,21 @@ section#home.l-home.sun-flower.hidden-xs
   .container.typewriter.hidden-sm
     span#typewriter
     span.typewriter-caret.blink &nbsp;
+
 section#about.l-about
   .container
     .row
-      .col-md-4.col-sm-12.col-xs-12.mtm data-scrollReveal='enter left'
+      .col-md-4.col-sm-12.col-xs-12.mtm data-scroll-reveal='enter left'
         p= t('about.introduction')
         p= t('about.passion')
         p Apple & UNIX lover.
         p= t('about.graduation')
-      .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1 data-scrollReveal='enter bottom'
+
+      .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1 data-scroll-reveal='enter bottom'
         .pull-center
           = image_tag 'brand.png', alt: 'Tiste'
-      .m-about--list.col-md-4.col-sm-12.col-xs-12 data-scrollReveal='enter right'
+
+      .m-about--list.col-md-4.col-sm-12.col-xs-12 data-scroll-reveal='enter right'
         = t('about.list')
 
 .hr
@@ -29,6 +32,7 @@ section
         h3.mtn
           = t('about.love_octocat')
           i.fui-heart.margin style='color: #e74c3c'
+
         p
           = t('about.open_source')
           = link_to 'dashboard', 'http://dashboard.tiste.io', target: '_blank'
@@ -42,12 +46,13 @@ section
           = link_to 'beerify', 'https://github.com/epnet/beerify', target: '_blank'
           | , etc...
 
-        .m-code.light-gray.mbl data-scrollReveal='wait .5s and then enter left'
+        .m-code.light-gray.mbl data-scroll-reveal='wait .5s and then enter left'
           = partial 'code'
           pre.light-gray
             | Finished in 0.02142 seconds
             br
             .s1 1 example, 0 failures
+
           .m-code--overlay.red
             p.h1.text-center.margin-top-large Rails lover
 
@@ -88,18 +93,22 @@ section#contact.l-contact.light-gray
               = link_to 'CV', '/baptiste_lecocq_cv_fr.pdf'
             - else
               = link_to 'CV', '/baptiste_lecocq_cv_en.pdf'
+
       .col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-4
         a.ss-octocat href='http://github.com/tiste'
           br
           span Github
+
       .col-md-2.col-sm-2.col-xs-4
         a.ss-twitter href='http://twitter.com/tiste'
           br
           span Twitter
+
       .col-md-2.col-sm-2.col-xs-4
         a.ss-facebook href='http://www.facebook.com/baptiste.lecocq'
           br
           span Facebook
+
       .col-md-2.col-sm-2.col-xs-4.hidden
         a href='https://plus.google.com/+BaptisteLecocq?rel=author'
           br

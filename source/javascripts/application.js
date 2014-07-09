@@ -1,9 +1,0 @@
-//= require jquery
-//= require bootstrap
-//= require jquery-knob/js/jquery.knob
-//= require scrollReveal.js/scrollReveal.js
-//= require typewriter/src/realistic-typewriter
-//= require vendor/jquery.hoverdir
-//= require vendor/jquery.parallaxify
-//= require vendor/jquery.to_top
-//= require javascript
