@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "homepage": "http://tiste.io",
   "authors": [
-    "tiste <contact@tiste.io>"
+    "Baptiste Lecocq <hello@tiste.io>"
   ],
   "private": false,
   "dependencies": {
