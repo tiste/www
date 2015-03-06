@@ -1,20 +1,22 @@
-nav.navbar.mbn role='navigation'
-  .navbar-header
-    button.navbar-toggle.btn.btn-navbar.hidden-lg.hidden-md.hidden-sm data-toggle='collapse' type='button' data-target='.navbar-collapse'
+.container-fluid.brand
+  .row
+    .container
+      .row
+        .col-xs-12
+          nav.navbar.navbar-default.mbn
+            .container-fluid
+              .navbar-header
+                button.navbar-toggle.collapsed data-target='.collapse' data-toggle='collapse' type='button'
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                = link_to 'tiste', '/', class: 'navbar-brand visible-xs'
 
-  .navbar-collapse.collapse
-    ul.nav.navbar-nav.navbar-right
-      li.up
-        = link_to t('nav.home'), '#home'
-      li.up
-        = link_to t('nav.about'), '#about'
-      li.up
-        = link_to t('nav.skills'), '#skills'
-      li.up
-        = link_to t('nav.projects'), '#projects'
-      li.up
-        = link_to t('nav.contact'), '#contact'
+              .collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li.mrm= link_to 'Home', '#top', class: 'hover'
 
-= link_to(image_tag('ribbons/awwwards_nominee_black_left.png'), 'http://www.awwwards.com/best-websites/tiste', class: 'm-ribbon m-ribbon--awwwards hidden-xs', target: '_blank')
+                  li.mrm= link_to 'Work', '#work', class: 'hover'
 
-= link_to(image_tag('ribbons/one-page-love-award.png'), 'http://onepagelove.com/tiste', class: 'm-ribbon m-ribbon--opl hidden-xs', target: '_blank')
+                  li.mrm= link_to 'Contact', '#contact', class: 'hover'

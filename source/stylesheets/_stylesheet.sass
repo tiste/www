@@ -1,126 +1,120 @@
+html
+  height: 100%
+
 body
-  background-color: #F9F9F9
-  overflow-x: hidden
+  margin-top: 10px
+  background-color: #FEFEFE
+  min-height: 100%
+  border-left: 10px solid $light-gray
+  border-right: 10px solid $light-gray
 
-::selection, *::-moz-selection
-  background: #f6223f
-  color: #FEFEFE
+  &:before, &:after
+    content: ""
+    position: fixed
+    background: $light-gray
+    left: 0
+    right: 0
+    height: 10px
+    z-index: 999
 
-img
-  width: 100%
+  &:before
+    top: 0
 
-pre
-  margin-bottom: 0
-  border: 0
+  &:after
+    bottom: 0
 
-.margin-top-huge
-  margin-top: 150px
+hr
+  height: 0
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
 
-.margin-top-large
-  margin-top: 85px
-
-.margin-bottom-huge
-  margin-bottom: 150px
-
-.margin
-  margin: 15px
-
-.hr
-  height: 10px
-  box-shadow: 0 10px 0 rgba(0,0,0,0.05)
-
-.lead-letter
-  color: #1abc9c
-  font-size: 3em
-
-.blink
-  @include animation(blink 1.3s linear infinite)
-
-@include keyframes(blink)
-  from
-    opacity: 1
-
-  to
-    opacity: 0
-
-.matrix
-  background: black !important
-  color: #00CC00
-  font-family: Courier, "Courier New", FreeMono
-
-  .m-banner--mac
-    display: none
-
-.border-gray
-  border-bottom: 1px solid #e7e7e7
-  border-top: 1px solid #e7e7e7
-  padding-bottom: 30px
-  padding-top: 30px
-
-section
-  min-height: 480px
-  padding: 40px 0px
+a
+  color: darken($text-color, 10%)
+  font-weight: bold
 
 .navbar
-  box-shadow: 0 10px 0 rgba(0,0,0,0.05)
-  position: relative
-  border-radius: 0
   text-transform: uppercase
+  z-index: 10
 
-.to_top
-  opacity: .7
-  z-index: 30
+.header h1
+  font-size: 4em
 
-  i
-    padding: 20px !important
+  @media (max-width: $screen-xs-max)
+    font-size: 2.5em
 
-.up
+.hover
+  display: inline-block
   position: relative
-  @include transition(margin-top 0.3s)
+  text-decoration: none
+  overflow: hidden
+  +transition(transform 0.3s)
+  +transition-timing-function(cubic-bezier(0.6, 0, 0.4, 1))
+
+  &:before, &:after
+    pointer-events: none
+    +backface-visibility(hidden)
+    font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased
+
+  &:hover, &:focus
+    +transform(translateY(10%))
+
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    width: 100%
+    height: 100%
+    background: $sun-flower
+    content: ""
+    +transition(transform 0.3s)
+    +transform(translateY(100%) translateY(-5px))
+    +transition-timing-function(cubic-bezier(0.6, 0, 0.4, 1))
+
+  &:hover:before, &:focus:before
+    +transform(translateY(-100%) translateY(5px))
+
+
+// works
+
+.works-item--container
+  position: relative
+  +transition(transform 0.35s)
+  +transform(perspective(1000px) translate3d(0, 0, 0))
+
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    width: 100%
+    height: 100%
+    content: ""
+    +transition(opacity 0.35s)
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8)
+    opacity: 0
 
   &:hover
-    margin-top: -6px
+    +transform(perspective(1000px) translate3d(0, 0, 20px))
 
-.m-ribbon
-  position: fixed
-  z-index: 30
+  &:hover:before
+    opacity: 1
 
-.m-ribbon--awwwards
-  top: 100px
-
-.m-ribbon--opl
-  top: 250px
+.works-item--hashtag
+  background-color: lighten($brand, 25%)
 
 
-/**
- * Home
- */
+// social networks
 
-.m-banner--mac
-  top: 55px
-  right: -55px
-  width: auto
+.social-networks
+  font-size: 2em
 
-.typewriter-caret
-  background: #777
+  .fa-twitter
+    color: #55acee
 
-.typewriter
-  font-size: 2.3em
-  font-weight: bold
-  position: relative
-  line-height: 50px
+  .fa-github
+    color: #666666
 
-.logo-type
-  display: block
-  float: left
-  height: 0
-  overflow: hidden
-  text-transform: none
-
-@media (max-width: $screen-xs-max)
-  .btn-hg
-    font-size: 25px !important
-    padding: 20px 29px 23px !important
-
-  .m-social [class*="ss-"]
-    font-size: 3em !important
+  .fa-instagram
+    color: #3f729b
