@@ -1,0 +1,31 @@
+#home.container-fluid.brand
+  .row
+    .container
+      .row
+        .col-xs-12.text-center.header.mvxl
+          h1.mtn Baptiste Lecocq
+          h3.mtn= t('catchphrase')
+
+.container-fluid
+  .row
+    = partial 'about'
+
+    .container.hidden-xs
+      hr.mts
+
+    #work.container.mvxl
+      #masonry-container.row.clearfix
+        - data.works.each do |work|
+          a.works-item.col-xs-12.col-sm-4 href="/#{work.slug}"
+            .works-item--container
+              = image_tag work.image, alt: work.title, class: 'max-width'
+
+              .works-item--hashtag.pvm.phm
+                p.mbn.em= work.hashtag
+                = work.content
+
+- content_for :scripts do
+  coffee:
+    $(window).load ->
+      $('#masonry-container').masonry
+        itemSelector: '.works-item'

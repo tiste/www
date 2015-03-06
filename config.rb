@@ -1,5 +1,5 @@
 activate :gzip
-activate :i18n, langs: [:en, :fr]
+activate :i18n
 activate :livereload
 activate :meta_tags
 
@@ -11,6 +11,10 @@ end
 
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-42477577-1'
+end
+
+data.works.each do |work|
+  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", ignore: true
 end
 
 set :css_dir, 'stylesheets'

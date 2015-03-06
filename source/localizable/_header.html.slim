@@ -15,8 +15,8 @@
 
               .collapse.navbar-collapse
                 ul.nav.navbar-nav.navbar-right
-                  li.mrm= link_to 'Home', '#top', class: 'hover'
+                  - path = !!(/^\/(fr)?\/$/i =~ current_page.url) ? '' : '/'
 
-                  li.mrm= link_to 'Work', '#work', class: 'hover'
-
+                  li.mrm= link_to t('nav.home'), "#{path}#home", class: 'hover'
+                  li.mrm= link_to t('nav.work'), "#{path}#work", class: 'hover'
                   li.mrm= link_to 'Contact', '#contact', class: 'hover'

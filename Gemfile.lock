@@ -56,7 +56,6 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    masonry-rails (0.2.3)
     middleman (3.3.10)
       coffee-script (~> 2.2)
       compass (>= 1.0.0, < 2.0.0)
@@ -151,7 +150,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   bourbon
-  masonry-rails
   middleman (~> 3.3)
   middleman-deploy
   middleman-google-analytics
