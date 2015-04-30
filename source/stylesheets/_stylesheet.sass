@@ -28,7 +28,7 @@ hr
   border-top: 1px solid rgba(0, 0, 0, 0.1)
   border-bottom: 1px solid rgba(255, 255, 255, 0.3)
 
-a
+a, strong
   color: darken($text-color, 10%)
   font-weight: bold
 
@@ -75,31 +75,24 @@ a
   &:hover:before, &:focus:before
     +transform(translateY(-100%) translateY(5px))
 
+.bordered
+  border: 10px solid $brand-light
+
 
 // works
 
-.works-item--container
-  position: relative
-  +transition(transform 0.35s)
-  +transform(perspective(1000px) translate3d(0, 0, 0))
-
-  &:before
-    position: absolute
-    top: 0
-    left: 0
-    z-index: -1
-    width: 100%
-    height: 100%
-    content: ""
-    +transition(opacity 0.35s)
-    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5)
-    opacity: 0
+.works-item
+  -webkit-font-smoothing: antialiased
 
   &:hover
-    +transform(perspective(1000px) translate3d(0, 0, 20px))
+    text-decoration: none
 
-  &:hover:before
-    opacity: 1
+.works-item--container
+  +transition(transform 0.3s)
+  +transform(scale(1, 1))
+
+  &:hover
+    +transform(scale(1.05, 1.05))
 
 .works-item--hashtag
   background-color: lighten($brand, 25%)

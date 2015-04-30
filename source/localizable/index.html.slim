@@ -16,8 +16,8 @@
     #work.container.mvxl
       #masonry-container.row.clearfix
         - data.works.each do |work|
-          a.works-item.col-xs-12.col-sm-4 href="/#{work.slug}"
-            .works-item--container
+          a.works-item.col-xs-12.col-sm-4.mbm href="/#{work.slug}"
+            .works-item--container.bordered
               = image_tag work.image, alt: work.title, class: 'max-width'
 
               .works-item--hashtag.pvm.phm
