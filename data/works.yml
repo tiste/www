@@ -1,7 +1,7 @@
 -
   title: 'simonsimon'
   slug: 'simonsimon'
-  url: 'http://tiste.io/simonsimon'
+  url: 'http://simonsimon.tiste.io'
   image: 'works/simonsimon/landing.png'
   hashtag: '#simon #game'
 
@@ -25,6 +25,13 @@
   hashtag: '#angular #plugin'
 
 -
+  title: 'Blanchemaille'
+  slug: 'blanchemaille'
+  url: 'http://www.blanchemaille.fr'
+  image: 'works/blanchemaille/landing.png'
+  hashtag: '#sinatra #api #angular #pinkpanda'
+
+-
   title: 'Codegent'
   slug: 'codegent'
   url: 'http://www.codegent.com'
@@ -36,7 +43,7 @@
   slug: 'bovary'
   url: 'http://www.champagnebovary.com'
   image: 'works/bovary/landing.png'
-  hashtag: '#middleman #customer'
+  hashtag: '#middleman'
 
 -
   title: 'middleman-meta-tags'
@@ -48,7 +55,7 @@
   slug: 'a2s-conseil'
   url: 'http://a2s-conseil.fr'
   image: 'works/a2s-conseil/landing.png'
-  hashtag: '#rails #customer'
+  hashtag: '#rails'
 
 -
   title: 'sentencify'
