@@ -16,13 +16,19 @@
     #work.container.mvxl
       #masonry-container.row.clearfix
         - data.works.each do |work|
-          a.works-item.col-xs-12.col-sm-4.mbm href="/#{work.slug}"
-            .works-item--container.bordered
-              = image_tag work.image, alt: work.title, class: 'max-width'
+          .works-item.col-xs-12.col-sm-4
+            - url = work.slug ? "/#{work.slug}" : work.url
+            a href=url title=work.title
+              .works-item--container.bordered
+                - if work.image
+                  = image_tag work.image, alt: work.title, class: 'max-width'
+                - else
+                  .text-center
+                    p.h2.mbl= work.title
 
-              .works-item--hashtag.pvm.phm
-                p.mbn.em= work.hashtag
-                = work.content
+                .works-item--hashtag.pvm.phm
+                  p.mbn.em= work.hashtag
+                  = work.content
 
 - content_for :scripts do
   coffee:

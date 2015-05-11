@@ -13,7 +13,7 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-42477577-1'
 end
 
-data.works.each do |work|
+data.works.select { |w| w.has_key?('slug') }.each do |work|
   proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", ignore: true
 end
 
