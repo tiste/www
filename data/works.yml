@@ -1,0 +1,70 @@
+-
+  title: 'simonsimon'
+  slug: 'simonsimon'
+  url: 'http://simonsimon.tiste.io'
+  image: 'works/simonsimon/landing.png'
+  hashtag: '#simon #game'
+
+-
+  title: 'I Wish It'
+  slug: 'i-wish-it'
+  url: 'https://iwishit.co'
+  image: 'works/i-wish-it/landing.png'
+  hashtag: '#socialnetwork #gift'
+
+-
+  title: 'wall'
+  slug: 'wall'
+  url: 'http://wwwall.co'
+  image: 'works/wall/landing.png'
+  hashtag: '#anonymous #socialnetwork'
+
+-
+  title: 'angular-loading-button'
+  url: 'http://angular-loading-button.tiste.io'
+  hashtag: '#angular #plugin'
+
+-
+  title: 'Blanchemaille'
+  slug: 'blanchemaille'
+  url: 'http://www.blanchemaille.fr'
+  image: 'works/blanchemaille/landing.png'
+  hashtag: '#sinatra #api #angular #pinkpanda'
+
+-
+  title: 'Codegent'
+  slug: 'codegent'
+  url: 'http://www.codegent.com'
+  image: 'works/codegent/landing.png'
+  hashtag: '#internship #digitalagency #london'
+
+-
+  title: 'Bovary'
+  slug: 'bovary'
+  url: 'http://www.champagnebovary.com'
+  image: 'works/bovary/landing.png'
+  hashtag: '#middleman'
+
+-
+  title: 'middleman-meta-tags'
+  url: 'https://github.com/tiste/middleman-meta-tags'
+  hashtag: '#middleman #plugin'
+
+-
+  title: 'A2S Conseil'
+  slug: 'a2s-conseil'
+  url: 'http://a2s-conseil.fr'
+  image: 'works/a2s-conseil/landing.png'
+  hashtag: '#rails'
+
+-
+  title: 'sentencify'
+  url: 'https://github.com/tiste/sentencify'
+  hashtag: '#ruby #gem'
+
+-
+  title: 'Silicon Salad'
+  slug: 'silicon-salad'
+  url: 'http://www.siliconsalad.com'
+  image: 'works/silicon-salad/landing.png'
+  hashtag: '#internship #webagency #lille'

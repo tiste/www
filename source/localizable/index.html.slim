@@ -1,115 +1,37 @@
-- description %q(I'm an EPSI student, computer engineering school located on the North of France. I have a passion for web development and web design. I always try to stay in touch with new technologies. Apple and UNIX lover. Recent graduate: scientific A level.)
-- keywords %w(tiste baptiste lecocq web ruby php html north arras lille nord france epsi student etudiant it school design flat middleman seo sentencify beerify nameday).join(', ')
-
-section#home.l-home.sun-flower.hidden-xs
-  = image_tag 'mac.png', alt: 'mac', class: 'pos-absolute m-banner--mac', data: { 'parallaxify-range-x' => '120' }
-  .container.typewriter.hidden-sm
-    span#typewriter
-    span.typewriter-caret.blink &nbsp;
-
-section#about.l-about
-  .container
-    .row
-      .col-md-4.col-sm-12.col-xs-12.mtm data-scroll-reveal='enter left'
-        p= t('about.introduction')
-        p= t('about.passion')
-        p Apple & UNIX lover.
-        p= t('about.graduation')
-
-      .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1 data-scroll-reveal='enter bottom'
-        .pull-center
-          = image_tag 'brand.png', alt: 'Tiste'
-
-      .m-about--list.col-md-4.col-sm-12.col-xs-12 data-scroll-reveal='enter right'
-        = t('about.list')
-
-.hr
-
-section
-  .container
-    .row
-      .col-md-7
-        h3.mtn
-          = t('about.love_octocat')
-          i.fui-heart.margin style='color: #e74c3c'
-
-        p
-          = t('about.open_source')
-          = link_to 'dashboard', 'http://dashboard.tiste.io', target: '_blank'
-          | ,&nbsp;
-          = link_to 'middleman-meta-tags', 'https://github.com/tiste/middleman-meta-tags', target: '_blank'
-          | ,&nbsp;
-          = link_to 'nameday', 'http://nameday.tiste.io', target: '_blank'
-          | ,&nbsp;
-          = link_to 'sentencify', 'https://github.com/tiste/sentencify', target: '_blank'
-          | ,&nbsp;
-          = link_to 'beerify', 'https://github.com/epnet/beerify', target: '_blank'
-          | , etc...
-
-        .m-code.light-gray.mbl data-scroll-reveal='wait .5s and then enter left'
-          = partial 'code'
-          pre.light-gray
-            | Finished in 0.02142 seconds
-            br
-            .s1 1 example, 0 failures
-
-          .m-code--overlay.red
-            p.h1.text-center.margin-top-large Rails lover
-
-      .text-right.col-md-5.col-md-offset-0.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
-        = link_to(image_tag('octocat.png', alt: 'Octocat'), 'http://github.com/tiste', target: '_blank')
-
-section#skills.l-skills.turquoise
-  .container.text-center.mtl
-    - data.skills.each do |s|
-      .col-md-3.col-sm-4.col-xs-12.mbm
-        .skill data-value=(s.percent)
-        h4 #{s.title}
-
-section#projects.l-projects.ptn.pbn.margin-top-huge.margin-bottom-huge
-  .container-fluid.clearfix
-    .col-lg-10.col-lg-offset-2.col-md-11.col-md-offset-1.col-sm-11.col-sm-offset-1.col-xs-12
+#home.container-fluid.brand
+  .row
+    .container
       .row
-        - data.projects.each do |p|
-          div class="col-lg-3 col-md-5 col-sm-5 col-xs-12 m-project #{p.color} pln prn mrl mbl"
-            .m-project--content
-              a target='_blank' href=(p.url)
-                = image_tag p.image, alt: p.title, class: 'm-project--overlay'
-              div class="m-project--info #{p.color}"
-                = p.title
+        .col-xs-12.text-center.header.mvxl
+          h1.mtn Baptiste Lecocq
+          h3.mtn= t('catchphrase')
 
-section#contact.l-contact.light-gray
-  .container
-    .m-social.row.text-center
-      .col-md-4.col-sm-4
-        address
-          = link_to 'mailto:hello@tiste.io', class: 'btn btn-primary btn-hg btn-embossed'
-            i.fui-mail
-            = t('contact.me')
-          br
-          small
-            = t('contact.download')
-            - if I18n.locale == :fr
-              = link_to 'CV', '/baptiste_lecocq_cv_fr.pdf'
-            - else
-              = link_to 'CV', '/baptiste_lecocq_cv_en.pdf'
+.container-fluid
+  .row
+    = partial 'about'
 
-      .col-md-2.col-md-offset-2.col-sm-2.col-sm-offset-2.col-xs-4
-        a.ss-octocat href='http://github.com/tiste'
-          br
-          span Github
+    .container.hidden-xs
+      hr.mts
 
-      .col-md-2.col-sm-2.col-xs-4
-        a.ss-twitter href='http://twitter.com/tiste'
-          br
-          span Twitter
+    #work.container.mvxl
+      #masonry-container.row.clearfix
+        - data.works.each do |work|
+          .works-item.col-xs-12.col-sm-4
+            - url = work.slug ? "/#{work.slug}" : work.url
+            a href=url title=work.title
+              .works-item--container.bordered
+                - if work.image
+                  = image_tag work.image, alt: work.title, class: 'max-width'
+                - else
+                  .text-center
+                    p.h2.mbl= work.title
 
-      .col-md-2.col-sm-2.col-xs-4
-        a.ss-facebook href='http://www.facebook.com/baptiste.lecocq'
-          br
-          span Facebook
+                .works-item--hashtag.pvm.phm
+                  p.mbn.em= work.hashtag
+                  = work.content
 
-      .col-md-2.col-sm-2.col-xs-4.hidden
-        a href='https://plus.google.com/+BaptisteLecocq?rel=author'
-          br
-          span Google
+- content_for :scripts do
+  coffee:
+    $(window).load ->
+      $('#masonry-container').masonry
+        itemSelector: '.works-item'

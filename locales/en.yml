@@ -1,28 +1,5 @@
 en:
-  about:
-    graduation: 'Recent graduate: scientific A level.'
-    introduction: |
-      <span class="lead-letter">I</span>'m an <abbr title="École privée des sciences informatiques">EPSI</abbr> student, computer engineering school located on the North of France.
-    list: |
-      <p>Otherwise, I...</p>
-      <ul>
-        <li><span class="fui-check mrm"></span>keep calm</li>
-        <li><span class="fui-check mrm"></span><strike>drink beers</strike></li>
-        <li><span class="fui-check mrm"></span>play guitar</li>
-        <li><span class="fui-check mrm"></span>have Justin Bieber's haircut</li>
-        <li class="hidden-xs"><span class="fui-lock mrm"></span>up, up, down, down, left...</li>
-      </ul>
-    love_octocat: "Most of the time, she's my"
-    open_source: 'I create and participate every kinds of <strong>open source</strong> projects like '
-    passion: |
-      I have a passion for web development and web design.<br>
-      I always try to stay in touch with <strong>new technologies</strong>.
-  contact:
-    download: 'or download my '
-    me: ' Contact me'
+  catchphrase: 'glad to see you there'
   nav:
-    about: 'About'
-    contact: 'Contact'
     home: 'Home'
-    projects: 'Projects'
-    skills: 'Skills'
+    work: 'Work'

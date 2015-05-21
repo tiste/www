@@ -1,0 +1,28 @@
+.container-fluid.brand
+  .row
+    .container
+      .row
+        .col-xs-12
+          nav.navbar.navbar-default.mbn
+            .container-fluid
+              .navbar-header
+                button.navbar-toggle.collapsed data-target='.collapse' data-toggle='collapse' type='button'
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                = link_to 'tiste', '/', class: 'navbar-brand visible-xs'
+
+              .collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  - is_fr = !!(/^\/(fr)?\/$/i =~ current_page.url)
+                  - path = is_fr ? '' : '/'
+
+                  li.mrm= link_to t('nav.home'), "#{path}#home", class: 'hover'
+                  li.mrm= link_to t('nav.work'), "#{path}#work", class: 'hover'
+                  li.mrm= link_to 'Contact', '#contact', class: 'hover'
+
+                  - if !is_fr
+                    li.mrm= link_to 'FR', '/fr', class: 'hover'
+                  - else
+                    li.mrm= link_to 'EN', '/', class: 'hover'

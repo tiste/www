@@ -1,8 +1,7 @@
 activate :gzip
-activate :i18n, langs: [:en, :fr]
+activate :i18n
 activate :livereload
 activate :meta_tags
-activate :syntax
 
 activate :deploy do |deploy|
   deploy.method       = :git
@@ -14,12 +13,13 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-42477577-1'
 end
 
+data.works.select { |w| w.has_key?('slug') }.each do |work|
+  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", ignore: true
+end
+
 set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 set :js_dir, 'javascripts'
-
-set :markdown, fenced_code_blocks: true
-set :markdown_engine, :redcarpet
 
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
