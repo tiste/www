@@ -1,11 +1,11 @@
-- title 'A2S Conseil'
+- title work.title
 
 .container-fluid.brand
   .row
     .container
       .row
         .col-xs-12.text-center.header.mvxl
-          h1.mtn A2S Conseil
+          h1.mtn= work.title
 
 .container-fluid
   .row
@@ -15,4 +15,5 @@
           p Under development.
 
         .col-xs-12.col-sm-10
-          = image_tag 'works/a2s-conseil/usage.png', class: 'max-width bordered'
+          = link_to work.url do
+            = image_tag 'works/a2s-conseil/usage.png', class: 'max-width bordered'

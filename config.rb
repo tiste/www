@@ -14,7 +14,7 @@ activate :google_analytics do |ga|
 end
 
 data.works.select { |w| w.has_key?('slug') }.each do |work|
-  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", ignore: true
+  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", locals: { work: work }, ignore: true
 end
 
 set :css_dir, 'stylesheets'

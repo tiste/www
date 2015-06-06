@@ -1,11 +1,11 @@
-- title 'simonsimon'
+- title work.title
 
 .container-fluid.brand
   .row
     .container
       .row
         .col-xs-12.text-center.header.mvxl
-          h1.mtn simonsimon
+          h1.mtn= work.title
 
 .container-fluid
   .row
@@ -15,4 +15,5 @@
           p Under development.
 
         .col-xs-12.col-sm-4
-          = image_tag 'works/simonsimon/usage.gif', class: 'max-width bordered'
+          = link_to work.url do
+            = image_tag 'works/simonsimon/usage.gif', class: 'max-width bordered'
