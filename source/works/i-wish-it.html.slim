@@ -17,11 +17,11 @@
 
           p
             | You can add your items by clicking a Fav of your browser, but also add the&nbsp;
-            = link_to 'Chrome Extension', 'https://chrome.google.com/webstore/detail/jaibfmifkaacmkccpmnpmkoabafinbdk'
+            = link_to 'Chrome Extension', 'https://chrome.google.com/webstore/detail/jaibfmifkaacmkccpmnpmkoabafinbdk', target: '_blank'
             | &nbsp;and even copy/paste the URL.
 
         .col-xs-12.col-sm-9
-          = link_to work.url do
+          = link_to work.url, target: '_blank' do
             = image_tag 'works/i-wish-it/usage.png', class: 'max-width bordered'
 
       .row.mtxl

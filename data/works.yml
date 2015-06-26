@@ -10,14 +10,14 @@
   slug: 'i-wish-it'
   url: 'https://iwishit.co'
   image: 'works/i-wish-it/landing.png'
-  hashtag: '#socialnetwork #gift'
+  hashtag: '#social #network #gift'
 
 -
   title: 'wall'
   slug: 'wall'
   url: 'http://wwwall.co'
   image: 'works/wall/landing.png'
-  hashtag: '#anonymous #socialnetwork'
+  hashtag: '#anonymous #social #network'
 
 -
   title: 'angular-loading-button'

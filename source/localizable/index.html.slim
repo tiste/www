@@ -17,8 +17,9 @@
       #masonry-container.row.clearfix
         - data.works.each do |work|
           .works-item.col-xs-12.col-sm-4
+            - target = work.slug ? '_self' : '_blank'
             - url = work.slug ? "/#{work.slug}" : work.url
-            a href=url title=work.title
+            a href=url target=target title=work.title
               .works-item--container.bordered
                 - if work.image
                   = image_tag work.image, alt: work.title, class: 'max-width'
