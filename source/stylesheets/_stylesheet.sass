@@ -23,24 +23,39 @@ body
   &:after
     bottom: 0
 
-hr
-  height: 0
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+.separator
+  height: 1px
+  background-color: $x-light-gray
+  margin: 20px auto
 
 a, strong
   color: darken($text-color, 10%)
   font-weight: bold
 
+a
+  border-bottom: 1px solid $x-light-gray
+
+  &:hover
+    text-decoration: none
+    border-bottom: 1px solid $black
+
 .navbar
   text-transform: uppercase
   z-index: 10
 
-.header h1
-  font-size: 4em
+  a, a:hover
+    border-bottom: none
 
-  @media (max-width: $screen-xs-max)
-    font-size: 2.5em
+.header
+  h1
+    font-size: 4em
+    margin-top: 0
+
+    @media (max-width: $screen-xs-max)
+      font-size: 2.5em
+
+  h2
+    margin-top: .5em
 
 .hover
   display: inline-block
@@ -105,6 +120,9 @@ a, strong
 
 .social-networks
   font-size: 2em
+
+  a, a:hover
+    border-bottom: none
 
   .fa-twitter
     color: #55acee

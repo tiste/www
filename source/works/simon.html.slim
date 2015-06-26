@@ -5,15 +5,26 @@
     .container
       .row
         .col-xs-12.text-center.header.mvxl
-          h1.mtn= work.title
+          h1= work.title
+          h2 "Simon Says"
 
 .container-fluid
   .row
     .container.mvxl
       .row
-        .col-xs-12.col-sm-8
-          p Under development.
+        .col-xs-12.col-sm-5
+          p
+            strong simonsimon
+            | &nbsp;is a simple "
+            = link_to 'Simon Says', 'https://en.wikipedia.org/?title=Simon_Says', target: '_blank'
+            | " Javascript based game. I wrote it to to make something fun and usable and to experience "classes" in that language.
 
-        .col-xs-12.col-sm-4
+          .separator
+
+          p
+            strong Created at:
+            | &nbsp;April, 2015
+
+        .col-xs-12.col-sm-4.col-sm-offset-3
           = link_to work.url do
             = image_tag 'works/simonsimon/usage.gif', class: 'max-width bordered'

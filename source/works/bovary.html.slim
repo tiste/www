@@ -5,7 +5,7 @@
     .container
       .row
         .col-xs-12.text-center.header.mvxl
-          h1.mtn= work.title
+          h1= work.title
 
 .container-fluid
   .row
@@ -13,6 +13,12 @@
       .row
         .col-xs-12.col-sm-2
           p Under development.
+
+          .separator
+
+          p
+            strong Created at:
+            | &nbsp;May, 2014
 
         .col-xs-12.col-sm-10
           = link_to work.url do
