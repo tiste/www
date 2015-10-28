@@ -15,14 +15,15 @@
 
               .collapse.navbar-collapse
                 ul.nav.navbar-nav.navbar-right
-                  - is_fr = !!(/^\/(fr)?\/$/i =~ current_page.url)
-                  - path = is_fr ? '' : '/'
+                  - path = (/^\/(en)?\/?(.*)/i).match(current_page.url)[2].chomp('/')
+                  - locale_path = I18n.locale == :en ? '/en/' : '/'
 
-                  li.mrm= link_to t('nav.home'), "#{path}#home", class: 'hover'
-                  li.mrm= link_to t('nav.work'), "#{path}#work", class: 'hover'
-                  li.mrm= link_to 'Contact', '#contact', class: 'hover'
+                  li.mrm= link_to t('nav.home'), "#{locale_path}", class: 'hover'
+                  li.mrm= link_to t('nav.work'), "#{locale_path}#work", class: 'hover'
+                  li.mrm= link_to 'Contact', "#{locale_path}contact", class: 'hover'
 
-                  - if !is_fr
-                    li.mrm= link_to 'FR', '/fr', class: 'hover'
-                  - else
-                    li.mrm= link_to 'EN', '/', class: 'hover'
+                  - unless work
+                    - if I18n.locale == :en
+                      li.mrm= link_to 'FR', "/#{path}", class: 'hover'
+                    - else
+                      li.mrm= link_to 'EN', "/en/#{path}", class: 'hover'

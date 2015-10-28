@@ -1,5 +1,6 @@
 activate :gzip
-activate :i18n
+activate :i18n, mount_at_root: :fr
+activate :directory_indexes
 activate :livereload
 activate :meta_tags
 
@@ -14,7 +15,9 @@ activate :google_analytics do |ga|
 end
 
 data.works.select { |w| w.has_key?('slug') }.each do |work|
-  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", locals: { work: work }, ignore: true
+  proxy "/#{work.slug}/index.html", "/works/#{work.slug}.html", locals: { work: work }, ignore: true do
+    I18n.locale = :en
+  end
 end
 
 set :css_dir, 'stylesheets'
