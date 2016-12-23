@@ -1,0 +1,18 @@
+title: Baptiste Lecocq, software engineer in Lille
+email: hello@tiste.io
+description: >
+  Whoo,
+  awesome new website
+baseurl: ''
+url: 'http://tiste.io'
+twitter_username: tiste
+github_username: tiste
+google_analytics: UA-42477577-1
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,6 +1,5 @@
 .DS_Store
-/.bundle
-/.cache
-/.sass-cache
-/bower_components
-/build
+.idea
+_site
+.sass-cache
+.jekyll-metadata
