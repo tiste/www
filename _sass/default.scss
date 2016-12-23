@@ -47,3 +47,17 @@ a {
     margin: 0 auto;
     padding: 5rem 1rem;
 }
+
+.resume {
+    margin-top: 8rem;
+
+    li {
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+        border-bottom: 2px solid $brand-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
