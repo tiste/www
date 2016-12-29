@@ -15,21 +15,6 @@ $border-color: #F0F0F0;
 @import "bulma";
 @import "default";
 
-h1 {
-    @extend .title;
-    @extend .is-1;
-}
-
-h2 {
-    @extend .subtitle;
-    @extend .is-3;
-}
-
-h3 {
-    @extend .subtitle;
-    @extend .is-5;
-}
-
 .icon {
     line-height: 20px;
 }

@@ -15,7 +15,7 @@ body {
     &:after {
         content: "";
         position: fixed;
-        background: $border-color;
+        background-color: $border-color;
         left: 0;
         right: 0;
         height: 10px;
@@ -31,33 +31,47 @@ body {
     }
 }
 
-a {
-    color: darken($text-color, 20%);
-    font-weight: bold;
-    border-bottom: 2px solid $brand-color;
+.content {
+    a {
+        color: darken($text-color, 20%) !important;
+        font-weight: bold;
+        border-bottom: 3px solid $brand-color !important;
 
-    &:hover {
-        text-decoration: none;
-        border-bottom: 2px solid #000000;
+        &:hover {
+            text-decoration: none;
+            border-bottom: none !important;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
     }
 }
 
 .home {
     max-width: 32rem;
     margin: 0 auto;
-    padding: 5rem 1rem;
+    padding: 1rem;
+    padding-top: 10rem;
 }
 
 .resume {
-    margin-top: 8rem;
+    margin-top: 8rem !important;
 
     li {
         padding-bottom: 3rem;
-        margin-top: 3rem;
-        border-bottom: 2px solid $brand-color;
+        margin-top: 3rem !important;
+        position: relative;
 
-        &:last-child {
-            border-bottom: none;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -15px;
+            width: 50px;
+            height: 6px;
+            background-color: $brand-color;
         }
     }
 }
