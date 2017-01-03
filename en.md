@@ -3,6 +3,7 @@ layout: home
 title: false
 ---
 
+<div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
 # Hello,
 
 I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://www.ineat-conseil.com/en/). I've also worked in London, at [Codegent](https://www.codegent.com/).
@@ -10,8 +11,9 @@ I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://
 I aim to help folks by saving their time, thanks to IT tools.
 
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
+</div></div>
 
-{:.resume}
+{:.resume.columns.is-multiline}
 * #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
   Développement de la nouvelle version d'Opus.
 

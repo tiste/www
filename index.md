@@ -3,6 +3,7 @@ layout: home
 title: false
 ---
 
+<div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
 # Hello,
 
 Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://www.ineat-conseil.com/fr/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
@@ -10,8 +11,9 @@ Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille.
 Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des outils informatiques.
 
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
+</div></div>
 
-{:.resume}
+{:.resume.columns.is-multiline}
 * #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
   Développement de la nouvelle version d'Opus.
 

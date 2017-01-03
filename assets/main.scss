@@ -15,6 +15,10 @@ $border-color: #F0F0F0;
 @import "bulma";
 @import "default";
 
+.resume li {
+    @extend .column.is-half;
+}
+
 .icon {
     line-height: 20px;
 }

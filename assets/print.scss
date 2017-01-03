@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+.home {
+    max-width: 32rem;
+}
+
 a[href]:after {
     content: " (" attr(href) ")";
 }
