@@ -11,8 +11,8 @@ body {
     border-left: 10px solid $border-color;
     border-right: 10px solid $border-color;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         content: "";
         position: fixed;
         background-color: $border-color;
@@ -64,7 +64,7 @@ body {
         margin-top: 3rem !important;
         position: relative;
 
-        &:after {
+        &::after {
             content: "";
             display: block;
             position: absolute;

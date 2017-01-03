@@ -16,7 +16,8 @@ $border-color: #F0F0F0;
 @import "default";
 
 .resume li {
-    @extend .column.is-half;
+    @extend .column;
+    @extend .is-half;
 }
 
 .icon {
