@@ -12,6 +12,7 @@ google_analytics: UA-42477577-1
 markdown: kramdown
 theme: minima
 gems:
+  - jekyll-amp
   - jekyll-feed
 exclude:
   - Gemfile
