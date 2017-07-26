@@ -5,7 +5,7 @@ lang: fr
 ---
 
 <div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
-# Hello,
+# Bonjour, <small>[(hello?)]({% link en.md %})</small>
 
 Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://ineat-group.com/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
 

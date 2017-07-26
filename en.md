@@ -4,7 +4,7 @@ title: false
 ---
 
 <div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
-# Hello,
+# Hello, <small>[(bonjour ?)]({% link index.md %})</small>
 
 I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
 
