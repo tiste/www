@@ -27,7 +27,7 @@ I aim to help folks by saving their time, thanks to IT tools.
   Creation of functional mockups highlighting the concepts of an efficient user-experience.
 
 * #### Developer <small>– Ineat<br>October 2014 - August 2016</small>
-  Professional training contract of 2 years.
+  Sandwich course training of 2 years.
 
 * #### Developer <small>– Zodio (via Ineat)<br>February 2016 - April 2016</small>
   Consulting and development of the backend part of Zodio's loyalty apps. Building up an action plan of best practices around technical environment: code quality (eslint), contribution guide, coding styles, versioning tool with git, continuous integration (pm2).
@@ -47,9 +47,9 @@ I aim to help folks by saving their time, thanks to IT tools.
 * #### Developer <small>– Ineat<br>March 2015 - July 2015</small>
   Development of a responsive mailing platform for a customer.
 
-  Realization of a Javascript PoC that brought solutions to a web interface including Drag'n'Drop.
+  Realization of a Javascript PoC that brought solutions to a web interface including Drag'n'Drop.
 
-  We were followed by the Scrum method to build a Symfony 2 backend, as well as an AngularJS frontend.
+  We were followed by the Scrum method to build a Symfony 2 backend, as well as an AngularJS frontend.
 
 * #### Developer <small>– Leroy Merlin (via Ineat)<br>June 2015 - June 2015</small>
   Specific devs around the Nao robot in order to animate a talk.
