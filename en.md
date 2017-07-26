@@ -6,7 +6,7 @@ title: false
 <div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
 # Hello,
 
-I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://www.ineat-conseil.com/en/). I've also worked in London, at [Codegent](https://www.codegent.com/).
+I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
 
 I aim to help folks by saving their time, thanks to IT tools.
 
@@ -54,13 +54,13 @@ I aim to help folks by saving their time, thanks to IT tools.
 * #### Developer <small>– Leroy Merlin (via Ineat)<br>June 2015 - June 2015</small>
   Specific devs around the Nao robot in order to animate a talk.
 
-  Using the Chorégraphe tool, Nao was able to interact during a conversation, move around, be a timekeeper (between the different speakers), as well as animate some prefined games.
+  Using the Chorégraphe tool, Nao was able to interact during a conversation, move around, be a timekeeper (between the different speakers), as well as animate some predefined games.
 
 * #### Developer <small>– CITC-EuraRFID (via Ineat)<br>February 2015 - February 2015</small>
   Implementation of vocal interactions with Smarthome, the connected home by Euratechnologies.
   We built a Node.js app that allowed the translation of the voice from sound to HTTP requests, sent to the Smarthome.
 
-  It is now possible to operate and have informations about shutters, doors, lights, temperature and air quality rate.
+  It is now possible to operate and have information about shutters, doors, lights, temperature and air quality rate.
 
 * #### Scrum master <small>– Ineat<br>October 2014 - February 2015</small>
   Building a web app that allows managers to be more efficient on tracking the every day life of each collaborator.
@@ -76,7 +76,7 @@ I aim to help folks by saving their time, thanks to IT tools.
   I was immersed into a new country.
 
 * #### Developer <small>– Silicon Salad<br>May 2013 - August 2013</small>
-  Development of multiple RoR web apps: SOCAM, Potatomobile, JEF Chaussures. Build my own gems (sentencify and privates ones).
+  Development of multiple RoR web apps: SOCAM, Potatomobile, JEF Chaussures. Build my own gems (sentencify and private ones).
 
   Frequent use of GitHub and continuous integration tools (Travis / Coverall).
 
