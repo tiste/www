@@ -6,7 +6,7 @@ title: false
 <div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
 # Hello,
 
-I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://www.ineat-conseil.com/en/). I've also worked in London, at [Codegent](https://www.codegent.com/).
+I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
 
 I aim to help folks by saving their time, thanks to IT tools.
 
@@ -14,70 +14,72 @@ I aim to help folks by saving their time, thanks to IT tools.
 </div></div>
 
 {:.resume.columns.is-multiline}
-* #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
-  Développement de la nouvelle version d'Opus.
+* #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>
+  Development of the new version of Opus project.
 
-* #### Ingénieur Études et Développement <small>– Ineat<br>Août 2016 - À présent</small>
+* #### Software engineer <small>– Ineat<br>August 2016 - Now</small>
 
-* #### Développeur <small>– Vékia (via Ineat)<br>Avril 2016 - Septembre 2016</small>
-  Conseil et mise en place de l’architecture de l’application supply-chain Provisia. Le respect des bonnes pratiques est important : mise en place d’une convention de code, génération de documentation, tests (unitaires et fonctionnels), qualité de code. Le concept "offline-first" était un besoin très important qui a pu être respecté.
+* #### Developer <small>– Vékia (via Ineat)<br>April 2016 - September 2016</small>
+  Consulting and development of the architecture of the Provisia project. Compliance with best practices is important: setting up a code convention, generation of useful documentation, tests (unit and end-to-end), code quality. The "offline-first" concept was a very big need that have been respected.
 
-  Ces choix, stratégiques, devaient s’adapter à un court et long terme, tout en respectant la politique et les ressources de l’entreprise.
+  These strategic choices had to fit with a short and long term, while respecting the policy and resources of the company.
 
-  Création de maquettes fonctionnelles mettant en évidence les concepts d’une « user-experience » efficace.
+  Creation of functional mockups highlighting the concepts of an efficient user-experience.
 
-* #### Développeur <small>– Ineat<br>Octobre 2014 - Août 2016</small>
-  Contrat de professionnalisation de 2 ans.
+* #### Developer <small>– Ineat<br>October 2014 - August 2016</small>
+  Professional training contract of 2 years.
 
-* #### Développeur <small>– Zodio (via Ineat)<br>Février 2016 - Avril 2016</small>
-  Conseil et développement de la partie backend des applications fidélité de Zodio. Mise en place d'un plan d'actions de bonnes pratiques en ce qui concerne l'environnement technique : qualité de code (eslint), guide de contribution, conventions de code, outil de versioning avec formations (git), déploiements automatisés (pm2).
+* #### Developer <small>– Zodio (via Ineat)<br>February 2016 - April 2016</small>
+  Consulting and development of the backend part of Zodio's loyalty apps. Building up an action plan of best practices around technical environment: code quality (eslint), contribution guide, coding styles, versioning tool with git, continuous integration (pm2).
 
-  En étroite collaboration avec l'équipe mobilité, la réalisation de l'API Node.js permettait d'alimenter les applications Android.
+  In close collaboration with the mobility team, the realization of the Node.js API was used to feed Android apps.
 
-  Mise en place du serveur de production avec liaison directe et sécurisée vers les locaux d'Ineat Conseil.
+  Setting up the live server with a direct and secure link to the Ineat offices.
 
-* #### Développeur <small>– La Compagnie des Vétérinaires (via Ineat)<br>Août 2015 - Janvier 2016</small>
-  Création du nouveau site Internet de la partie "Bulle Bleue" avec une vision très modulable, qui pourrait s'étendre aux autres parties de "La Compagnie des Vétérinaires".
+* #### Developer <small>– La Compagnie des Vétérinaires (via Ineat)<br>August 2015 - January 2016</small>
+  Creation of the new website of the "Bulle Bleue" part, with a modular vision so that we could extend the need to other parts of "La Compagnie des Vétérinaires".
 
-  En charge des développements front et back, mais aussi de la partie réseau avec la mise en place des serveurs d'intégration et de recette, des certificats SSL (auto-signés ou non) permettant l'intégrité et la sécurité des données. Développements intensifs sur la partie "création de devis". Mise en place d'une qualité de code importante (entrainant de nombreuses revues de code).
-  Le projet est suivi sous la méthode Scrum.
+  I was managing the front and back developments, but also the network part by setting up integration servers and testing ones, as well as SSL certificates (self-signed or not) allowing integrity and security of data. Intensive developments on the "quote" module. Implementation of an important code quality (leading to many code reviews).
+  The project was followed by the Scrum method.
 
-  Environnement technique : Express.js (Node.js), AngularJS, gulp, Nuxeo, JWT, Jenkins, Git/GitLab.
+  Technical environment: Express.js (Node.js), AngularJS, gulp, Nuxeo, JWT, Jenkins, Git/GitLab.
 
-* #### Développeur <small>– Ineat<br>Mars 2015 - Juillet 2015</small>
-  Développement d'une plateforme d'e-mailing responsive pour un client.
+* #### Developer <small>– Ineat<br>March 2015 - July 2015</small>
+  Development of a responsive mailing platform for a customer.
 
-  Réalisation d'un PoC en Javascript permettant d'apporter des solutions à une interface web incluant du Drag'n'Drop.
+  Realization of a Javascript PoC that brought solutions to a web interface including Drag'n'Drop.
 
-  Participation sous la méthode Scrum aux développements backend avec Symfony 2, ainsi que frontend à l'aide d'AngularJS.
+  We were followed by the Scrum method to build a Symfony 2 backend, as well as an AngularJS frontend.
 
-* #### Développeur <small>– Leroy Merlin (via Ineat)<br>Juin 2015 - Juin 2015</small>
-  Développements autour du robot Nao dans le but d'animer une conférence.
+* #### Developer <small>– Leroy Merlin (via Ineat)<br>June 2015 - June 2015</small>
+  Specific devs around the Nao robot in order to animate a talk.
 
-  À l'aide de l'outil Chorégraphe, Nao était capable de suivre une conversation, de se déplacer, d'être gardien du temps (entre les différents animateurs) mais aussi d'animer certains jeux définis à l'avance.
+  Using the Chorégraphe tool, Nao was able to interact during a conversation, move around, be a timekeeper (between the different speakers), as well as animate some predefined games.
 
-* #### Développeur <small>– CITC-EuraRFID (via Ineat)<br>Février 2015 - Février 2015</small>
-  Mise en place d'interactions vocales avec la Smarthome, la maison connectée d'Euratechnologies.
-  La conception d'une application Node.js permettait la traduction de la voix en requêtes HTTP, émises vers la Smarthome.
+* #### Developer <small>– CITC-EuraRFID (via Ineat)<br>February 2015 - February 2015</small>
+  Implementation of vocal interactions with Smarthome, the connected home by Euratechnologies.
+  We built a Node.js app that allowed the translation of the voice from sound to HTTP requests, sent to the Smarthome.
 
-  Il est désormais possible d'actionner les volets, la porte, la lumière, et aussi la température et les taux de qualité d'air.
+  It is now possible to operate and have information about shutters, doors, lights, temperature and air quality rate.
 
-* #### Scrum master <small>– Ineat<br>Octobre 2014 - Février 2015</small>
-  Développement d'une application web capable d’améliorer le suivi de projet pour chaque collaborateur de la société. Création d'un PoC en AngularJS permettant d'obtenir une interface Gantt afin d'imputer les tâches.
+* #### Scrum master <small>– Ineat<br>October 2014 - February 2015</small>
+  Building a web app that allows managers to be more efficient on tracking the every day life of each collaborator.
+  A PoC were created as a Gantt interface, in order to impute the tasks.
 
-  Travail en méthode Scrum (Scrum master d'une équipe interne de 4 personnes).
+  We build it over Scrum method, and I was the scrum master of a team of 4 people.
 
-  Utilisation d'outils et technologies innovants afin de pouvoir former d'autres collaborateurs (Stylus, Jade, CoffeeScript, Symfony 2, AngularJS, Git).
+  Use of innovative tools and technologies to train other collaborators (Stylus, Jade, CoffeeScript, Symfony 2, AngularJS, Git).
 
-* #### Développeur <small>– Codegent<br>Juin 2014 - Octobre 2014</small>
-  Conception d'applications AngularJS, NodeJS et Laravel au sein d'une entreprise Londonienne. Le travail effectué améliorait les applications internes telles que Twilert et BATN, mais aussi externes telles que 1Stream (BBC) et Ilumi (Tanfield Food). Utilisation d'outils de versioning tel que git mais aussi d'outils d'automatisation : gulp et Grunt. La gestion de projet était dirigée par SCRUM.
+* #### Developer <small>– Codegent<br>June 2014 - October 2014</small>
+  Designing AngularJS, NodeJS and Laravel apps into a London web agency. My job was focused on enhancing intern apps as Twilert and BATN, and extern ones as 1Stream (BBC) and Ilumi (Tanfield Food). Using versioning tools such as git, and automation scripts such as gulp and Grunt. Project management was driven with SCRUM.
 
-  Découverte d'une nouvelle culture et immergé dans la langue anglaise.
+  I was immersed into a new country.
 
-* #### Développeur <small>– Silicon Salad<br>Mai 2013 - Août 2013</small>
-  Développement d'applications Ruby on Rails sur différents projets web : SOCAM, Potatomobile, Jef Chaussures.
+* #### Developer <small>– Silicon Salad<br>May 2013 - August 2013</small>
+  Development of multiple RoR web apps: SOCAM, Potatomobile, JEF Chaussures. Build my own gems (sentencify and private ones).
 
-  Conception de gems et utilisation de Git / GitHub ainsi que d’outils d’intégration continue (Travis / Coverall).
+  Frequent use of GitHub and continuous integration tools (Travis / Coverall).
 
-* #### Développeur <small>– Roquette Frères<br>Mai 2012 - Août 2012</small>
-  Lancement d’un service informatique (infrastructure et hiérarchie) ainsi que la conception de logiciels informatiques à l’aide de WinDev.
+* #### Developer <small>– Roquette Frères<br>May 2012 - August 2012</small>
+  Launch of an IT department (infrastructure and hierarchy).
+  Design several softwares using WinDev.

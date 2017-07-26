@@ -7,7 +7,7 @@ lang: fr
 <div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
 # Hello,
 
-Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://www.ineat-conseil.com/fr/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
+Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://ineat-group.com/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
 
 Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des outils informatiques.
 
@@ -35,10 +35,10 @@ Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des out
 
   En étroite collaboration avec l'équipe mobilité, la réalisation de l'API Node.js permettait d'alimenter les applications Android.
 
-  Mise en place du serveur de production avec liaison directe et sécurisée vers les locaux d'Ineat Conseil.
+  Mise en place du serveur de production avec liaison directe et sécurisée vers les locaux d'Ineat.
 
 * #### Développeur <small>– La Compagnie des Vétérinaires (via Ineat)<br>Août 2015 - Janvier 2016</small>
-  Création du nouveau site Internet de la partie "Bulle Bleue" avec une vision très modulable, qui pourrait s'étendre aux autres parties de "La Compagnie des Vétérinaires".
+  Création du nouveau site Internet de la partie "Bulle Bleue" avec une vision très modulaire, de manière à étendre le besoin aux autres parties de "La Compagnie des Vétérinaires".
 
   En charge des développements front et back, mais aussi de la partie réseau avec la mise en place des serveurs d'intégration et de recette, des certificats SSL (auto-signés ou non) permettant l'intégrité et la sécurité des données. Développements intensifs sur la partie "création de devis". Mise en place d'une qualité de code importante (entrainant de nombreuses revues de code).
   Le projet est suivi sous la méthode Scrum.
