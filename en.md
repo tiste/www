@@ -69,15 +69,16 @@ I aim to help folks by saving their time, thanks to IT tools.
 
   Utilisation d'outils et technologies innovants afin de pouvoir former d'autres collaborateurs (Stylus, Jade, CoffeeScript, Symfony 2, AngularJS, Git).
 
-* #### Développeur <small>– Codegent<br>Juin 2014 - Octobre 2014</small>
-  Conception d'applications AngularJS, NodeJS et Laravel au sein d'une entreprise Londonienne. Le travail effectué améliorait les applications internes telles que Twilert et BATN, mais aussi externes telles que 1Stream (BBC) et Ilumi (Tanfield Food). Utilisation d'outils de versioning tel que git mais aussi d'outils d'automatisation : gulp et Grunt. La gestion de projet était dirigée par SCRUM.
+* #### Developer <small>– Codegent<br>June 2014 - October 2014</small>
+  Designing AngularJS, NodeJS and Laravel apps into a London web agency. My job was focused on enhancing intern apps as Twilert and BATN, and extern ones as 1Stream (BBC) and Ilumi (Tanfield Food). Using versioning tools such as git, and automation scripts such as gulp and Grunt. Project management was driven with SCRUM.
 
-  Découverte d'une nouvelle culture et immergé dans la langue anglaise.
+  I was immersed into a new country.
 
-* #### Développeur <small>– Silicon Salad<br>Mai 2013 - Août 2013</small>
-  Développement d'applications Ruby on Rails sur différents projets web : SOCAM, Potatomobile, Jef Chaussures.
+* #### Developer <small>– Silicon Salad<br>May 2013 - August 2013</small>
+  Development of multiple RoR web apps: SOCAM, Potatomobile, JEF Chaussures. Build my own gems (sentencify and privates ones).
 
-  Conception de gems et utilisation de Git / GitHub ainsi que d’outils d’intégration continue (Travis / Coverall).
+  Frequent use of GitHub and continuous integration tools (Travis / Coverall).
 
-* #### Développeur <small>– Roquette Frères<br>Mai 2012 - Août 2012</small>
-  Lancement d’un service informatique (infrastructure et hiérarchie) ainsi que la conception de logiciels informatiques à l’aide de WinDev.
+* #### Developer <small>– Roquette Frères<br>May 2012 - August 2012</small>
+  Launch of an IT department (infrastructure and hierarchy).
+  Design several softwares using WinDev.
