@@ -3,7 +3,7 @@ layout: home
 title: false
 ---
 
-<div class="columns"><div class="column is-half is-offset-one-quarter" markdown="1">
+<div class="columns"><div class="column is-half is-offset-one-quarter"><div class="hero is-fullheight" markdown="1">
 # Hello, <small>[(bonjour ?)]({% link index.md %})</small>
 
 I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
@@ -11,7 +11,7 @@ I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://
 I aim to help folks by saving their time, thanks to IT tools.
 
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
-</div></div>
+</div></div></div>
 
 {:.resume.columns.is-multiline}
 * #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>

@@ -31,6 +31,13 @@ body {
     }
 }
 
+canvas {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+}
+
 .content {
     a {
         color: darken($text-color, 20%) !important;
@@ -50,15 +57,18 @@ body {
 }
 
 .home {
+    position: relative;
+    z-index: 1;
     max-width: 64rem;
     margin: 0 auto;
     padding: 1rem;
-    padding-top: 10rem;
+}
+
+.hero {
+    padding-top: 8rem;
 }
 
 .resume {
-    margin-top: 8rem !important;
-
     li {
         padding-bottom: 3rem;
         margin-top: 3rem !important;

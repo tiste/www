@@ -20,6 +20,11 @@ $border-color: #F0F0F0;
     @extend .is-half;
 }
 
+.hero {
+    justify-content: initial;
+    background-color: transparent;
+}
+
 .icon {
     line-height: 20px;
 }
