@@ -12,7 +12,7 @@ Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille.
 Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des outils informatiques.
 
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
-</div></div></div>
+</div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
 {:.resume.columns.is-multiline}
 * #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>

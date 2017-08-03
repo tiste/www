@@ -44,10 +44,6 @@ canvas {
     padding: 1rem;
 }
 
-.hero {
-    padding-top: 8rem;
-}
-
 .resume li {
     margin-top: 5rem !important;
     position: relative;
@@ -60,5 +56,51 @@ canvas {
         width: 50px;
         height: 6px;
         background-color: $brand-color;
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+
+    > * {
+        position: absolute;
+        display: block;
+        top: 29%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        margin: -4px 0 0 -4px;
+        background: white;
+        border-radius: 50%;
+        animation: scroll-down 2.5s linear infinite;
     }
 }

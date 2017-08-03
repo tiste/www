@@ -11,7 +11,7 @@ I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://
 I aim to help folks by saving their time, thanks to IT tools.
 
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
-</div></div></div>
+</div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
 {:.resume.columns.is-multiline}
 * #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>
