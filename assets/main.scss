@@ -3,21 +3,20 @@
 
 @charset "utf-8";
 
-$base-font-family: "Droid Sans", Helvetica, Arial, sans-serif !default;
-$base-font-size: 15px !default;
-
-// #F7DC6F
-$brand-color: lighten(#F1C40F, 20%) !default;
-$background-color: #FEFEFE !default;
-$text-color: #4C4C4C !default;
-$border-color: #F0F0F0;
-
+@import "variables";
 @import "bulma";
 @import "default";
 
+// only override
+
+small {
+    font-size: 0.58em;
+}
+
 .resume li {
     @extend .column;
-    @extend .is-half;
+    @extend .is-half-desktop;
+    @extend .is-full;
 }
 
 .hero {

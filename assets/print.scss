@@ -3,14 +3,40 @@
 
 @charset "utf-8";
 
+@import "variables";
+
 @page {
     margin: 0;
 }
 
-.home {
-    max-width: 32rem;
-}
-
 a[href]:after {
     content: " (" attr(href) ")";
+}
+
+.no-print, .no-print * {
+    display: none !important;
+}
+
+canvas {
+    display: none;
+}
+
+.hero.is-fullheight {
+    min-height: inherit;
+}
+
+.home {
+    max-width: 44rem;
+}
+
+.resume li {
+    page-break-inside: avoid;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 3rem !important;
+    border-top: 6px solid $brand-color;
+
+    &::after {
+        display: none;
+    }
 }

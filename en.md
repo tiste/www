@@ -3,8 +3,8 @@ layout: home
 title: false
 ---
 
-<div class="columns"><div class="column is-half is-offset-one-quarter"><div class="hero is-fullheight" markdown="1">
-# Hello, <small>[(bonjour ?)]({% link index.md %})</small>
+<div class="columns"><div class="column is-half-desktop is-offset-one-quarter-desktop is-full"><div class="hero is-fullheight" markdown="1">
+# Hello, <small class="no-print">[(bonjour ?)]({% link index.md %})</small>
 
 I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
 

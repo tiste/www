@@ -4,8 +4,8 @@ title: false
 lang: fr
 ---
 
-<div class="columns"><div class="column is-half is-offset-one-quarter"><div class="hero is-fullheight" markdown="1">
-# Bonjour, <small>[(hello?)]({% link en.md %})</small>
+<div class="columns"><div class="column is-half-desktop is-offset-one-quarter-desktop is-full"><div class="hero is-fullheight" markdown="1">
+# Bonjour, <small class="no-print">[(hello?)]({% link en.md %})</small>
 
 Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://ineat-group.com/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
 
