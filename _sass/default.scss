@@ -10,8 +10,6 @@ body {
 }
 
 canvas {
-    height: 100%;
-    width: 100%;
     opacity: 0.5;
     position: absolute;
 }
@@ -69,6 +67,15 @@ canvas {
         border-bottom: 10px solid $border-color;
         border-right: 10px solid $border-color;
         text-align: center;
+    }
+
+    .hero-body {
+        z-index: 1;
+    }
+
+    canvas {
+        margin-top: -12px;
+        margin-left: -12px;
     }
 }
 
