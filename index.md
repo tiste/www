@@ -11,6 +11,8 @@ Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille.
 
 Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des outils informatiques.
 
+Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
+
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
 </div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 

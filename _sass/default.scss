@@ -42,6 +42,10 @@ canvas {
     max-width: 64rem;
     margin: 0 auto;
     padding: 1rem;
+
+    .hero {
+        padding-top: 8rem;
+    }
 }
 
 .resume li {
@@ -56,6 +60,15 @@ canvas {
         width: 50px;
         height: 6px;
         background-color: $brand-color;
+    }
+}
+
+.projects {
+    .column {
+        height: 200px;
+        border-bottom: 10px solid $border-color;
+        border-right: 10px solid $border-color;
+        text-align: center;
     }
 }
 

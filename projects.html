@@ -1,0 +1,15 @@
+---
+layout: projects
+title: Projects
+---
+
+<div class="columns is-multiline projects">
+    {% for project in site.data.projects %}
+        <div class="column is-4 hero">
+            <a href="{{project.url}}" class="hero-body">
+                <h1 class="title">{{project.name}}</h1>
+                <h2 class="subtitle">{{project.url}}</h2>
+            </a>
+        </div>
+    {% endfor %}
+</div>

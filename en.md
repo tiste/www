@@ -10,6 +10,8 @@ I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://
 
 I aim to help folks by saving their time, thanks to IT tools.
 
+You can still see my [projects]({% link projects.html %}).
+
 {% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
 </div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
