@@ -9,6 +9,13 @@
 
 // only override
 
+.content {
+    text-align: justify;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 small {
     font-size: 0.58em;
 }

@@ -3,15 +3,12 @@ layout: projects
 title: Projects
 ---
 
-<div class="columns is-multiline projects">
+<ul class="projects">
     {% for project in site.data.projects %}
-        <div class="column is-4 hero">
-            <canvas></canvas>
-
-            <a href="{{project.url}}" class="hero-body">
-                <h1 class="title">{{project.name}}</h1>
-                <h2 class="subtitle">{{project.url}}</h2>
+        <li>
+            <a href="{{project.url}}">
+                <span>{{project.name}}</span>
             </a>
-        </div>
+        </li>
     {% endfor %}
-</div>
+</ul>
