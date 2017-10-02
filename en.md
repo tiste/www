@@ -16,6 +16,11 @@ You can still see my [projects]({% link projects.html %}).
 </div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
 {:.resume.columns.is-multiline}
+* #### Developer Circle Lead <small>– Facebook<br>October 2017 - Now</small>
+  Developer Circles is a new program from Facebook, comprised of a global network of developer communities around the world. Driven by Facebook’s overall mission to connect the world, Developer Circles is a new program designed to connect developers to foster collaboration and knowledge sharing.
+
+  As a Lead for the Developer Circles here in Lille, organizing events, managing our online community, and liaising with Facebook as an overall advisor for the program.
+
 * #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>
   Development of the new version of Opus project.
 

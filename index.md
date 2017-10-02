@@ -17,6 +17,11 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 </div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
 {:.resume.columns.is-multiline}
+* #### Developer Circle Lead <small>– Facebook<br>Octobre 2017 - À présent</small>
+  Les Developer Circles sont un nouveau programme de Facebook, composé d’un réseau international de communautés de développeurs venus du monde entier. Motivés par la volonté globale de Facebook de connecter le monde, les Developer Circles sont un nouveau programme conçu pour connecter les développeurs, en vue d’encourager la collaboration et le partage des connaissances.
+
+  Je travaille en tant que Lead du Developer Circle de Lille, en organisant des évènements, en gérant notre communauté en ligne et en faisant la liaison avec Facebook en tant que conseiller général du programme.
+
 * #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
   Développement de la nouvelle version d'Opus.
 
