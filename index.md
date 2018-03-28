@@ -13,10 +13,13 @@ Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des out
 
 Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
 
-{% include icon-twitter.html username=site.twitter_username %} {% include icon-github.html username=site.github_username %}
+{% include social.html %}
 </div><div class="hero-foot">{% include mouse.html %}</div></div></div>
 
 {:.resume.columns.is-multiline}
+* #### Professional Scrum Master I <small><br>Mars 2018</small>
+  Obtention de la certification.
+
 * #### Developer Circle Lead <small>– Facebook<br>Octobre 2017 - À présent</small>
   Les Developer Circles sont un nouveau programme de Facebook, composé d’un réseau international de communautés de développeurs venus du monde entier. Motivés par la volonté globale de Facebook de connecter le monde, les Developer Circles sont un nouveau programme conçu pour connecter les développeurs, en vue d’encourager la collaboration et le partage des connaissances.
 
