@@ -20,12 +20,17 @@ You can still see my [projects]({% link projects.html %}).
   Certificate obtention.
 
 * #### Developer Circle Lead <small>– Facebook<br>October 2017 - Now</small>
-  Developer Circles is a new program from Facebook, comprised of a global network of developer communities around the world. Driven by Facebook’s overall mission to connect the world, Developer Circles is a new program designed to connect developers to foster collaboration and knowledge sharing.
+  Developer Circles is a new program from Facebook, comprised of a global network of developer communities around the world. Driven by Facebook's overall mission to connect the world, Developer Circles is a new program designed to connect developers to foster collaboration and knowledge sharing.
 
   As a Lead for the Developer Circles here in Lille, organizing events, managing our online community, and liaising with Facebook as an overall advisor for the program.
 
 * #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>
-  Development of the new version of Opus project.
+  Being at the beginning of the redesign of the Opus project, omnichannel publishing platform of Adeo, the work was mainly to set up the Scrum team and to build the core of the application (API and back office).
+
+  It is in collaboration with the business units of the group that the product has been incremented around the best development practices: articulation of the gitflow around the needs of Quality Assurance, peer coding, collective reviews, complete unit/functional/perf tests.
+  Skill improvement over search services (Elasticsearch) was essential in order to provide a product meeting highly demanding business requirements.
+
+  When going into feature teams, I was given the role of Scrum Master.
 
 * #### Software engineer <small>– Ineat<br>August 2016 - Now</small>
 

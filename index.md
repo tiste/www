@@ -21,21 +21,26 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
   Obtention de la certification.
 
 * #### Developer Circle Lead <small>– Facebook<br>Octobre 2017 - À présent</small>
-  Les Developer Circles sont un nouveau programme de Facebook, composé d’un réseau international de communautés de développeurs venus du monde entier. Motivés par la volonté globale de Facebook de connecter le monde, les Developer Circles sont un nouveau programme conçu pour connecter les développeurs, en vue d’encourager la collaboration et le partage des connaissances.
+  Les Developer Circles sont un nouveau programme de Facebook, composé d'un réseau international de communautés de développeurs venus du monde entier. Motivés par la volonté globale de Facebook de connecter le monde, les Developer Circles sont un nouveau programme conçu pour connecter les développeurs, en vue d'encourager la collaboration et le partage des connaissances.
 
   Je travaille en tant que Lead du Developer Circle de Lille, en organisant des évènements, en gérant notre communauté en ligne et en faisant la liaison avec Facebook en tant que conseiller général du programme.
 
 * #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
-  Développement de la nouvelle version d'Opus.
+  Placé au début de la refonte du projet Opus, brique de publication omnicanal d'Adeo, le travail était principalement de mettre en place l'équipe Scrum ainsi que de bâtir le coeur de l'application (API et back office).
+
+  C'est en collaboration avec les business units du groupe que le produit a été incrémenté autour des meilleures pratiques de développement : articulation du gitflow autour des besoins de la Quality Assurance, pair coding, collective reviews, tests unitaires/fonctionnels/perf complets.
+  La montée en compétence sur les services de search (Elasticsearch) était indispensable afin de fournir un produit répondant aux exigences métier pointues.
+
+  Lors du passage en feature team, le rôle de Scrum Master m'a été attribué.
 
 * #### Ingénieur Études et Développement <small>– Ineat<br>Août 2016 - À présent</small>
 
 * #### Développeur <small>– Vékia (via Ineat)<br>Avril 2016 - Septembre 2016</small>
-  Conseil et mise en place de l’architecture de l’application supply-chain Provisia. Le respect des bonnes pratiques est important : mise en place d’une convention de code, génération de documentation, tests (unitaires et fonctionnels), qualité de code. Le concept "offline-first" était un besoin très important qui a pu être respecté.
+  Conseil et mise en place de l'architecture de l'application supply-chain Provisia. Le respect des bonnes pratiques est important : mise en place d'une convention de code, génération de documentation, tests (unitaires et fonctionnels), qualité de code. Le concept "offline-first" était un besoin très important qui a pu être respecté.
 
-  Ces choix, stratégiques, devaient s’adapter à un court et long terme, tout en respectant la politique et les ressources de l’entreprise.
+  Ces choix, stratégiques, devaient s'adapter à un court et long terme, tout en respectant la politique et les ressources de l'entreprise.
 
-  Création de maquettes fonctionnelles mettant en évidence les concepts d’une « user-experience » efficace.
+  Création de maquettes fonctionnelles mettant en évidence les concepts d'une « user-experience » efficace.
 
 * #### Développeur <small>– Ineat<br>Octobre 2014 - Août 2016</small>
   Contrat de professionnalisation de 2 ans.
@@ -74,7 +79,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
   Il est désormais possible d'actionner les volets, la porte, la lumière, et aussi la température et les taux de qualité d'air.
 
 * #### Scrum master <small>– Ineat<br>Octobre 2014 - Février 2015</small>
-  Développement d'une application web capable d’améliorer le suivi de projet pour chaque collaborateur de la société. Création d'un PoC en AngularJS permettant d'obtenir une interface Gantt afin d'imputer les tâches.
+  Développement d'une application web capable d'améliorer le suivi de projet pour chaque collaborateur de la société. Création d'un PoC en AngularJS permettant d'obtenir une interface Gantt afin d'imputer les tâches.
 
   Travail en méthode Scrum (Scrum master d'une équipe interne de 4 personnes).
 
@@ -88,7 +93,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 * #### Développeur <small>– Silicon Salad<br>Mai 2013 - Août 2013</small>
   Développement d'applications Ruby on Rails sur différents projets web : SOCAM, Potatomobile, Jef Chaussures.
 
-  Conception de gems et utilisation de Git / GitHub ainsi que d’outils d’intégration continue (Travis / Coverall).
+  Conception de gems et utilisation de Git / GitHub ainsi que d'outils d'intégration continue (Travis / Coverall).
 
 * #### Développeur <small>– Roquette Frères<br>Mai 2012 - Août 2012</small>
-  Lancement d’un service informatique (infrastructure et hiérarchie) ainsi que la conception de logiciels informatiques à l’aide de WinDev.
+  Lancement d'un service informatique (infrastructure et hiérarchie) ainsi que la conception de logiciels informatiques à l'aide de WinDev.
