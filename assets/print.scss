@@ -21,7 +21,7 @@ canvas {
     display: none;
 }
 
-.hero.is-fullheight {
+.hero {
     min-height: inherit;
 }
 
@@ -31,8 +31,6 @@ canvas {
 
 .resume li {
     page-break-inside: avoid;
-    padding-left: 0;
-    padding-right: 0;
     margin-top: 3rem !important;
     border-top: 6px solid $brand-color;
 

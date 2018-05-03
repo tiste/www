@@ -4,7 +4,7 @@ title: false
 lang: fr
 ---
 
-<div class="columns"><div class="column is-half-desktop is-offset-one-quarter-desktop is-full"><div class="hero is-fullheight" markdown="1">
+<div class="hero" markdown="1">
 # Bonjour, <small class="no-print">[(hello?)]({% link en.md %})</small>
 
 Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://ineat-group.com/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
@@ -14,9 +14,10 @@ Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des out
 Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
 
 {% include social.html %}
-</div><div class="hero-foot">{% include mouse.html %}</div></div></div>
+<div class="hero-foot">{% include mouse.html %}</div>
+</div>
 
-{:.resume.columns.is-multiline}
+{:.resume}
 * #### Professional Scrum Master I <small><br>Mars 2018</small>
   Obtention de la certification.
 

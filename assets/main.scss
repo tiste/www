@@ -4,41 +4,5 @@
 @charset "utf-8";
 
 @import "variables";
-@import "bulma";
 @import "default";
-
-// only override
-
-.content {
-    text-align: justify;
-    max-width: 64rem;
-    margin: 0 auto;
-    padding: 1rem;
-
-    ul {
-        margin-left: auto;
-    }
-}
-
-small {
-    font-size: 0.58em;
-}
-
-.resume li {
-    @extend .column;
-    @extend .is-half-desktop;
-    @extend .is-full;
-}
-
-.hero {
-    justify-content: initial;
-    background-color: transparent;
-}
-
-.hero-foot {
-    margin-top: -5rem;
-}
-
-.icon {
-    line-height: 20px;
-}
+@import "responsive";
