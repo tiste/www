@@ -23,18 +23,31 @@ canvas {
 
 .hero {
     min-height: inherit;
+    padding-top: 10vh;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.home {
-    max-width: 44rem;
-}
+.resume {
+    max-width: 32rem;
+    margin: 0 auto;
+    display: table;
 
-.resume li {
-    page-break-inside: avoid;
-    margin-top: 3rem !important;
-    border-top: 6px solid $brand-color;
+    li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        page-break-inside: avoid;
+        margin-top: 0;
+        padding-top: 4rem;
 
-    &::after {
-        display: none;
+        h4 {
+            border-top: 6px solid $brand-color;
+            padding-top: 1rem;
+        }
+
+        &::after {
+            display: none;
+        }
     }
 }
