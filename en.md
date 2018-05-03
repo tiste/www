@@ -3,7 +3,7 @@ layout: home
 title: false
 ---
 
-<div class="columns"><div class="column is-half-desktop is-offset-one-quarter-desktop is-full"><div class="hero is-fullheight" markdown="1">
+<div class="hero" markdown="1">
 # Hello, <small class="no-print">[(bonjour ?)]({% link index.md %})</small>
 
 I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
@@ -13,9 +13,10 @@ I aim to help folks by saving their time, thanks to IT tools.
 You can still see my [projects]({% link projects.html %}).
 
 {% include social.html %}
-</div><div class="hero-foot">{% include mouse.html %}</div></div></div>
+<div class="hero-foot">{% include mouse.html %}</div>
+</div>
 
-{:.resume.columns.is-multiline}
+{:.resume}
 * #### Professional Scrum Master I <small><br>March 2018</small>
   Certificate obtention.
 
