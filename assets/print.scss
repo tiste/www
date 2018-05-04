@@ -9,10 +9,6 @@
     margin: 0;
 }
 
-a[href]:after {
-    content: " (" attr(href) ")";
-}
-
 .no-print, .no-print * {
     display: none !important;
 }

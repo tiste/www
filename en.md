@@ -13,7 +13,7 @@ I aim to help folks by saving their time, thanks to IT tools.
 You can still see my [projects]({% link projects.html %}).
 
 {% include social.html %}
-<div class="hero-foot">{% include mouse.html %}</div>
+<div class="hero-foot no-print">{% include mouse.html %}</div>
 </div>
 
 {:.resume}

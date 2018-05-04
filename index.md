@@ -14,7 +14,7 @@ Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des out
 Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
 
 {% include social.html %}
-<div class="hero-foot">{% include mouse.html %}</div>
+<div class="hero-foot no-print">{% include mouse.html %}</div>
 </div>
 
 {:.resume}
