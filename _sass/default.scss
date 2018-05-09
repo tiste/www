@@ -43,6 +43,12 @@ canvas {
     position: absolute;
 }
 
+.offline {
+    canvas {
+        filter: grayscale(100%);
+    }
+}
+
 a {
     color: $emphase-color;
     font-weight: bold;
