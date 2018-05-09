@@ -7,6 +7,7 @@ const assetsToCache = [
     '/index.html',
     '/en.html',
     '/projects.html',
+    '/logo.png',
 ];
 
 self.addEventListener('install', (event) => {

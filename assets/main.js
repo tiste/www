@@ -2,15 +2,13 @@
     const c = document.getElementsByTagName('canvas')[0],
         ctx = c.getContext('2d');
 
-    function init() {
+    function initWaves() {
         setup(10, ctx, window.innerWidth, window.innerHeight);
     }
 
     'resize click touchleave'.split(' ').forEach((e) => {
-        window.addEventListener(e, init, false);
+        window.addEventListener(e, initWaves, false);
     });
-
-    init();
 
 
     // offline mode
@@ -34,4 +32,8 @@
             document.body.classList.add('offline');
         }
     }
+
+
+    initWaves();
+    networkMode();
 })();
