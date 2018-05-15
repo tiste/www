@@ -33,25 +33,14 @@ body {
     background-color: $background-color;
     min-height: 100%;
     font: #{$base-font-size} $base-font-family;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     margin: 0;
 }
 
-canvas {
-    opacity: 0.5;
-    position: absolute;
-}
-
-.offline {
-    canvas {
-        filter: grayscale(100%);
-    }
-}
-
 a {
     color: $emphase-color;
-    font-weight: bold;
+    font-weight: 700;
     border-bottom: 3px solid $brand-color;
     text-decoration: none;
 
@@ -63,9 +52,14 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font-family;
-    font-weight: 900;
+    font-weight: 500;
     color: $emphase-color;
     margin: 0;
+    text-align: left;
+
+    a {
+        font-weight: inherit;
+    }
 }
 
 h1 {
@@ -90,6 +84,17 @@ p {
 
 small {
     font-size: 0.58em;
+}
+
+canvas {
+    opacity: 0.5;
+    position: absolute;
+}
+
+.offline {
+    canvas {
+        filter: grayscale(100%);
+    }
 }
 
 .social-media-list {

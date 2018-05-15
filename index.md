@@ -41,7 +41,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 
   Ces choix, stratégiques, devaient s'adapter à un court et long terme, tout en respectant la politique et les ressources de l'entreprise.
 
-  Création de maquettes fonctionnelles mettant en évidence les concepts d'une « user-experience » efficace.
+  Création de maquettes fonctionnelles mettant en évidence les concepts d'une "user-experience" efficace.
 
 * #### Développeur <small>– Ineat<br>Octobre 2014 - Août 2016</small>
   Contrat de professionnalisation de 2 ans.
