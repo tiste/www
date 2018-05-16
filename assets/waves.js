@@ -1,4 +1,4 @@
-const hues = [0, 120, 180, 240];
+const hues = [0, 48, 160, 240];
 
 const Wave = function (config) {
     this.position = config.position;
