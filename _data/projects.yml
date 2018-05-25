@@ -1,11 +1,11 @@
 - name: Sheriff
-  url: http://sheriff.tiste.io
+  url: https://sheriff.rocks
 
 - name: Ploop
   url: https://www.ploopapp.com
 
 - name: git-101
-  url: http://talks.tiste.io/git-101
+  url: https://talks.tiste.io/git-101
 
 - name: http2-experiments
   url: https://github.com/tiste/http2-experiments
@@ -14,7 +14,7 @@
   url: https://tiste.github.io/angular-query-builder
 
 - name: angular-loading-button
-  url: http://angular-loading-button.tiste.io
+  url: https://angular-loading-button.tiste.io
 
 - name: bulle-bleue
   url: https://www.bullebleue.fr
@@ -29,7 +29,7 @@
   url: https://github.com/tiste/middleman-meta-tags
 
 - name: simonsimon
-  url: http://simonsimon.tiste.io
+  url: https://simonsimon.tiste.io
 
 - name: wall
   url: https://github.com/tiste/wall
