@@ -6,9 +6,13 @@ title: false
 <div class="hero" markdown="1">
 # Hello, <small class="no-print">[(bonjour ?)]({% link index.md %})</small>
 
-I'm Baptiste, a software engineer in Lille. I currently work for [Ineat](http://ineat-group.com/). I've also worked in London, at [Codegent](https://www.codegent.com/).
+I'm Baptiste, I currently work at [OCTO](https://www.octo.com/en).
 
-I aim to help folks by saving their time, thanks to IT tools.
+As a software engineer, I have always been interested in solving problems with simple and effective solutions. It is with this state of mind that I carry out the projects I work on.
+
+My experience in the web in many kinds of missions allowed me to improve myself on craft practices, with the aim of spreading them around me, and to convince that a well-designed code is a necessary key in the success of a project.
+
+I mostly worked and practiced languages and frameworks of the Javascript world. I am also involved in multiple methods related to agility and software craftmanship to grow the teams that I work with.
 
 You can still see my [projects]({% link projects.html %}).
 
@@ -17,15 +21,17 @@ You can still see my [projects]({% link projects.html %}).
 </div>
 
 {:.resume}
+* #### Software engineer <small>– OCTO<br>September 2018 - Now</small>
+
 * #### Professional Scrum Master I <small><br>March 2018</small>
   Certificate obtention.
 
-* #### Developer Circle Lead <small>– Facebook<br>October 2017 - Now</small>
+* #### Developer Circle Lead <small>– Facebook<br>October 2017 - September 2018</small>
   Developer Circles is a new program from Facebook, comprised of a global network of developer communities around the world. Driven by Facebook's overall mission to connect the world, Developer Circles is a new program designed to connect developers to foster collaboration and knowledge sharing.
 
   As a Lead for the Developer Circles here in Lille, organizing events, managing our online community, and liaising with Facebook as an overall advisor for the program.
 
-* #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - Now</small>
+* #### Software engineer <small>– Adeo (via OCTO)<br>September 2016 - Now</small>
   Being at the beginning of the redesign of the Opus project, omnichannel publishing platform of Adeo, the work was mainly to set up the Scrum team and to build the core of the application (API and back office).
 
   It is in collaboration with the business units of the group that the product has been incremented around the best development practices: articulation of the gitflow around the needs of Quality Assurance, peer coding, collective reviews, complete unit/functional/perf tests.
@@ -33,7 +39,7 @@ You can still see my [projects]({% link projects.html %}).
 
   When going into feature teams, I was given the role of Scrum Master.
 
-* #### Software engineer <small>– Ineat<br>August 2016 - Now</small>
+* #### Software engineer <small>– Ineat<br>August 2016 - September 2018</small>
 
 * #### Developer <small>– Vékia (via Ineat)<br>April 2016 - September 2016</small>
   Consulting and development of the architecture of the Provisia project. Compliance with best practices is important: setting up a code convention, generation of useful documentation, tests (unit and end-to-end), code quality. The "offline-first" concept was a very big need that have been respected.

@@ -3,7 +3,7 @@
         ctx = c.getContext('2d');
 
     function initWaves() {
-        setup(10, ctx, window.innerWidth, window.innerHeight);
+        setup(10, ctx, window.innerWidth, document.querySelector('.hero').offsetHeight);
     }
 
     'resize click touchleave'.split(' ').forEach((e) => {

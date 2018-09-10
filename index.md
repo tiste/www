@@ -7,9 +7,13 @@ lang: fr
 <div class="hero" markdown="1">
 # Bonjour, <small class="no-print">[(hello?)]({% link en.md %})</small>
 
-Je m'appelle Baptiste, je suis ingénieur d'études et développement sur Lille. Je travaille actuellement pour [Ineat](http://ineat-group.com/). Avant cela, j'étais à Londres, chez [Codegent](https://www.codegent.com/).
+Je m'appelle Baptiste, je travaille actuellement chez [OCTO](https://www.octo.com/fr).
 
-Mon but est d'aider les gens en leurs faisant gagner du temps, grâce à des outils informatiques.
+En tant qu'ingénieur études et développement, j'ai toujours été attiré par la résolution de problèmes à l'aide de solutions simples et efficientes. C'est avec cet état d'esprit que je mène à bien les projets pour lesquels je m'engage.
+
+Mon expérience dans le monde du web dans des missions très diverses, m'a permis de me perfectionner sur les pratiques craft, dans le but de les propager autour de moi, et de convaincre qu'un code bien designé est une clé nécessaire dans la réussite d'un projet.
+
+Je maîtrise principalement les langages et frameworks du monde Javascript. Je suis également impliqué dans un certain nombre de méthodes liées à l'agilité et au software craftmanship pour faire grandir les équipes que j'accompagne.
 
 Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
 
@@ -18,15 +22,17 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 </div>
 
 {:.resume}
+* #### Ingénieur Études et Développement <small>– OCTO<br>Septembre 2018 - À présent</small>
+
 * #### Professional Scrum Master I <small><br>Mars 2018</small>
   Obtention de la certification.
 
-* #### Developer Circle Lead <small>– Facebook<br>Octobre 2017 - À présent</small>
+* #### Developer Circle Lead <small>– Facebook<br>Octobre 2017 - Septembre 2018</small>
   Les Developer Circles sont un nouveau programme de Facebook, composé d'un réseau international de communautés de développeurs venus du monde entier. Motivés par la volonté globale de Facebook de connecter le monde, les Developer Circles sont un nouveau programme conçu pour connecter les développeurs, en vue d'encourager la collaboration et le partage des connaissances.
 
   Je travaille en tant que Lead du Developer Circle de Lille, en organisant des évènements, en gérant notre communauté en ligne et en faisant la liaison avec Facebook en tant que conseiller général du programme.
 
-* #### Ingénieur Études et Développement <small>– Adeo (via Ineat)<br>Septembre 2016 - À présent</small>
+* #### Ingénieur Études et Développement <small>– Adeo (via OCTO)<br>Septembre 2016 - À présent</small>
   Placé au début de la refonte du projet Opus, brique de publication omnicanal d'Adeo, le travail était principalement de mettre en place l'équipe Scrum ainsi que de bâtir le coeur de l'application (API et back office).
 
   C'est en collaboration avec les business units du groupe que le produit a été incrémenté autour des meilleures pratiques de développement : articulation du gitflow autour des besoins de la Quality Assurance, pair coding, collective reviews, tests unitaires/fonctionnels/perf complets.
@@ -34,7 +40,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 
   Lors du passage en feature team, le rôle de Scrum Master m'a été attribué.
 
-* #### Ingénieur Études et Développement <small>– Ineat<br>Août 2016 - À présent</small>
+* #### Ingénieur Études et Développement <small>– Ineat<br>Août 2016 - Septembre 2018</small>
 
 * #### Développeur <small>– Vékia (via Ineat)<br>Avril 2016 - Septembre 2016</small>
   Conseil et mise en place de l'architecture de l'application supply-chain Provisia. Le respect des bonnes pratiques est important : mise en place d'une convention de code, génération de documentation, tests (unitaires et fonctionnels), qualité de code. Le concept "offline-first" était un besoin très important qui a pu être respecté.
