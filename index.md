@@ -15,7 +15,7 @@ Mon expérience dans le monde du web dans des missions très diverses, m'a permi
 
 Je maîtrise principalement les langages et frameworks du monde Javascript. Je suis également impliqué dans un certain nombre de méthodes liées à l'agilité et au software craftmanship pour faire grandir les équipes que j'accompagne.
 
-Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}).
+Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.html %}), ou lire [mon blog](http://blog.tiste.io).
 
 {% include social.html %}
 <div class="hero-foot no-print">{% include mouse.html %}</div>

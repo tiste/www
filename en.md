@@ -14,7 +14,7 @@ My experience in the web in many kinds of missions allowed me to improve myself 
 
 I mostly worked and practiced languages and frameworks of the Javascript world. I am also involved in multiple methods related to agility and software craftmanship to grow the teams that I work with.
 
-You can still see my [projects]({% link projects.html %}).
+You can still see my [projects]({% link projects.html %}), or read [my blog](http://blog.tiste.io).
 
 {% include social.html %}
 <div class="hero-foot no-print">{% include mouse.html %}</div>
