@@ -63,7 +63,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
   Création du nouveau site Internet de la partie "Bulle Bleue" avec une vision très modulaire, de manière à étendre le besoin aux autres parties de "La Compagnie des Vétérinaires".
 
   En charge des développements front et back, mais aussi de la partie réseau avec la mise en place des serveurs d'intégration et de recette, des certificats SSL (auto-signés ou non) permettant l'intégrité et la sécurité des données. Développements intensifs sur la partie "création de devis". Mise en place d'une qualité de code importante (entrainant de nombreuses revues de code).
-  Le projet est suivi sous la méthode Scrum.
+  Le projet est suivi sous le framework Scrum.
 
   Environnement technique : Express.js (Node.js), AngularJS, gulp, Nuxeo, JWT, Jenkins, Git/GitLab.
 
@@ -72,7 +72,7 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 
   Réalisation d'un PoC en Javascript permettant d'apporter des solutions à une interface web incluant du Drag'n'Drop.
 
-  Participation sous la méthode Scrum aux développements backend avec Symfony 2, ainsi que frontend à l'aide d'AngularJS.
+  Participation sous le framework Scrum aux développements backend avec Symfony 2, ainsi que frontend à l'aide d'AngularJS.
 
 * #### Développeur <small>– Leroy Merlin (via Ineat)<br>Juin 2015 - Juin 2015</small>
   Développements autour du robot Nao dans le but d'animer une conférence.
@@ -88,12 +88,12 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 * #### Scrum master <small>– Ineat<br>Octobre 2014 - Février 2015</small>
   Développement d'une application web capable d'améliorer le suivi de projet pour chaque collaborateur de la société. Création d'un PoC en AngularJS permettant d'obtenir une interface Gantt afin d'imputer les tâches.
 
-  Travail en méthode Scrum (Scrum master d'une équipe interne de 4 personnes).
+  Travail en guide Scrum (Scrum master d'une équipe interne de 4 personnes).
 
   Utilisation d'outils et technologies innovants afin de pouvoir former d'autres collaborateurs (Stylus, Jade, CoffeeScript, Symfony 2, AngularJS, Git).
 
 * #### Développeur <small>– Codegent<br>Juin 2014 - Octobre 2014</small>
-  Conception d'applications AngularJS, NodeJS et Laravel au sein d'une entreprise Londonienne. Le travail effectué améliorait les applications internes telles que Twilert et BATN, mais aussi externes telles que 1Stream (BBC) et Ilumi (Tanfield Food). Utilisation d'outils de versioning tel que git mais aussi d'outils d'automatisation : gulp et Grunt. La gestion de projet était dirigée par SCRUM.
+  Conception d'applications AngularJS, NodeJS et Laravel au sein d'une entreprise Londonienne. Le travail effectué améliorait les applications internes telles que Twilert et BATN, mais aussi externes telles que 1Stream (BBC) et Ilumi (Tanfield Food). Utilisation d'outils de versioning tel que git mais aussi d'outils d'automatisation : gulp et Grunt. La gestion de projet était dirigée par Scrum.
 
   Découverte d'une nouvelle culture et immergé dans la langue anglaise.
 
