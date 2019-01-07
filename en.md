@@ -62,7 +62,7 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
   Creation of the new website of the "Bulle Bleue" part, with a modular vision so that we could extend the need to other parts of "La Compagnie des Vétérinaires".
 
   I was managing the front and back developments, but also the network part by setting up integration servers and testing ones, as well as SSL certificates (self-signed or not) allowing integrity and security of data. Intensive developments on the "quote" module. Implementation of an important code quality (leading to many code reviews).
-  The project was followed by the Scrum method.
+  The project was followed by the Scrum framework.
 
   Technical environment: Express.js (Node.js), AngularJS, gulp, Nuxeo, JWT, Jenkins, Git/GitLab.
 
@@ -71,7 +71,7 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
 
   Realization of a Javascript PoC that brought solutions to a web interface including Drag'n'Drop.
 
-  We were followed by the Scrum method to build a Symfony 2 backend, as well as an AngularJS frontend.
+  We were followed by the Scrum framework to build a Symfony 2 backend, as well as an AngularJS frontend.
 
 * #### Developer <small>– Leroy Merlin (via Ineat)<br>June 2015 - June 2015</small>
   Specific devs around the Nao robot in order to animate a talk.
@@ -88,12 +88,12 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
   Building a web app that allows managers to be more efficient on tracking the every day life of each collaborator.
   A PoC were created as a Gantt interface, in order to impute the tasks.
 
-  We build it over Scrum method, and I was the scrum master of a team of 4 people.
+  We build it over Scrum guide, and I was the Scrum master of a team of 4 people.
 
   Use of innovative tools and technologies to train other collaborators (Stylus, Jade, CoffeeScript, Symfony 2, AngularJS, Git).
 
 * #### Developer <small>– Codegent<br>June 2014 - October 2014</small>
-  Designing AngularJS, NodeJS and Laravel apps into a London web agency. My job was focused on enhancing intern apps as Twilert and BATN, and extern ones as 1Stream (BBC) and Ilumi (Tanfield Food). Using versioning tools such as git, and automation scripts such as gulp and Grunt. Project management was driven with SCRUM.
+  Designing AngularJS, NodeJS and Laravel apps into a London web agency. My job was focused on enhancing intern apps as Twilert and BATN, and extern ones as 1Stream (BBC) and Ilumi (Tanfield Food). Using versioning tools such as git, and automation scripts such as gulp and Grunt. Project management was driven with Scrum.
 
   I was immersed into a new country.
 
