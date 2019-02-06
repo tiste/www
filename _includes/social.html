@@ -1,12 +1,12 @@
 <ul class="social-media-list">
-    <li class="no-screen"><a href="tel:{{ site.tel | escape }}"><span class="icon-phone"></span> {{ site.tel | escape }}</a></li>
-
-    <li class="no-screen"><a href="mailto:{{ site.mailto | escape }}"><span class="icon-envelop"></span> {{ site.mailto | escape
-        }}</a></li>
-
     <li class="no-print"><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"><span class="icon-twitter"></span>
         {{ site.twitter_username | escape }}</a></li>
 
     <li class="no-print"><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"><span class="icon-github"></span> {{
         site.github_username | escape }}</a></li>
+
+    <li class="no-screen"><a href="tel:{{ site.tel | escape }}"><span class="icon-phone"></span> {{ site.tel | escape }}</a></li>
+
+    <li><a href="mailto:{{ site.mailto | escape }}"><span class="icon-envelop"></span> {{ site.mailto | escape
+        }}</a></li>
 </ul>
