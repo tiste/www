@@ -1,14 +1,24 @@
 title: Baptiste Lecocq, software engineer in Lille
-email: hello@tiste.io
-description: >
+lang: fr
+email: baptiste.lecocq@gmail.com
+description: |
   Je m’appelle Baptiste, je suis ingénieur d’études et développement sur Lille.
   Je travaille actuellement pour Ineat. Avant cela, j’étais à Londres, chez Codegent.
-baseurl: ''
 url: 'https://tiste.io'
 tel: +33 6 34 25 45 34
-mailto: baptiste.lecocq@gmail.com
-twitter_username: tiste
+twitter:
+  username: tiste
+  card: summary
 github_username: tiste
+social:
+  name: Baptiste Lecocq
+  links:
+    - https://twitter.com/tiste
+    - https://www.linkedin.com/in/baptistelecocq
+    - https://plus.google.com/+BaptisteLecocq
+    - https://github.com/tiste
+    - https://keybase.io/tiste
+logo: /logo.png
 google_analytics: UA-42477577-1
 
 markdown: kramdown

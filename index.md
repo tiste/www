@@ -1,7 +1,5 @@
 ---
 layout: home
-title: false
-lang: fr
 ---
 
 <div class="hero" markdown="1">

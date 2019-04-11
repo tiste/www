@@ -1,6 +1,6 @@
 ---
 layout: home
-title: false
+lang: en
 ---
 
 <div class="hero" markdown="1">
