@@ -1,8 +1,14 @@
+- name: Swunitch
+  url: https://apps.apple.com/fr/app/swunitch/id1488948143
+
+- name: Le Scrum est une fenêtre (talk)
+  url: https://talks.tiste.io/le-scrum-est-une-fenetre/#/
+
+- name: Leroy Merlin
+  url: https://www.leroymerlin.fr
+
 - name: Sheriff
   url: https://sheriff.rocks
-
-- name: Ploop
-  url: https://www.ploopapp.com
 
 - name: git-101 (talk)
   url: https://talks.tiste.io/git-101
@@ -22,17 +28,11 @@
 - name: Dartagnan
   url: http://dartagnan.io/en
 
-- name: wholine
-  url: https://github.com/tiste/wholine
-
 - name: middleman-meta-tags
   url: https://github.com/tiste/middleman-meta-tags
 
 - name: simonsimon
   url: https://simonsimon.tiste.io
-
-- name: wall
-  url: https://github.com/tiste/wall
 
 - name: sentencify
   url: https://github.com/tiste/sentencify
