@@ -21,6 +21,8 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
 </div>
 
 {:.resume}
+* #### Software engineer <small>– Adeo (via OCTO)<br>September 2018 - Now</small>
+
 * #### Software engineer <small>– OCTO<br>September 2018 - Now</small>
 
 * #### Professional Scrum Master I <small><br>March 2018</small>
@@ -31,7 +33,7 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
 
   As a Lead for the Developer Circles here in Lille, organizing events, managing our online community, and liaising with Facebook as an overall advisor for the program.
 
-* #### Software engineer <small>– Adeo (via OCTO)<br>September 2016 - Now</small>
+* #### Software engineer <small>– Adeo (via Ineat)<br>September 2016 - September 2018</small>
   Being at the beginning of the redesign of the Opus project, omnichannel publishing platform of Adeo, the work was mainly to set up the Scrum team and to build the core of the application (API and back office).
 
   It is in collaboration with the business units of the group that the product has been incremented around the best development practices: articulation of the gitflow around the needs of Quality Assurance, peer coding, collective reviews, complete unit/functional/perf tests.
