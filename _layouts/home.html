@@ -2,11 +2,6 @@
 layout: default
 ---
 
-<canvas></canvas>
+{% include header.html %}
 
-<div class="main">
-    {{ content }}
-</div>
-
-<script src="{{ '/assets/waves.js' | absolute_url }}"></script>
-<script src="{{ '/assets/main.js' | absolute_url }}"></script>
+{{ content }}

@@ -4,6 +4,8 @@
 @charset "utf-8";
 
 @import "variables";
+@import "header";
+@import "social";
 
 @page {
     margin: 0;
@@ -11,39 +13,4 @@
 
 .no-print, .no-print * {
     display: none !important;
-}
-
-canvas {
-    display: none;
-}
-
-.hero {
-    min-height: inherit;
-    padding-top: 7vh;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.resume {
-    max-width: 42rem;
-    margin: 0 auto;
-    display: table;
-
-    li {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        page-break-inside: avoid;
-        margin-top: 0;
-        padding-top: 4rem;
-
-        h4 {
-            border-top: 6px solid $brand-color;
-            padding-top: 1rem;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
 }

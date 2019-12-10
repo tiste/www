@@ -1,22 +1,7 @@
-@font-face {
-    font-family: "icomoon";
-    src:  url("fonts/icomoon.eot?7faqlb");
-    src:  url("fonts/icomoon.eot?7faqlb#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?7faqlb") format("truetype"),
-    url("fonts/icomoon.woff?7faqlb") format("woff"),
-    url("fonts/icomoon.svg?7faqlb#icomoon") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
 @media screen {
     .no-screen, .no-screen * {
         display: none !important;
     }
-}
-
-:root {
-    --container-padding: 0.75rem;
 }
 
 *, *:before, *:after {
@@ -27,213 +12,36 @@ html {
     height: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    font-size: 62.5%;
 }
 
 body {
     background-color: $background-color;
-    min-height: 100%;
     font: #{$base-font-size} $base-font-family;
-    font-weight: 400;
     color: $text-color;
     margin: 0;
-}
-
-a {
-    color: $emphase-color;
-    font-weight: 700;
-    border-bottom: 3px solid $brand-color;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: none;
-        border-bottom: none;
-    }
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font-family;
-    font-weight: 500;
-    color: $emphase-color;
-    margin: 0;
-    text-align: left;
-
-    a {
-        font-weight: inherit;
-    }
+    line-height: 1.5;
+    letter-spacing: -.004em;
 }
 
 h1 {
-    font-size: calc(2.5em + .5vw);
-}
-
-h2 {
-    font-size: calc(2em + .2vw);
-}
-
-h3 {
-    font-size: calc(1.7em + .2vw);
-}
-
-h4 {
-    font-size: calc(1.3em + .2vw);
+    @include golden-typo(7.2rem);
 }
 
 p {
-    line-height: 1.6;
+    @include golden-typo(1.72rem);
+    margin-bottom: 1rem;
 }
 
-small {
-    font-size: 0.58em;
-}
-
-canvas {
-    opacity: 0.5;
-    position: absolute;
+.container {
+    width: $container-width;
+    margin: 0 auto;
 }
 
 .offline {
-    canvas {
-        filter: grayscale(100%);
-    }
-}
-
-.social-media-list {
-    list-style: none;
-    padding-left: 0;
-    line-height: 1.6;
-    text-align: initial;
-
-    li {
-        display: inline;
-        margin-right: 10px;
-    }
-}
-
-.main {
-    text-align: justify;
-    max-width: 64rem;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-.hero {
-    padding: 17vh var(--container-padding) var(--container-padding);
-    min-height: 100vh;
-    position: relative;
-    max-width: 42rem;
-    margin: 0 auto;
-}
-
-.hero-foot {
-    position: absolute;
-    left: calc(50% - 35px / 2);
-    bottom: 0;
-}
-
-.resume {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    li {
-        margin-top: 5rem;
-        position: relative;
-        width: 50%;
-        padding: var(--container-padding);
-
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: -15px;
-            width: 50px;
-            height: 6px;
-            background-color: $brand-color;
-        }
-    }
-}
-
-.projects {
-    li {
-        list-style: square;
-        color: $brand-color;
-    }
-
-    li + li {
-        margin-top: 1em;
-    }
-}
-
-[class^="icon-"], [class*=" icon-"] {
-    font-family: "icomoon" !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-phone:before {
-    content: "\e942";
-}
-.icon-envelop:before {
-    content: "\e945";
-}
-.icon-twitter:before {
-    content: "\ea96";
-}
-.icon-github:before {
-    content: "\eab0";
-}
-
-@keyframes scroll-down {
-    0% {
-        opacity: 1;
-        top: 29%;
-    }
-
-    15% {
-        opacity: 1;
-        top: 50%;
-    }
-
-    50% {
-        opacity: 0;
-        top: 50%;
-    }
-
-    100% {
-        opacity: 0;
-        top: 29%;
-    }
-}
-
-.mouse {
-    position: relative;
-    display: block;
-    width: 35px;
-    height: 55px;
-    margin: 0 auto 20px;
-    box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 23px;
-
-    > * {
-        position: absolute;
-        display: block;
-        top: 29%;
-        left: 50%;
-        width: 8px;
-        height: 8px;
-        margin: -4px 0 0 -4px;
-        background: white;
-        border-radius: 50%;
-        animation: scroll-down 2.5s linear infinite;
-    }
 }

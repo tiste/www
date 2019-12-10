@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="icon" href="{{ '/logo.png' | absolute_url }}"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:500|Lato:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:900&display=swap">
     <link rel="stylesheet" href="{{ '/assets/main.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/print.css' | absolute_url }}" media="print">
     <link rel="manifest" href="manifest.json">
@@ -28,6 +28,10 @@
 <body>
 
 {{ content }}
+
+{% include social.html %}
+
+<script src="{{ '/assets/main.js' | absolute_url }}"></script>
 
 </body>
 </html>
