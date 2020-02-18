@@ -21,9 +21,20 @@ You can still see my [projects]({% link projects.html %}), or read [my blog](htt
 </div>
 
 {:.resume}
-* #### Software engineer <small>– Adeo (via OCTO)<br>September 2018 - Now</small>
+* #### Freelance <small>– Adeo<br>February 2020 - Now</small>
 
-* #### Software engineer <small>– OCTO<br>September 2018 - Now</small>
+* #### Software engineer <small>– Adeo (via OCTO)<br>September 2018 - February 2020</small>
+  Redesign of Adeo's omnichannel publishing platforms. The watchwords: user centric and craftsmanship. Set up of workshops on user needs, DDD, and description of a C4 model. Coaching for teams in a Javascript environment on acculturation to dev practices (TDD, pair programming, code reviews, test pyramid, etc.) and devops practices.
+
+  Product currently in production respecting SLO (99% of requests in less than 60ms).
+
+* #### Teacher <small>– FGES (La Catho)<br>September 2019 - February 2020</small>
+  With twenty students, we worked on the concepts of "advanced web": dev practices (tests, SOLID, DRY, etc.), devops practices (CI / CD), Javascript, web tools (React).
+
+* #### Confirmed consultant <small>– OCTO<br>September 2018 - February 2020</small>
+  Coaching teams on craftsmanship.
+  TDD trainer.
+  "Give and receive efficient feedback" trainer.
 
 * #### Professional Scrum Master I <small><br>March 2018</small>
   Certificate obtention.

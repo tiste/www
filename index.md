@@ -20,9 +20,20 @@ Vous pouvez toujours visualiser l'ensemble de [mes projets]({% link projects.htm
 </div>
 
 {:.resume}
-* #### Ingénieur Études et Développement <small>– Adeo (via OCTO)<br>Septembre 2018 - À présent</small>
+* #### Freelance <small>– Adeo<br>Mars 2020 - À présent</small>
 
-* #### Ingénieur Études et Développement <small>– OCTO<br>Septembre 2018 - À présent</small>
+* #### Ingénieur Études et Développement <small>– Adeo (via OCTO)<br>Septembre 2018 - Février 2020</small>
+  Refonte des briques de publication omnicanal d'Adeo. Les mots d'ordre : user centric et craftsmanship. Mise en place d'ateliers sur les besoins utilisateurs, de DDD, et description d'un modèle C4. Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
+
+  Produit actuellement en production respectant les SLO (99% des requêtes en moins de 60ms).
+
+* #### Enseignant <small>– FGES (La Catho)<br>Septembre 2019 - Février 2020</small>
+  Avec une vingtaine d'étudiants, nous avons travaillé sur les concepts du "web avancé" : pratiques de dev (tests, SOLID, DRY, etc.), pratiques devops (CI/CD), Javascript, outils web (React).
+
+* #### Consultant confirmé <small>– OCTO<br>Septembre 2018 - Février 2020</small>
+  Accompagnement d'équipes sur le craftsmanship.
+  Formateur TDD.
+  Formateur "Donner et recevoir des feedback efficaces".
 
 * #### Professional Scrum Master I <small><br>Mars 2018</small>
   Obtention de la certification.
