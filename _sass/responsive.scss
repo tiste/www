@@ -1,9 +1,37 @@
 @media (max-width: 600px) {
-    .resume li {
+    h1 {
+        @include golden-typo(5rem);
         width: 100%;
     }
 
-    .mouse {
+    .columns {
+        flex-direction: column;
+    }
+
+    .headline {
+        @include golden-typo(1.6rem);
+    }
+
+    .nav {
         display: none;
+    }
+
+    .resume li {
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .section {
+        padding: 20vh 1vh;
+
+        h1:first-child {
+            line-height: 5rem;
+            margin-top: -4.2rem;
+        }
     }
 }

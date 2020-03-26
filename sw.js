@@ -1,13 +1,15 @@
 const cacheName = 'v1';
 
 const assetsToCache = [
-    '/assets/main.css',
-    '/assets/waves.js',
-    '/assets/main.js',
+    '/assets/app.css',
+    '/assets/app.js',
     '/index.html',
     '/en.html',
     '/projects.html',
     '/logo.png',
+    '/assets/images/logo-full.png',
+    '/assets/images/logo-full-white.png',
+    '/assets/images/header.jpeg',
 ];
 
 self.addEventListener('install', (event) => {

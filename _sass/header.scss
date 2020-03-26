@@ -1,0 +1,54 @@
+header {
+    background-image: url("images/header.jpeg");
+    background-size: cover;
+    background-position: 100% 75%;
+
+    .header-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(90deg, rgba($brand, 90%) 20%, rgba($brand, 50%));
+    }
+
+    h1 {
+        position: initial !important;
+        margin-top: initial !important;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .container:after {
+        content: " ";
+        clear: both;
+        display: table;
+    }
+}
+
+nav {
+    z-index: 10;
+}
+
+.nav {
+    font-family: $title-font-family;
+    padding: 1rem 3rem;
+    font-weight: bold;
+
+    > *:first-child {
+        float: left;
+        width: 218px;
+        height: 50px;
+        background-size: cover;
+    }
+
+    > *:nth-child(2) {
+        float: right;
+    }
+}
+
+.midnightHeader {
+    background-color: transparent !important;
+}

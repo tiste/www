@@ -1,10 +1,24 @@
 $base-font-family: Lato, Arial, sans-serif !default;
-$base-font-size: 15px !default;
+$base-font-size: 16px !default;
 
-$title-font-family: "Fira Sans", Georgia, serif !default;
+$title-font-family: Raleway, Georgia, serif !default;
 
-$brand-color: #FFCE00 !default;
-$background-color: #FEFEFE !default;
-$text-color: #122443 !default;
-$emphase-color: darken($text-color, 20%) !default;
-$border-color: #F0F0F0;
+$brand: #FFCE00 !default;
+$light-text: #FEFEFE !default;
+$background: #FEFEFE !default;
+$dark-text: #122443 !default;
+$emphase: darken($dark-text, 20%) !default;
+
+$container-width: 50vw;
+
+$phi: 1.618;
+
+@function golden($value) {
+    @return $value * $phi;
+}
+
+@mixin golden-typo($value) {
+    font-size: $value;
+    line-height: golden($value);
+    margin-top: 0;
+}
