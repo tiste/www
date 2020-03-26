@@ -1,12 +1,24 @@
 header {
-    h1 {
-        float: left;
-        width: 20%;
+    background-image: url("images/header.jpeg");
+    background-size: cover;
+    background-position: 100% 75%;
+
+    .header-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(90deg, rgba($brand, 90%) 20%, rgba($brand, 50%));
     }
 
-    p {
-        float: right;
-        width: 70%;
+    h1 {
+        position: initial !important;
+        margin-top: initial !important;
+    }
+
+    .container {
+        position: relative;
     }
 
     .container:after {
@@ -14,12 +26,29 @@ header {
         clear: both;
         display: table;
     }
+}
 
-    img {
-        width: 500px;
-        position: absolute;
-        margin-left: -500px;
-        display: inline-block;
-        z-index: -1;
+nav {
+    z-index: 10;
+}
+
+.nav {
+    font-family: $title-font-family;
+    padding: 1rem 3rem;
+    font-weight: bold;
+
+    > *:first-child {
+        float: left;
+        width: 218px;
+        height: 50px;
+        background-size: cover;
     }
+
+    > *:nth-child(2) {
+        float: right;
+    }
+}
+
+.midnightHeader {
+    background-color: transparent !important;
 }

@@ -1,0 +1,67 @@
+---
+layout: home
+---
+
+<nav class="fixed">
+    <div class="nav">
+        <a href="/"></a>
+
+        <p><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
+    </div>
+</nav>
+
+<header data-midnight="brand-theme" class="brand-theme section">
+    <div class="header-overlay"></div>
+    <div class="container">
+        <h1>Baptiste Lecocq</h1>
+
+        <p class="headline">
+            J'aide les personnes et équipes à définir et répondre à <b class="emphase">leurs besoins</b>.
+            J'y parviens en travaillant pour et avec ces personnes en mettant en place un environnement favorisant <b
+            class="emphase">les échanges</b> et <b class="emphase">l'excellence technique</b>.
+        </p>
+
+        <p class="headline">Je considère réussir cette mission en suivant des indicateurs liés à la <b class="emphase">satisfaction
+            client</b>
+            et la <b class="emphase">qualité logicielle</b>.</p>
+
+        {% include social.html %}
+    </div>
+</header>
+
+<div class="section light-theme">
+    <div class="container">
+        <h1>Mes<br>compétences</h1>
+
+        <div class="columns">
+            <div class="column">
+                <p>Mon expérience dans le monde du web dans des missions très diverses, m'a convaincu que la <b
+                    class="emphase">fluidité de la
+                    communication</b> et qu'un code bien designé sont des clés nécessaires dans la réussite d’un projet.
+                </p>
+            </div>
+            <div class="column"></div>
+        </div>
+
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column">
+                <p>Je maîtrise principalement les langages et frameworks du monde Javascript.
+                    Je suis également impliqué dans un certain nombre de méthodes liées à l’agilité et au software
+                    craftsmanship
+                    pour faire grandir les équipes que j’accompagne.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-midnight="brand-theme" class="brand-theme section">
+    <div class="container">
+        <h1>Mon<br>parcours</h1>
+
+        {% capture resume %}
+        {% include cv.md %}
+        {% endcapture %}
+        {{ resume | markdownify }}
+    </div>
+</div>
