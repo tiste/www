@@ -12,7 +12,11 @@
         @include golden-typo(1.6rem);
     }
 
-    .nav {
+    header {
+        background-position-x: 83%;
+    }
+
+    nav {
         display: none;
     }
 

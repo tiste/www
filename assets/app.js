@@ -20,5 +20,5 @@
     }
     networkMode();
 
-    $('nav.fixed').midnight();
+    $('nav').midnight();
 })();

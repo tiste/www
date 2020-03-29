@@ -29,6 +29,14 @@
 
 {{ content }}
 
+<nav>
+    <div class="nav">
+        <a href="/"></a>
+
+        <p><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
+    </div>
+</nav>
+
 <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
 <script src="{{ '/assets/app.js' | absolute_url }}"></script>
 
