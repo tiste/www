@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/Avenir-Black.eot");
+    src: local("Avenir Black"), local("Avenir-Black"),
+    url("fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Avenir-Black.woff2") format("woff2"),
+    url("fonts/Avenir-Black.woff") format("woff"),
+    url("fonts/Avenir-Black.ttf") format("truetype"),
+    url("fonts/Avenir-Black.svg#Avenir-Black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
 @media screen {
     .no-screen, .no-screen * {
         display: none !important;
@@ -67,7 +80,7 @@ p {
         top: 0;
         position: absolute;
         line-height: 7rem;
-        margin-top: -6rem;
+        margin-top: -5.8rem;
     }
 }
 
