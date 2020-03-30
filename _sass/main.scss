@@ -79,8 +79,8 @@ p {
     h1:first-child {
         top: 0;
         position: absolute;
-        line-height: 7rem;
-        margin-top: -5.8rem;
+        line-height: 6rem;
+        margin-top: -5.3rem;
     }
 }
 
@@ -125,11 +125,7 @@ p {
 .brand-theme {
     background-color: $brand;
 
-    .nav, a {
-        color: lighten($brand, 40%);
-    }
-
-    .nav > *:first-child {
+    .logo {
         background-image: url("images/logo-full-white.png");
     }
 }
@@ -137,17 +133,13 @@ p {
 .light-theme {
     background-color: $background;
 
-    .nav, a {
-        color: $dark-text;
-    }
-
-    .nav > *:first-child {
+    .logo {
         background-image: url("images/logo-full.png");
     }
 }
 
 .button {
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 5.5rem;
     border-radius: 2px;
     background-color: #FFF;
     box-shadow: -6px 6px 0 0 rgba(0, 0, 0, 0.1);
