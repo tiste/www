@@ -32,7 +32,7 @@ function HeroSection({ data }) {
             <div className="columns is-vcentered">
               <div className="column is-7">
                 <h1 className="title">
-                  Bonjour, je suis <strong>Baptiste Lecocq</strong>
+                  Bonjour, je suis <strong>Baptiste Lecocq</strong>.
                 </h1>
 
                 <p>
