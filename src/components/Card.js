@@ -15,9 +15,11 @@ export function Card({ title, link, children }) {
         <div className="content">{children[1]}</div>
         <div className="tags">
           {children[2] &&
-            children[2].props.children
-              .split(", ")
-              .map((tag) => <span className="tag is-light">{tag}</span>)}
+            children[2].props.children.split(", ").map((tag, i) => (
+              <span key={i} className="tag is-light">
+                {tag}
+              </span>
+            ))}
         </div>
       </div>
     </div>

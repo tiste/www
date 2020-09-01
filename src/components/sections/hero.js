@@ -5,9 +5,9 @@ import Img from "gatsby-image";
 export default () => {
   const staticQuery = graphql`
     query {
-      me: file(relativePath: { eq: "me.jpg" }) {
+      me: file(relativePath: { eq: "me.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 700) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -32,7 +32,9 @@ function HeroSection({ data }) {
             <div className="columns is-vcentered">
               <div className="column is-7">
                 <h1 className="title">
-                  Bonjour, je suis <strong>Baptiste Lecocq</strong>
+                  Bonjour, je suis
+                  <br />
+                  <strong>Baptiste Lecocq</strong>
                 </h1>
 
                 <p>
@@ -69,9 +71,12 @@ function HeroSection({ data }) {
 
                 <a
                   href="mailto:baptiste.lecocq@gmail.com"
-                  className="button is-primary"
+                  className="button is-primary is-light is-outlined is-rounded mb-5 mt-3"
                 >
-                  Contactez-moi
+                  <span>On travaille ensemble ?</span>
+                  <span className="icon" role="img" aria-label="handshake">
+                    🤝
+                  </span>
                 </a>
               </div>
 

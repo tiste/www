@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from "gatsby";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import "../../stylesheets/main.scss";
+import { Seo } from "../Seo";
 
 export default (props) => {
   const staticQuery = graphql`
@@ -30,7 +31,7 @@ function Layout(props) {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "fr" }}>
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta
@@ -38,6 +39,7 @@ function Layout(props) {
           content="width=device-width, minimum-scale=1, user-scalable=no, minimal-ui"
         />
       </Helmet>
+      <Seo />
       <main className={props.cssClasses}>{props.children}</main>
     </>
   );

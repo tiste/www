@@ -26,20 +26,18 @@ function ResumeSection({ data, crop }) {
           Mon parcours <strong>professionnel</strong>
         </h2>
 
-        <div className="columns is-8 is-variable">
-          <div
-            className={"resume " + (crop ? "is-cropped" : "")}
-            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-          />
-        </div>
-        {crop && (
-          <div className="has-text-centered">
-            <Link className="button is-primary is-large" to="/cv">
-              Voir les autres missions
-            </Link>
-          </div>
-        )}
+        <div
+          className={"resume " + (crop ? "is-cropped" : "")}
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
       </div>
+      {crop && (
+        <div className="has-text-centered">
+          <Link className="button is-primary is-medium" to="/cv">
+            Voir les autres missions
+          </Link>
+        </div>
+      )}
     </section>
   );
 }

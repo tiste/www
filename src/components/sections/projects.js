@@ -114,7 +114,7 @@ function ProjectsSection({ data }) {
               anyone pass the Sheriff.
             </p>
 
-            <p>Continous Integration, Quality</p>
+            <p>Continuous Integration, Quality</p>
           </Card>
         </div>
         <div className="column is-hidden-tablet-only">

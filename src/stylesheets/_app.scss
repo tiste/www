@@ -15,26 +15,17 @@ strong,
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  @extend .columns;
 
   li {
     margin-top: 5rem;
     position: relative;
-    width: 50%;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    @extend .column;
+    @extend .is-6;
 
     @include mobile {
-      width: 100%;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-
-    &:nth-child(even) {
-      padding-left: 2rem;
-    }
-
-    &:nth-child(odd) {
-      padding-right: 2rem;
+      flex-basis: auto;
     }
 
     &::after {
