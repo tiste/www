@@ -1,0 +1,8 @@
+.highlight-box {
+  padding: 4rem;
+  border-radius: 10px;
+
+  @include mobile {
+    padding: 2rem;
+  }
+}
