@@ -1,0 +1,67 @@
+.button {
+  font-weight: bold;
+  height: auto;
+}
+
+.container {
+  max-width: $container-width;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.hero-body {
+  padding-top: 3rem !important;
+
+  @include mobile {
+    padding-top: 0 !important;
+  }
+}
+
+.navbar-brand .navbar-item {
+  padding-right: 2rem;
+  width: 100px;
+
+  svg {
+    width: 100%;
+  }
+
+  @include desktop {
+    padding-top: 15px;
+    padding-left: 0;
+  }
+}
+
+.navbar .container {
+  padding: $column-gap;
+}
+
+.content {
+  h1,
+  h2 {
+    font-weight: initial;
+  }
+
+  h1 {
+    font-size: 4em;
+
+    @include mobile {
+      padding-top: 3rem;
+      font-size: 2em;
+    }
+  }
+
+  h2 {
+    font-size: 3em;
+
+    @include mobile {
+      font-size: 2em;
+    }
+  }
+}
+
+.subtitle strong {
+  font-weight: bold;
+}
