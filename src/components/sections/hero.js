@@ -49,6 +49,24 @@ function HeroSection({ data }) {
                   <strong>qualité logicielle</strong>.
                 </p>
 
+                <p>
+                  Je suis certifié{" "}
+                  <a
+                    className="emphase has-text-underlined"
+                    href="https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite"
+                  >
+                    Pratiques du développement logiciel de qualité
+                  </a>{" "}
+                  et{" "}
+                  <a
+                    className="emphase has-text-underlined"
+                    href="https://www.scrum.org/certificates/302722"
+                  >
+                    Professional Scrum Master I
+                  </a>
+                  .
+                </p>
+
                 <a
                   href="mailto:baptiste.lecocq@gmail.com"
                   className="button is-primary"

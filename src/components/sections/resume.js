@@ -1,7 +1,7 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 
-export default () => {
+export default (props) => {
   const staticQuery = graphql`
     query {
       markdownRemark(frontmatter: { slug: { eq: "cv" } }) {
@@ -13,12 +13,12 @@ export default () => {
   return (
     <StaticQuery
       query={`${staticQuery}`}
-      render={(data) => <ResumeSection data={data} />}
+      render={(data) => <ResumeSection data={data} {...props} />}
     />
   );
 };
 
-function ResumeSection({ data }) {
+function ResumeSection({ data, crop }) {
   return (
     <section className="section">
       <div className="container content">
@@ -28,10 +28,17 @@ function ResumeSection({ data }) {
 
         <div className="columns is-8 is-variable">
           <div
-            className="resume"
+            className={"resume " + (crop ? "is-cropped" : "")}
             dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-          ></div>
+          />
         </div>
+        {crop && (
+          <div className="has-text-centered">
+            <Link className="button is-primary is-large" to="/cv">
+              Voir les autres missions
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
