@@ -3,6 +3,17 @@ module.exports = {
     title: `Baptiste Lecocq, ingénieur logiciel indépendant à Lille`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "UA-42477577-1",
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true,
+        },
+        environments: ["production", "development"],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
