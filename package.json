@@ -1,7 +1,7 @@
 {
   "name": "www",
   "description": "Baptiste Lecocq, ingénieur logiciel indépendant à Lille",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "Baptiste Lecocq <baptiste.lecocq@gmail.com> (https://tiste.io)",
   "dependencies": {
     "bulma": "0.9.0",
