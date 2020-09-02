@@ -58,7 +58,7 @@ function ProjectsSection({ data }) {
       <div className="columns is-vcentered">
         <div className="column">
           <Card title="Javro" link="https://javro.github.io/">
-            <Img fluid={data.javro.childImageSharp.fluid} />
+            <Img fluid={data.javro.childImageSharp.fluid} alt="Javro" />
 
             <p>
               Javro est une application permettant d'écrire des fichiers Avro
@@ -74,7 +74,7 @@ function ProjectsSection({ data }) {
             title="Swunitch"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
           >
-            <Img fluid={data.swunitch.childImageSharp.fluid} />
+            <Img fluid={data.swunitch.childImageSharp.fluid} alt="Swunitch" />
 
             <p>
               Marre de convertir les minutes par kilomètres en km/h ? Vos amis
@@ -90,7 +90,10 @@ function ProjectsSection({ data }) {
             title="Le Scrum est une fenêtre"
             link="https://talks.tiste.io/le-scrum-est-une-fenetre/#/"
           >
-            <Img fluid={data.scrum.childImageSharp.fluid} />
+            <Img
+              fluid={data.scrum.childImageSharp.fluid}
+              alt="Le Scrum est une fenêtre"
+            />
 
             <p>
               Après de longs mois d’application de “Scrum by the book” dans une
@@ -107,7 +110,7 @@ function ProjectsSection({ data }) {
         </div>
         <div className="column is-hidden-tablet-only">
           <Card title="Sheriff" link="https://sheriff.rocks">
-            <Img fluid={data.sheriff.childImageSharp.fluid} />
+            <Img fluid={data.sheriff.childImageSharp.fluid} alt="Sheriff" />
 
             <p>
               Best way to monitor your Pull Request health, without letting
@@ -119,7 +122,7 @@ function ProjectsSection({ data }) {
         </div>
         <div className="column is-hidden-tablet-only">
           <Card title="git-101" link="https://talks.tiste.io/git-101">
-            <Img fluid={data.git.childImageSharp.fluid} />
+            <Img fluid={data.git.childImageSharp.fluid} alt="git-101" />
 
             <p>Les basics de git</p>
 

@@ -81,7 +81,10 @@ function HeroSection({ data }) {
               </div>
 
               <div className="column">
-                <Img fluid={data.me.childImageSharp.fluid} />
+                <Img
+                  fluid={data.me.childImageSharp.fluid}
+                  alt="Baptiste Lecocq"
+                />
               </div>
             </div>
           </div>

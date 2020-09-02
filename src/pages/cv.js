@@ -3,12 +3,14 @@ import Layout from "../components/layouts/Layout";
 import Nav from "../components/layouts/Nav";
 import Footer from "../components/layouts/Footer";
 import ResumeSection from "../components/sections/resume";
+import CustomersSection from "../components/sections/customers";
 
 export default () => {
   return (
     <Layout title="Expérience professionnelle">
       <Nav />
       <ResumeSection />
+      <CustomersSection />
       <Footer />
     </Layout>
   );
