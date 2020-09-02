@@ -35,6 +35,11 @@ svg {
   }
 }
 
+.navbar-menu .navbar-item {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
 .navbar .container {
   padding: $column-gap;
 }

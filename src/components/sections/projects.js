@@ -55,6 +55,12 @@ export default () => {
 function ProjectsSection({ data }) {
   return (
     <section className="section">
+      <div className="container content is-hidden-tablet">
+        <h2>
+          Mes projets <strong>phares</strong>
+        </h2>
+      </div>
+
       <div className="columns is-vcentered">
         <div className="column">
           <Card title="Javro" link="https://javro.github.io/">
@@ -129,6 +135,12 @@ function ProjectsSection({ data }) {
             <p>Talk</p>
           </Card>
         </div>
+      </div>
+
+      <div className="container has-text-centered">
+        <a href="https://github.com/tiste" className="button is-light mt-4">
+          Voir plus de projets sur GitHub
+        </a>
       </div>
     </section>
   );

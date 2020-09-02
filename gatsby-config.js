@@ -4,14 +4,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        googleAnalytics: {
-          trackingId: "UA-42477577-1",
-          cookieName: "gatsby-gdpr-google-analytics",
-          anonymize: true,
-        },
-        environments: ["production", "development"],
+        trackingId: "UA-42477577-1",
+        anonymize: true,
       },
     },
     `gatsby-plugin-react-helmet`,
