@@ -39,3 +39,14 @@ strong,
     }
   }
 }
+
+@include prefers-scheme(dark) {
+  svg path {
+    fill: $primary !important;
+  }
+
+  .customers {
+    background-color: $grey-lighter;
+    border-radius: 5px;
+  }
+}

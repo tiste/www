@@ -35,7 +35,7 @@ function CustomersSection({ data }) {
   return (
     <section className="section">
       <div className="container content">
-        <div className="columns is-vcentered is-multiline is-mobile">
+        <div className="columns is-vcentered is-multiline is-mobile customers">
           {data.allFile.edges.map(({ node }, i) => (
             <div key={i} className="column is-4-mobile is-2-tablet">
               <Img fluid={node.childImageSharp.fluid} alt={node.name} />
