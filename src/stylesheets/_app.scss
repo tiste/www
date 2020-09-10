@@ -40,6 +40,10 @@ strong,
   }
 }
 
+footer svg {
+  width: 200px;
+}
+
 @include prefers-scheme(dark) {
   svg path {
     fill: $primary !important;

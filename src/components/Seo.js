@@ -28,7 +28,6 @@ export function Seo() {
           sameAs: [
             "https://twitter.com/tiste",
             "https://www.linkedin.com/in/baptistelecocq",
-            "https://plus.google.com/+BaptisteLecocq",
             "https://github.com/tiste",
             "https://keybase.io/tiste",
           ],

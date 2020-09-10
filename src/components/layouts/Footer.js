@@ -5,7 +5,7 @@ export default () => (
   <footer className="footer">
     <div className="container content">
       <div className="columns is-centered">
-        <div className="column is-4">
+        <div className="column is-4 has-text-centered">
           <Logo />
         </div>
       </div>
