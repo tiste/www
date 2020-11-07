@@ -58,8 +58,22 @@ function HeroSection({ data }) {
                     href="https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite"
                   >
                     Pratiques du développement logiciel de qualité
-                  </a>{" "}
-                  et{" "}
+                  </a>
+                  , aux technologies du Knowledge Engineering (
+                  <a
+                    className="emphase has-text-underlined"
+                    href="https://www.credential.net/8b189a15-de52-45d7-a506-e7a2892a58e8"
+                  >
+                    Semantic Web Training
+                  </a>
+                  ,{" "}
+                  <a
+                    className="emphase has-text-underlined"
+                    href="https://graphacademy.neo4j.com/certificates/d6dd1ef3184ad6ba22690ea499dbb406101651b8475c4498d9af34b10e14d7d3.pdf"
+                  >
+                    Neo4j Professional
+                  </a>
+                  ) et{" "}
                   <a
                     className="emphase has-text-underlined"
                     href="https://www.scrum.org/certificates/302722"
