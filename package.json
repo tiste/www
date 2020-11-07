@@ -32,12 +32,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "format": "prettier --write .",
+    "lint": "prettier --check .",
     "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "test": "jest",
-    "now-build": "gatsby build"
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",

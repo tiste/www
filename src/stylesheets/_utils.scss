@@ -12,12 +12,20 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1) 90%
+    );
     width: 100%;
     height: 5rem;
 
     @include prefers-scheme(dark) {
-      background-image: linear-gradient(to bottom, rgba(#17181c, 0), rgba(#17181c, 1) 90%);
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#17181c, 0),
+        rgba(#17181c, 1) 90%
+      );
     }
   }
 }
