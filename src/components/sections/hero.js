@@ -62,6 +62,13 @@ function HeroSection({ data }) {
                   , aux technologies du Knowledge Engineering (
                   <a
                     className="emphase has-text-underlined"
+                    href="https://www.credential.net/4a384db7-3355-421f-9023-73a9f3296d38"
+                  >
+                    Knowledge Engineering Training
+                  </a>
+                  ,{" "}
+                  <a
+                    className="emphase has-text-underlined"
                     href="https://www.credential.net/8b189a15-de52-45d7-a506-e7a2892a58e8"
                   >
                     Semantic Web Training
