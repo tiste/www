@@ -13,9 +13,9 @@ export default () => {
     <Layout>
       <Nav />
       <HeroSection />
-      <ProjectsSection />
-      <SkillsSection />
       <CustomersSection />
+      <SkillsSection />
+      <ProjectsSection />
       <ResumeSection crop={true} />
       <Footer />
     </Layout>
