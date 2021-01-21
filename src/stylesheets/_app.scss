@@ -44,13 +44,18 @@ footer svg {
   width: 200px;
 }
 
+@include prefers-scheme(light) {
+  .is-dark-mode {
+    display: none !important;
+  }
+}
+
 @include prefers-scheme(dark) {
   svg path {
     fill: $primary !important;
   }
 
-  .customers {
-    background-color: $grey-lighter;
-    border-radius: 5px;
+  .is-light-mode {
+    display: none !important;
   }
 }
