@@ -5,7 +5,7 @@ import Footer from "../components/layouts/Footer";
 import ResumeSection from "../components/sections/resume";
 import CustomersSection from "../components/sections/customers";
 
-export default () => {
+function CVPage() {
   return (
     <Layout title="Expérience professionnelle">
       <Nav />
@@ -14,4 +14,6 @@ export default () => {
       <Footer />
     </Layout>
   );
-};
+}
+
+export default CVPage;

@@ -8,7 +8,7 @@ import { SkillsSection } from "../components/sections/skills";
 import ProjectsSection from "../components/sections/projects";
 import CustomersSection from "../components/sections/customers";
 
-export default () => {
+function IndexPage() {
   return (
     <Layout>
       <Nav />
@@ -20,4 +20,6 @@ export default () => {
       <Footer />
     </Layout>
   );
-};
+}
+
+export default IndexPage;
