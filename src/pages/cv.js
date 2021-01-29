@@ -5,7 +5,7 @@ import Footer from "../components/layouts/Footer";
 import ResumeSection from "../components/sections/resume";
 import CustomersSection from "../components/sections/customers";
 
-function CVPage() {
+export default function CVPage() {
   return (
     <Layout title="Expérience professionnelle">
       <Nav />
@@ -15,5 +15,3 @@ function CVPage() {
     </Layout>
   );
 }
-
-export default CVPage;

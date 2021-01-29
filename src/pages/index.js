@@ -8,7 +8,7 @@ import { SkillsSection } from "../components/sections/skills";
 import ProjectsSection from "../components/sections/projects";
 import CustomersSection from "../components/sections/customers";
 
-function IndexPage() {
+export default function IndexPage() {
   return (
     <Layout>
       <Nav />
@@ -21,5 +21,3 @@ function IndexPage() {
     </Layout>
   );
 }
-
-export default IndexPage;

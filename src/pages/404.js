@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layouts/Layout";
 
-function _404Page() {
+export default function _404Page() {
   return (
     <Layout>
       <div className="not-found">
@@ -14,5 +14,3 @@ function _404Page() {
     </Layout>
   );
 }
-
-export default _404Page;
