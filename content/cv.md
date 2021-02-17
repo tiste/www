@@ -2,7 +2,13 @@
 slug: cv
 ---
 
-- #### Freelance <small>– Adeo<br>Mars 2020 - À présent</small>
+- #### Freelance Software Engineer <small>– Adeo<br>Mars 2020 - À présent</small>
+
+  Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
+
+- #### Freelance Software Engineer <small>– Pumpkin<br>Juillet 2020 - Février 2021</small>
+
+  Construction du site institutionnel Pumpkin, permettant de mettre en avant les offres et avantages du service. Sur un socle Gatsby/Prismic, le site respecte les principes d'accessibilité, rapidité, et d'expérience utilisateur fluide.
 
 - #### Ingénieur Études et Développement <small>– Adeo (via OCTO)<br>Septembre 2018 - Février 2020</small>
 
