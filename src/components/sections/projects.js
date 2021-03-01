@@ -6,6 +6,13 @@ import Img from "gatsby-image";
 export default () => {
   const staticQuery = graphql`
     query {
+      _1a10: file(relativePath: { eq: "projects/1a10.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       javro: file(relativePath: { eq: "projects/javro.png" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
@@ -34,13 +41,6 @@ export default () => {
           }
         }
       }
-      git: file(relativePath: { eq: "projects/git.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `;
 
@@ -63,6 +63,21 @@ function ProjectsSection({ data }) {
 
       <div className="columns is-vcentered">
         <div className="column">
+          <Card title="1 à 10" link="https://1a10.app">
+            <Img fluid={data._1a10.childImageSharp.fluid} alt="1 à 10" />
+
+            <p>
+              Le 1 à 10 est une application de quiz pour jouer en famille ou
+              entre amis. Chaque joueur doit s'auto-estimer sur un thème de la
+              vie de tous les jours (fromage, bière, devinettes, etc...). Plus
+              la note est haute, plus c'est difficile, mais plus tu gagnes de
+              points !
+            </p>
+
+            <p>React Native, iOS, App Store</p>
+          </Card>
+        </div>
+        <div className="column is-hidden-tablet-only">
           <Card title="Javro" link="https://javro.github.io/">
             <Img fluid={data.javro.childImageSharp.fluid} alt="Javro" />
 
@@ -88,7 +103,7 @@ function ProjectsSection({ data }) {
               Cette application sera utile pour vous.
             </p>
 
-            <p>iOS, App Store</p>
+            <p>React Native, iOS, App Store</p>
           </Card>
         </div>
         <div className="column">
@@ -124,15 +139,6 @@ function ProjectsSection({ data }) {
             </p>
 
             <p>Continuous Integration, Quality</p>
-          </Card>
-        </div>
-        <div className="column is-hidden-tablet-only">
-          <Card title="git-101" link="https://talks.tiste.io/git-101">
-            <Img fluid={data.git.childImageSharp.fluid} alt="git-101" />
-
-            <p>Les basics de git</p>
-
-            <p>Talk</p>
           </Card>
         </div>
       </div>
