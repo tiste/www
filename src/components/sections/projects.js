@@ -6,6 +6,13 @@ import Img from "gatsby-image";
 export default () => {
   const staticQuery = graphql`
     query {
+      setlist_live: file(relativePath: { eq: "projects/setlist-live.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       _1a10: file(relativePath: { eq: "projects/1a10.png" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
@@ -34,13 +41,6 @@ export default () => {
           }
         }
       }
-      sheriff: file(relativePath: { eq: "projects/sheriff.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `;
 
@@ -63,7 +63,26 @@ function ProjectsSection({ data }) {
 
       <div className="columns is-vcentered">
         <div className="column">
-          <Card title="1 à 10" link="https://1a10.app">
+          <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
+            <Img
+              fluid={data.setlist_live.childImageSharp.fluid}
+              alt="Setlist Live"
+            />
+
+            <p>
+              Setlist Live est une application permettant à votre groupe de
+              musique de partager votre catalogue musical, et d'en construire
+              des setlists à parcourir EN LIVE pendant les concerts. Si vous
+              êtes chanteur, le morceau affichera les paroles, sinon, vous
+              pouvez lire votre tablature préférée ! Dès que le morceau change,
+              tout le monde change !
+            </p>
+
+            <p>React Native, iOS, App Store, Android</p>
+          </Card>
+        </div>
+        <div className="column">
+          <Card title="1 à 10" link="https://1a10.app" isApp={true}>
             <Img fluid={data._1a10.childImageSharp.fluid} alt="1 à 10" />
 
             <p>
@@ -74,7 +93,7 @@ function ProjectsSection({ data }) {
               points !
             </p>
 
-            <p>React Native, iOS, App Store</p>
+            <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
         <div className="column is-hidden-tablet-only">
@@ -90,7 +109,7 @@ function ProjectsSection({ data }) {
             <p>Electron, Kafka</p>
           </Card>
         </div>
-        <div className="column">
+        <div className="column is-hidden-tablet-only">
           <Card
             title="Swunitch"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
@@ -127,18 +146,6 @@ function ProjectsSection({ data }) {
             </p>
 
             <p>Talk</p>
-          </Card>
-        </div>
-        <div className="column is-hidden-tablet-only">
-          <Card title="Sheriff" link="https://sheriff.rocks">
-            <Img fluid={data.sheriff.childImageSharp.fluid} alt="Sheriff" />
-
-            <p>
-              Best way to monitor your Pull Request health, without letting
-              anyone pass the Sheriff.
-            </p>
-
-            <p>Continuous Integration, Quality</p>
           </Card>
         </div>
       </div>

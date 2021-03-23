@@ -40,7 +40,7 @@ function Layout(props) {
         />
         <meta
           name="viewport"
-          content="width=device-width, minimum-scale=1, user-scalable=no, minimal-ui"
+          content="width=device-width, minimum-scale=1, minimal-ui"
         />
       </Helmet>
       <Seo />
