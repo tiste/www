@@ -37,7 +37,7 @@ function HeroSection({ data }) {
                   <strong>Baptiste Lecocq</strong>
                 </h1>
 
-                <p>
+                <p className="is-greater">
                   J'aide les personnes et équipes à définir et répondre à{" "}
                   <strong>leurs besoins</strong>. J'y parviens en travaillant
                   pour et avec ces personnes en mettant en place un
@@ -45,13 +45,13 @@ function HeroSection({ data }) {
                   <strong>l'excellence technique</strong>.
                 </p>
 
-                <p>
+                <p className="is-greater">
                   Je considère réussir cette mission en suivant des indicateurs
                   liés à la <strong>satisfaction client</strong> et la{" "}
                   <strong>qualité logicielle</strong>.
                 </p>
 
-                <p>
+                <p className="is-greater">
                   Je suis certifié{" "}
                   <a
                     className="emphase has-text-underlined"

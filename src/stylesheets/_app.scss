@@ -2,8 +2,8 @@ b,
 strong,
 .emphase,
 .emphase * {
-  color: $primary !important;
-  font-weight: bold !important;
+  color: darken($primary, 5%) !important;
+  font-weight: bolder !important;
 }
 
 .title strong,
@@ -12,6 +12,11 @@ h2 strong {
   background: -webkit-linear-gradient(135deg, darken($primary, 7%), $primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.is-greater {
+  font-weight: 500 !important;
+  font-size: 1.25em;
 }
 
 .skills {

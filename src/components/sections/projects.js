@@ -61,7 +61,7 @@ function ProjectsSection({ data }) {
         </h2>
       </div>
 
-      <div className="columns is-vcentered">
+      <div className="columns is-vcentered has-text-justified">
         <div className="column">
           <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
             <Img
@@ -72,10 +72,12 @@ function ProjectsSection({ data }) {
             <p>
               Setlist Live est une application permettant à votre groupe de
               musique de partager votre catalogue musical, et d'en construire
-              des setlists à parcourir EN LIVE pendant les concerts. Si vous
-              êtes chanteur, le morceau affichera les paroles, sinon, vous
-              pouvez lire votre tablature préférée ! Dès que le morceau change,
-              tout le monde change !
+              des setlists à parcourir EN LIVE pendant les concerts.
+            </p>
+            <p>
+              Si vous êtes chanteur, le morceau affichera les paroles, sinon,
+              vous pouvez lire votre tablature préférée ! Dès que le morceau
+              change, tout le monde change !
             </p>
 
             <p>React Native, iOS, App Store, Android</p>
@@ -139,6 +141,8 @@ function ProjectsSection({ data }) {
               Après de longs mois d’application de “Scrum by the book” dans une
               feature team de 5 personnes, tout est très bien maîtrisé. Un peu
               trop ? Le cadre du Scrum s’est dressé comme un mur devant nous.
+            </p>
+            <p>
               Quelques semaines plus tard, nous avions assisté à une évolution
               des mentalités et des rituels. Nous sommes devenus une équipe plus
               Agile qu’hier, et en constante évolution. Vous voulez aussi
