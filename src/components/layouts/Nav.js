@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../images/favicon.svg";
 import { Link } from "gatsby";
 
-export default () => {
+export function Nav() {
   const [navIsOpened, setNavIsOpened] = useState(false);
 
   function toggleNav() {
@@ -41,4 +41,4 @@ export default () => {
       </div>
     </nav>
   );
-};
+}

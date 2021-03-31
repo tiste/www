@@ -1,58 +1,8 @@
 import React from "react";
 import { Card } from "../Card";
-import { graphql, StaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 
-export default () => {
-  const staticQuery = graphql`
-    query {
-      setlist_live: file(relativePath: { eq: "projects/setlist-live.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      _1a10: file(relativePath: { eq: "projects/1a10.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      javro: file(relativePath: { eq: "projects/javro.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      swunitch: file(relativePath: { eq: "projects/swunitch.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      scrum: file(relativePath: { eq: "projects/scrum.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `;
-
-  return (
-    <StaticQuery
-      query={`${staticQuery}`}
-      render={(data) => <ProjectsSection data={data} />}
-    />
-  );
-};
-
-function ProjectsSection({ data }) {
+export function ProjectsSection() {
   return (
     <section className="section section-gray">
       <div className="container content is-hidden-tablet">
@@ -64,9 +14,12 @@ function ProjectsSection({ data }) {
       <div className="columns is-vcentered has-text-justified">
         <div className="column">
           <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
-            <Img
-              fluid={data.setlist_live.childImageSharp.fluid}
+            <StaticImage
+              src="../../images/projects/setlist-live.png"
               alt="Setlist Live"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
             />
 
             <p>
@@ -85,7 +38,13 @@ function ProjectsSection({ data }) {
         </div>
         <div className="column">
           <Card title="1 à 10" link="https://1a10.app" isApp={true}>
-            <Img fluid={data._1a10.childImageSharp.fluid} alt="1 à 10" />
+            <StaticImage
+              src="../../images/projects/1a10.png"
+              alt="1 à 10"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
 
             <p>
               Le 1 à 10 est une application de quiz pour jouer en famille ou
@@ -100,7 +59,13 @@ function ProjectsSection({ data }) {
         </div>
         <div className="column is-hidden-tablet-only">
           <Card title="Javro" link="https://javro.github.io/">
-            <Img fluid={data.javro.childImageSharp.fluid} alt="Javro" />
+            <StaticImage
+              src="../../images/projects/javro.png"
+              alt="Javro"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
 
             <p>
               Javro est une application permettant d'écrire des fichiers Avro
@@ -116,7 +81,13 @@ function ProjectsSection({ data }) {
             title="Swunitch"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
           >
-            <Img fluid={data.swunitch.childImageSharp.fluid} alt="Swunitch" />
+            <StaticImage
+              src="../../images/projects/swunitch.png"
+              alt="Swunitch"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
 
             <p>
               Marre de convertir les minutes par kilomètres en km/h ? Vos amis
@@ -132,9 +103,12 @@ function ProjectsSection({ data }) {
             title="Le Scrum est une fenêtre"
             link="https://talks.tiste.io/le-scrum-est-une-fenetre/#/"
           >
-            <Img
-              fluid={data.scrum.childImageSharp.fluid}
-              alt="Le Scrum est une fenêtre"
+            <StaticImage
+              src="../../images/projects/scrum.png"
+              alt="Scrum"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
             />
 
             <p>

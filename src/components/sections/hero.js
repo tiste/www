@@ -1,29 +1,7 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 
-export default () => {
-  const staticQuery = graphql`
-    query {
-      me: file(relativePath: { eq: "me.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `;
-
-  return (
-    <StaticQuery
-      query={`${staticQuery}`}
-      render={(data) => <HeroSection data={data} />}
-    />
-  );
-};
-
-function HeroSection({ data }) {
+export default function Hero() {
   return (
     <>
       <section className="hero">
@@ -102,9 +80,12 @@ function HeroSection({ data }) {
               </div>
 
               <div className="column">
-                <Img
-                  fluid={data.me.childImageSharp.fluid}
+                <StaticImage
+                  src="../../images/me.jpeg"
                   alt="Baptiste Lecocq"
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={700}
                 />
               </div>
             </div>

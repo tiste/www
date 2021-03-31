@@ -57,6 +57,10 @@ h2 strong {
   background-color: #f1f2f5;
   border-top: 1px solid rgba(18, 36, 67, 0.15);
   border-bottom: 1px solid rgba(18, 36, 67, 0.15);
+
+  @include prefers-scheme(dark) {
+    background-color: #292929;
+  }
 }
 
 footer svg {

@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/layouts/Layout";
-import Nav from "../components/layouts/Nav";
-import Footer from "../components/layouts/Footer";
 import ResumeSection from "../components/sections/resume";
 import CustomersSection from "../components/sections/customers";
+import { Footer } from "../components/layouts/Footer";
+import { Nav } from "../components/layouts/Nav";
 
 export default function CVPage() {
   return (

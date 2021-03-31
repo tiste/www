@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export default () => {
+export default function Customers() {
   const staticQuery = graphql`
-    query {
+    {
       allFile(
         filter: { relativePath: { glob: "customers/*" } }
         sort: { fields: name }
@@ -13,9 +13,11 @@ export default () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 250) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                width: 250
+                layout: CONSTRAINED
+                placeholder: BLURRED
+              )
             }
           }
         }
@@ -29,14 +31,17 @@ export default () => {
       render={(data) => <CustomersSection data={data} />}
     />
   );
-};
+}
 
 function getCustomers(data, colorMode) {
   return data.allFile.edges
     .filter(({ node }) => node.name.endsWith(colorMode))
     .map(({ node }, i) => (
       <div key={i} className="column is-4-mobile is-2-tablet">
-        <Img fluid={node.childImageSharp.fluid} alt={node.name} />
+        <GatsbyImage
+          image={node.childImageSharp.gatsbyImageData}
+          alt={node.name}
+        />
       </div>
     ));
 }
