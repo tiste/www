@@ -57,23 +57,29 @@ export function ProjectsSection() {
             <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
-        <div className="column is-hidden-tablet-only">
-          <Card title="Javro" link="https://javro.github.io/">
+        <div className="column">
+          <Card title="Pumpkin" link="https://pumpkin-app.co">
             <StaticImage
-              src="../../images/projects/javro.png"
-              alt="Javro"
+              src="../../images/projects/pumpkin.png"
+              alt="Pumpkin"
               placeholder="blurred"
               layout="constrained"
               width={400}
+              style={{
+                border: "5px solid #34b3e6",
+                borderBottom: 0,
+                borderRadius: "0.25rem",
+              }}
             />
 
             <p>
-              Javro est une application permettant d'écrire des fichiers Avro
-              avec simplicité, de les valider, et de les visualiser sous la
-              forme d'un exemple JSON.
+              Construction du site institutionnel Pumpkin, permettant de mettre
+              en avant les offres et avantages du service. Sur un socle
+              Gatsby/Prismic, le site respecte les principes d'accessibilité,
+              rapidité, et d'expérience utilisateur fluide.
             </p>
 
-            <p>Electron, Kafka</p>
+            <p>Gatsby, Prismic</p>
           </Card>
         </div>
         <div className="column is-hidden-tablet-only">
@@ -98,7 +104,7 @@ export function ProjectsSection() {
             <p>React Native, iOS, App Store</p>
           </Card>
         </div>
-        <div className="column">
+        <div className="column is-hidden-tablet-only">
           <Card
             title="Le Scrum est une fenêtre"
             link="https://talks.tiste.io/le-scrum-est-une-fenetre/#/"
