@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/logo.svg";
+import { StaticImage } from "gatsby-plugin-image";
 
 export function Footer() {
   return (
@@ -7,7 +7,12 @@ export function Footer() {
       <div className="container content">
         <div className="columns is-centered">
           <div className="column is-4 has-text-centered">
-            <Logo />
+            <StaticImage
+              src="../../images/logo.svg"
+              alt="Full logo"
+              placeholder="blurred"
+              width={250}
+            />
           </div>
         </div>
       </div>

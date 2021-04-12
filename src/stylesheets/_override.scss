@@ -25,6 +25,10 @@ svg {
   width: 100%;
 }
 
+.navbar-item img {
+  max-height: none;
+}
+
 .navbar-brand .navbar-item {
   padding-right: 2rem;
   width: 100px;

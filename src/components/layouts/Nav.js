@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../images/favicon.svg";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 export function Nav() {
   const [navIsOpened, setNavIsOpened] = useState(false);
@@ -14,7 +14,13 @@ export function Nav() {
       <div className="container">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <Logo />
+            <StaticImage
+              src="../../images/favicon.svg"
+              alt="Logo"
+              placeholder="blurred"
+              width={68}
+              height={68}
+            />
           </Link>
 
           <div
