@@ -38,10 +38,13 @@ function getCustomers(data, colorMode) {
     .filter(({ node }) => node.name.endsWith(colorMode))
     .map(({ node }, i) => (
       <div key={i} className="column is-4-mobile is-2-tablet">
-        <GatsbyImage
-          image={node.childImageSharp.gatsbyImageData}
-          alt={node.name}
-        />
+        {/* Wanted <a> tag, for Google Snippet */}
+        <a href={"/cv#:~:text=" + node.name.split("-")[0]}>
+          <GatsbyImage
+            image={node.childImageSharp.gatsbyImageData}
+            alt={node.name}
+          />
+        </a>
       </div>
     ));
 }
