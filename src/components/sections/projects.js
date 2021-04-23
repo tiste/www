@@ -11,7 +11,7 @@ export function ProjectsSection() {
         </h2>
       </div>
 
-      <div className="columns is-vcentered has-text-justified">
+      <div className="columns is-mobile is-vcentered has-text-justified carousel">
         <div className="column">
           <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
             <StaticImage
@@ -82,7 +82,7 @@ export function ProjectsSection() {
             <p>Gatsby, Prismic</p>
           </Card>
         </div>
-        <div className="column is-hidden-tablet-only">
+        <div className="column">
           <Card
             title="Swunitch"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
@@ -104,7 +104,7 @@ export function ProjectsSection() {
             <p>React Native, iOS, App Store</p>
           </Card>
         </div>
-        <div className="column is-hidden-tablet-only">
+        <div className="column">
           <Card
             title="Le Scrum est une fenêtre"
             link="https://talks.tiste.io/le-scrum-est-une-fenetre/#/"

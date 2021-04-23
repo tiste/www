@@ -24,6 +24,26 @@ h2 strong {
   margin: 0 auto;
 }
 
+.carousel {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @include mobile {
+    align-items: start !important;
+  }
+
+  .column {
+    flex: 0 0 auto;
+    width: 350px;
+    margin-bottom: 2rem;
+
+    @include mobile {
+      width: 300px;
+    }
+  }
+}
+
 .resume ul {
   list-style: none;
   display: flex;
