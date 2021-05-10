@@ -12,6 +12,7 @@ h2 strong {
   background: -webkit-linear-gradient(135deg, darken($primary, 7%), $primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 .is-greater {
