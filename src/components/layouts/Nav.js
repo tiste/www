@@ -42,6 +42,9 @@ export function Nav() {
             <Link className="navbar-item" to="/cv">
               Mes missions
             </Link>
+            <Link className="navbar-item" to="/contact">
+              <span className="button is-primary is-light">Contactez-moi</span>
+            </Link>
           </div>
         </div>
       </div>
