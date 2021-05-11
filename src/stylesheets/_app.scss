@@ -30,6 +30,10 @@ h2 strong {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
+  @include from(1800px) {
+    justify-content: center;
+  }
+
   @include mobile {
     align-items: start !important;
   }

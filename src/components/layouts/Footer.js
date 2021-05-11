@@ -8,7 +8,15 @@ export function Footer() {
         <div className="columns is-centered">
           <div className="column is-4 has-text-centered">
             <StaticImage
+              className="is-light-mode"
               src="../../images/logo.svg"
+              alt="Full logo"
+              placeholder="blurred"
+              width={250}
+            />
+            <StaticImage
+              className="is-dark-mode"
+              src="../../images/logo-white.svg"
               alt="Full logo"
               placeholder="blurred"
               width={250}

@@ -19,7 +19,16 @@ export function Nav() {
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
             <StaticImage
+              className="is-light-mode"
               src="../../images/favicon.svg"
+              alt="Logo"
+              placeholder="blurred"
+              width={68}
+              height={68}
+            />
+            <StaticImage
+              className="is-dark-mode"
+              src="../../images/favicon-white.svg"
               alt="Logo"
               placeholder="blurred"
               width={68}
@@ -32,9 +41,9 @@ export function Nav() {
             role="presentation"
             onClick={() => toggleNav()}
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
           </div>
         </div>
 
@@ -47,7 +56,9 @@ export function Nav() {
               Mes missions
             </Link>
             <Link className="navbar-item" to="/contact">
-              <span className="button is-primary is-light">Contactez-moi</span>
+              <span className="button is-primary is-light is-outlined">
+                Contactez-moi
+              </span>
             </Link>
           </div>
         </div>

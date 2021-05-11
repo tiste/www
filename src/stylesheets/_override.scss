@@ -56,6 +56,10 @@ svg {
   .container {
     padding: $column-gap;
   }
+
+  @include prefers-scheme(dark) {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .content {
