@@ -14,10 +14,10 @@
 }
 
 .hero-body {
-  padding-top: 3rem !important;
+  margin-top: 3rem;
 
   @include mobile {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
 }
 
@@ -30,22 +30,32 @@ svg {
 }
 
 .navbar-brand .navbar-item {
-  padding-right: 2rem;
   width: 100px;
+  padding-right: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
 
   @include desktop {
-    padding-top: 15px;
     padding-left: 0;
   }
 }
 
-.navbar-menu .navbar-item {
-  font-weight: bold;
-  margin-right: 1rem;
+.navbar-menu {
+  box-shadow: none;
+
+  .navbar-item {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
 }
 
-.navbar .container {
-  padding: $column-gap;
+.navbar {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: saturate(150%) blur(15px);
+
+  .container {
+    padding: $column-gap;
+  }
 }
 
 .content {

@@ -31,7 +31,7 @@ function LayoutComponent(props) {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: "fr" }}>
+      <Helmet htmlAttributes={{ lang: "fr", class: "has-navbar-fixed-top" }}>
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta
