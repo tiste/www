@@ -83,6 +83,25 @@ export function ProjectsSection() {
           </Card>
         </div>
         <div className="column">
+          <Card title="Javro" link="https://javro.github.io/">
+            <StaticImage
+              src="../../images/projects/javro.png"
+              alt="Javro"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
+
+            <p>
+              Javro est une application permettant d'écrire des fichiers Avro
+              avec simplicité, de les valider, et de les visualiser sous la
+              forme d'un exemple JSON.
+            </p>
+
+            <p>Electron, Kafka</p>
+          </Card>
+        </div>
+        <div className="column">
           <Card
             title="Swunitch"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
