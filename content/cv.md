@@ -6,6 +6,8 @@ slug: cv
 
   Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
 
+  Tech lead de la brique transverse Knowledge Graph.
+
 - #### Freelance Software Engineer <small>– Pumpkin<br>Juillet 2020 - Février 2021</small>
 
   Construction du site institutionnel Pumpkin, permettant de mettre en avant les offres et avantages du service. Sur un socle Gatsby/Prismic, le site respecte les principes d'accessibilité, rapidité, et d'expérience utilisateur fluide.
@@ -14,7 +16,7 @@ slug: cv
 
   Refonte des briques de publication omnicanal d'Adeo. Les mots d'ordre : user centric et craftsmanship. Mise en place d'ateliers sur les besoins utilisateurs, de DDD, et description d'un modèle C4. Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
 
-  Produit actuellement en production respectant les SLO (99% des requêtes en moins de 60ms).
+  Création d'un nouveau produit de gestion des offres de la Marketplace Leroy Merlin, actuellement en production respectant les SLO (99% des requêtes en moins de 60ms).
 
 - #### Enseignant <small>– FGES (La Catho)<br>Septembre 2019 - Février 2020</small>
 
