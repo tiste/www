@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Baptiste Lecocq, ingénieur logiciel indépendant à Lille",
+    description:
+      "Consultant informatique Lille. J'aide les personnes et équipes à définir et répondre à leurs besoins. J' y parviens en travaillant pour et avec ces personnes en mettant en place un environnement favorisant les échanges et l'excellence technique. Je considère réussir cette mission en suivant des indicateurs liés à la satisfaction client et la qualité logicielle.",
     siteUrl: "https://tiste.io",
   },
   plugins: [
