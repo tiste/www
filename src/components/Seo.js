@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { graphql, StaticQuery } from "gatsby";
 
-export default function Seo(props) {
+export function Seo(props) {
   const staticQuery = graphql`
     query SiteQuery {
       site {

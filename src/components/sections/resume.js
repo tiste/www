@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link, StaticQuery } from "gatsby";
 
-export default function Resume(props) {
+export function ResumeSection(props) {
   const staticQuery = graphql`
     query {
       markdownRemark(frontmatter: { slug: { eq: "cv" } }) {
@@ -13,12 +13,12 @@ export default function Resume(props) {
   return (
     <StaticQuery
       query={`${staticQuery}`}
-      render={(data) => <ResumeSection data={data} {...props} />}
+      render={(data) => <ResumeComponent data={data} {...props} />}
     />
   );
 }
 
-function ResumeSection({ data, crop }) {
+function ResumeComponent({ data, crop }) {
   return (
     <section className="section">
       <div className="container content">

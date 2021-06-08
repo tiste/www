@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layouts/Layout";
+import { Layout } from "../components/layouts/Layout";
 import { Nav } from "../components/layouts/Nav";
 
 export default function _404Page() {

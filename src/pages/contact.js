@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Layout from "../components/layouts/Layout";
-import CustomersSection from "../components/sections/customers";
+import { Layout } from "../components/layouts/Layout";
+import { CustomersSection } from "../components/sections/customers";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
 import { post } from "axios";

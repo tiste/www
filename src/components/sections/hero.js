@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-export default function Hero() {
+export function HeroSection() {
   return (
     <section className="hero">
       <div className="hero-body">

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function Customers() {
+export function CustomersSection() {
   const staticQuery = graphql`
     {
       allFile(
@@ -28,7 +28,7 @@ export default function Customers() {
   return (
     <StaticQuery
       query={`${staticQuery}`}
-      render={(data) => <CustomersSection data={data} />}
+      render={(data) => <CustomersComponent data={data} />}
     />
   );
 }
@@ -49,7 +49,7 @@ function getCustomers(data, colorMode) {
     ));
 }
 
-function CustomersSection({ data }) {
+function CustomersComponent({ data }) {
   return (
     <section className="section">
       <div className="container content">

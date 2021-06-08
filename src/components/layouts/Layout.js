@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import "../../stylesheets/main.scss";
-import Seo from "../Seo";
+import { Seo } from "../Seo";
 
-export default function Layout(props) {
+export function Layout(props) {
   return (
     <>
       <Seo title={props.title} />
