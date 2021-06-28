@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export function CustomersSection() {
@@ -33,18 +33,20 @@ export function CustomersSection() {
   );
 }
 
-function getCustomers(data, colorMode) {
+export function getCustomers(data, colorMode, filter = "") {
   return data.allFile.edges
     .filter(({ node }) => node.name.endsWith(colorMode))
+    .filter(({ node }) =>
+      node.name.toLowerCase().includes(filter.substr(0, 4).toLowerCase())
+    )
     .map(({ node }, i) => (
       <div key={i} className="column is-4-mobile is-2-tablet">
-        {/* Wanted <a> tag, for Google Snippet */}
-        <a href={"/cv#:~:text=" + node.name.split("-")[0]}>
+        <Link to={`/missions/${node.name.split(".")[0]}`}>
           <GatsbyImage
             image={node.childImageSharp.gatsbyImageData}
             alt={node.name}
           />
-        </a>
+        </Link>
       </div>
     ));
 }

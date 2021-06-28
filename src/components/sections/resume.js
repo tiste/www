@@ -1,24 +1,8 @@
 import React from "react";
-import { graphql, Link, StaticQuery } from "gatsby";
+import { CV } from "../../../content/cv";
+import { Link } from "gatsby";
 
-export function ResumeSection(props) {
-  const staticQuery = graphql`
-    query {
-      markdownRemark(frontmatter: { slug: { eq: "cv" } }) {
-        html
-      }
-    }
-  `;
-
-  return (
-    <StaticQuery
-      query={`${staticQuery}`}
-      render={(data) => <ResumeComponent data={data} {...props} />}
-    />
-  );
-}
-
-function ResumeComponent({ data, crop }) {
+export function ResumeSection({ crop }) {
   return (
     <section className="section">
       <div className="container content">
@@ -26,14 +10,33 @@ function ResumeComponent({ data, crop }) {
           Mon parcours <strong>professionnel</strong>
         </h2>
 
-        <div
-          className={"resume " + (crop ? "is-cropped" : "")}
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
+        <div className={"resume " + (crop ? "is-cropped" : "")}>
+          <ul>
+            {CV.map((mission, index) => (
+              <li key={index}>
+                <h4>
+                  {mission.title}{" "}
+                  <small>
+                    – {mission.customer}
+                    <br />
+                    {mission.date}
+                  </small>
+                </h4>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: mission.description
+                      .replace("\n", "")
+                      .replace(/\n/g, "<br />"),
+                  }}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       {crop && (
         <div className="has-text-centered">
-          <Link className="button is-primary is-medium" to="/cv">
+          <Link className="button is-primary is-medium" to="/missions">
             Voir les autres missions
           </Link>
         </div>

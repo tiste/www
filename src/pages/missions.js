@@ -5,7 +5,7 @@ import { CustomersSection } from "../components/sections/customers";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
 
-export default function CVPage() {
+export default function MissionsPage() {
   return (
     <Layout title="Expérience professionnelle">
       <Nav />

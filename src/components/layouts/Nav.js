@@ -49,13 +49,26 @@ export function Nav() {
 
         <div className={"navbar-menu " + (navIsOpened ? "is-active" : "")}>
           <div className="navbar-start">
-            <Link className="navbar-item" to="/">
+            <Link
+              className="navbar-item"
+              activeClassName="has-text-primary"
+              to="/"
+            >
               Accueil
             </Link>
-            <Link className="navbar-item" to="/cv">
+            <Link
+              className="navbar-item"
+              activeClassName="has-text-primary"
+              partiallyActive={true}
+              to="/missions"
+            >
               Mes missions
             </Link>
-            <Link className="navbar-item" to="/contact">
+            <Link
+              className="navbar-item"
+              activeClassName="has-text-primary"
+              to="/contact"
+            >
               <span className="button is-primary is-light is-outlined">
                 Contactez-moi
               </span>
