@@ -120,14 +120,22 @@ export function ProjectsSection() {
               Cette application sera utile pour vous.
             </p>
             <p>
-              Vous pouvez aussi tester la{" "}
+              Vous pouvez téléchargez la version{" "}
+              <a href="https://apps.apple.com/fr/app/swunitch/id1488948143">
+                iOS
+              </a>{" "}
+              et{" "}
+              <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
+                Android
+              </a>
+              , ou tester la{" "}
               <a href="https://convertisseur-temps-course.tiste.io">
                 version web
               </a>
               .
             </p>
 
-            <p>React Native, iOS, App Store</p>
+            <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
         <div className="column">
