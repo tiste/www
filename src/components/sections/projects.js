@@ -103,12 +103,12 @@ export function ProjectsSection() {
         </div>
         <div className="column">
           <Card
-            title="Swunitch"
+            title="Convertisseur temps course"
             link="https://apps.apple.com/fr/app/swunitch/id1488948143"
           >
             <StaticImage
               src="../../images/projects/swunitch.png"
-              alt="Swunitch"
+              alt="Convertisseur temps course"
               placeholder="blurred"
               layout="constrained"
               width={400}
@@ -118,6 +118,13 @@ export function ProjectsSection() {
               Marre de convertir les minutes par kilomètres en km/h ? Vos amis
               vous demandent souvent combien 50min sur 10km rendent en allure ?
               Cette application sera utile pour vous.
+            </p>
+            <p>
+              Vous pouvez aussi tester la{" "}
+              <a href="https://convertisseur-temps-course.tiste.io">
+                version web
+              </a>
+              .
             </p>
 
             <p>React Native, iOS, App Store</p>
