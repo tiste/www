@@ -1,6 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export function Card({ title, link, children, isApp }) {
+export function Card(props) {
+  const { title, link, children, isApp } = props;
   const [image, ...rest] = children;
   const footer = rest.pop();
 
@@ -37,7 +39,7 @@ export function Card({ title, link, children, isApp }) {
       <div className="card-content" {...categoryTags}>
         <p className="title">
           <a href={link} {...linkTags}>
-            {title}
+            <span itemProp="name">{title}</span>
           </a>
         </p>
         <div className="content" {...osTags}>
@@ -55,3 +57,9 @@ export function Card({ title, link, children, isApp }) {
     </div>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  isApp: PropTypes.bool,
+};

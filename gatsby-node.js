@@ -2,9 +2,10 @@ const path = require("path");
 const slugify = require("slugify");
 const { CV } = require("./content/cv");
 
-exports.createPages = async ({ actions }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
+  // CV
   const createdCustomers = [];
 
   CV.forEach((mission, index) => {
@@ -20,5 +21,30 @@ exports.createPages = async ({ actions }) => {
     });
 
     createdCustomers.push(customer);
+  });
+
+  // Projects
+  const projects = await graphql(`
+    {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "project" } } }) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  projects.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: path.resolve(__dirname, "src/templates/project.js"),
+      context: {
+        slug: node.frontmatter.slug,
+      },
+    });
   });
 };

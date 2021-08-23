@@ -13,6 +13,44 @@ export function ProjectsSection() {
 
       <div className="columns is-mobile is-vcentered has-text-justified carousel">
         <div className="column">
+          <Card
+            title="Convertisseur temps course"
+            link="/projects/swunitch"
+            isApp={true}
+          >
+            <StaticImage
+              src="../../images/projects/swunitch.png"
+              alt="Convertisseur temps course"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
+
+            <p>
+              Marre de convertir les minutes par kilomètres en km/h ? Vos amis
+              vous demandent souvent combien 50min sur 10km rendent en allure ?
+              Cette application sera utile pour vous.
+            </p>
+            <p>
+              Vous pouvez téléchargez la version{" "}
+              <a href="https://apps.apple.com/fr/app/swunitch/id1488948143">
+                iOS
+              </a>{" "}
+              et{" "}
+              <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
+                Android
+              </a>
+              , ou tester la{" "}
+              <a href="https://convertisseur-temps-course.tiste.io">
+                version web
+              </a>
+              .
+            </p>
+
+            <p>React Native, iOS, App Store, Android</p>
+          </Card>
+        </div>
+        <div className="column">
           <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
             <StaticImage
               src="../../images/projects/setlist-live.png"
@@ -99,43 +137,6 @@ export function ProjectsSection() {
             </p>
 
             <p>Electron, Kafka</p>
-          </Card>
-        </div>
-        <div className="column">
-          <Card
-            title="Convertisseur temps course"
-            link="https://apps.apple.com/fr/app/swunitch/id1488948143"
-          >
-            <StaticImage
-              src="../../images/projects/swunitch.png"
-              alt="Convertisseur temps course"
-              placeholder="blurred"
-              layout="constrained"
-              width={400}
-            />
-
-            <p>
-              Marre de convertir les minutes par kilomètres en km/h ? Vos amis
-              vous demandent souvent combien 50min sur 10km rendent en allure ?
-              Cette application sera utile pour vous.
-            </p>
-            <p>
-              Vous pouvez téléchargez la version{" "}
-              <a href="https://apps.apple.com/fr/app/swunitch/id1488948143">
-                iOS
-              </a>{" "}
-              et{" "}
-              <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
-                Android
-              </a>
-              , ou tester la{" "}
-              <a href="https://convertisseur-temps-course.tiste.io">
-                version web
-              </a>
-              .
-            </p>
-
-            <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
         <div className="column">
