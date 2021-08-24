@@ -61,7 +61,7 @@ export function HeroSection() {
                 ) et{" "}
                 <a
                   className="emphase has-text-underlined"
-                  href="https://www.scrum.org/certificates/302722"
+                  href="https://www.credly.com/badges/87112e73-4dcc-43be-8560-3355ba4e298b"
                 >
                   Professional Scrum Master I
                 </a>
