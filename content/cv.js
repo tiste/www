@@ -12,7 +12,7 @@ module.exports.CV = [
   {
     title: "Freelance Software Engineer",
     customer: "Pumpkin",
-    date: "Juillet 2020 - Février 2021",
+    date: "Juillet 2020 - Octobre 2021",
     description: `
   Construction du site institutionnel Pumpkin, permettant de mettre en avant les offres et avantages du service. Sur un socle Gatsby/Prismic, le site respecte les principes d'accessibilité, rapidité, et d'expérience utilisateur fluide.
 `,
