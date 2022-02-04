@@ -13,6 +13,25 @@ export function ProjectsSection() {
 
       <div className="columns is-mobile is-vcentered has-text-justified carousel">
         <div className="column">
+          <Card title="Yahtzee" link="https://yahtzee.game">
+            <StaticImage
+              src="../../images/projects/yahtzee.png"
+              alt="Yahtzee"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
+
+            <p>
+              Yahtzee en 3D est un jeu de dés où il faut faire le maximum de
+              points en validant des combinaisons. Vous pouvez y jouer seul, à
+              plusieurs en local, et même en multi-joueur.
+            </p>
+
+            <p>React, Three.js</p>
+          </Card>
+        </div>
+        <div className="column">
           <Card
             title="Convertisseur temps course"
             link="/projects/swunitch"
