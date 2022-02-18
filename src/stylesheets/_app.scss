@@ -1,3 +1,5 @@
+@use "sass:list";
+
 b,
 strong,
 .emphase,
@@ -20,11 +22,22 @@ h2 strong {
   font-size: 1.25em;
 }
 
+.projects-section {
+  padding-left: 0;
+  padding-right: 0;
+
+  h2 {
+    margin-left: list.nth($section-padding, 2);
+  }
+}
+
 $projectCardSize: 350;
 .carousel {
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  padding-left: list.nth($section-padding-desktop, 1);
+  padding-right: list.nth($section-padding-desktop, 1);
 
   @include from(#{$projectCardSize * 6}px) {
     justify-content: center;
@@ -32,6 +45,8 @@ $projectCardSize: 350;
 
   @include mobile {
     align-items: start !important;
+    padding-left: list.nth($section-padding, 2);
+    padding-right: list.nth($section-padding, 2);
   }
 
   .column {

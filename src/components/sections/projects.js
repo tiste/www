@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export function ProjectsSection() {
   return (
-    <section className="section section-gray">
+    <section className="section section-gray projects-section">
       <div className="container content is-hidden-tablet">
         <h2>
           Mes projets <strong>phares</strong>
