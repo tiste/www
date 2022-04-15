@@ -42,6 +42,7 @@ export default function ProjectPage({ data }) {
                   href={frontmatter.ios}
                   className="button is-primary is-rounded is-small mt-3 mr-3"
                   itemProp="url"
+                  target="_blank"
                 >
                   <span>Téléchargez pour iPhone</span>
                   <span className="icon" role="img" aria-label="phone">
@@ -53,6 +54,7 @@ export default function ProjectPage({ data }) {
                   href={frontmatter.android}
                   className="button is-primary is-rounded is-small mt-3 mr-3"
                   itemProp="url"
+                  target="_blank"
                 >
                   <span>Téléchargez pour Android</span>
                   <span className="icon" role="img" aria-label="phone">
@@ -64,6 +66,7 @@ export default function ProjectPage({ data }) {
                   href={frontmatter.web}
                   className="button is-primary is-rounded is-small mt-3"
                   itemProp="url"
+                  target="_blank"
                 >
                   <span>Voir sur le web</span>
                   <span className="icon" role="img" aria-label="computer">
