@@ -43,6 +43,7 @@ export default function ProjectPage({ data }) {
                   className="button is-primary is-rounded is-small mt-3 mr-3"
                   itemProp="url"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span>Téléchargez pour iPhone</span>
                   <span className="icon" role="img" aria-label="phone">
@@ -55,6 +56,7 @@ export default function ProjectPage({ data }) {
                   className="button is-primary is-rounded is-small mt-3 mr-3"
                   itemProp="url"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span>Téléchargez pour Android</span>
                   <span className="icon" role="img" aria-label="phone">
@@ -67,6 +69,7 @@ export default function ProjectPage({ data }) {
                   className="button is-primary is-rounded is-small mt-3"
                   itemProp="url"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span>Voir sur le web</span>
                   <span className="icon" role="img" aria-label="computer">

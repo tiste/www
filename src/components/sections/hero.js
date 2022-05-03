@@ -1,8 +1,36 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import { InfoCircle } from "../InfoCircle";
 
 export function HeroSection() {
+  const knowledgeEngineering = (
+    <>
+      (
+      <a
+        className="emphase has-text-underlined"
+        href="https://www.credential.net/4a384db7-3355-421f-9023-73a9f3296d38"
+      >
+        Knowledge Engineering Training
+      </a>
+      ,{" "}
+      <a
+        className="emphase has-text-underlined"
+        href="https://www.credential.net/8b189a15-de52-45d7-a506-e7a2892a58e8"
+      >
+        Semantic Web Training
+      </a>
+      ,{" "}
+      <a
+        className="emphase has-text-underlined"
+        href="https://graphacademy.neo4j.com/certificates/d6dd1ef3184ad6ba22690ea499dbb406101651b8475c4498d9af34b10e14d7d3.pdf"
+      >
+        Neo4j Professional
+      </a>
+      )
+    </>
+  );
+
   return (
     <section className="hero">
       <div className="hero-body">
@@ -37,28 +65,8 @@ export function HeroSection() {
                 >
                   Pratiques du développement logiciel de qualité
                 </a>
-                , aux technologies du Knowledge Engineering (
-                <a
-                  className="emphase has-text-underlined"
-                  href="https://www.credential.net/4a384db7-3355-421f-9023-73a9f3296d38"
-                >
-                  Knowledge Engineering Training
-                </a>
-                ,{" "}
-                <a
-                  className="emphase has-text-underlined"
-                  href="https://www.credential.net/8b189a15-de52-45d7-a506-e7a2892a58e8"
-                >
-                  Semantic Web Training
-                </a>
-                ,{" "}
-                <a
-                  className="emphase has-text-underlined"
-                  href="https://graphacademy.neo4j.com/certificates/d6dd1ef3184ad6ba22690ea499dbb406101651b8475c4498d9af34b10e14d7d3.pdf"
-                >
-                  Neo4j Professional
-                </a>
-                ) et{" "}
+                , aux technologies du Knowledge Engineering{" "}
+                <InfoCircle content={knowledgeEngineering} /> et{" "}
                 <a
                   className="emphase has-text-underlined"
                   href="https://www.credly.com/badges/87112e73-4dcc-43be-8560-3355ba4e298b"

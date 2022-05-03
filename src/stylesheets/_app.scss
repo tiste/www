@@ -99,6 +99,16 @@ $projectCardSize: 350;
   }
 }
 
+.info-circle {
+  cursor: pointer;
+
+  svg {
+    width: 25px;
+    margin-bottom: -8px;
+    margin-left: -3px;
+  }
+}
+
 footer svg {
   width: 200px;
 }

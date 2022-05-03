@@ -11,6 +11,14 @@ module.exports.CV = [
   },
   {
     title: "Freelance Software Engineer",
+    customer: "Cyclavet",
+    date: "September 2021 - À présent",
+    description: `
+  Création de l'application mobile
+`,
+  },
+  {
+    title: "Freelance Software Engineer",
     customer: "Pumpkin",
     date: "Juillet 2020 - Octobre 2021",
     description: `
