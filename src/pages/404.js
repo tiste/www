@@ -4,7 +4,7 @@ import { Nav } from "../components/layouts/Nav";
 
 export default function _404Page() {
   return (
-    <Layout>
+    <Layout title="Page non trouvée">
       <Nav />
       <section className="hero">
         <div className="hero-body">

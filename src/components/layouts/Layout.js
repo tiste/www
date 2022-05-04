@@ -7,7 +7,11 @@ import { Seo } from "../Seo";
 export function Layout(props) {
   return (
     <>
-      <Seo title={props.title} />
+      <Seo
+        title={props.title}
+        description={props.description}
+        meta={props.meta}
+      />
       <Helmet htmlAttributes={{ class: "has-navbar-fixed-top" }}>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -39,5 +43,7 @@ export function Layout(props) {
 
 Layout.propTypes = {
   title: PropTypes.string,
+  description: PropTypes.string,
   cssClasses: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
 };

@@ -47,7 +47,10 @@ export default function ContactPage() {
   }
 
   return (
-    <Layout title="On entre en contact">
+    <Layout
+      title="On entre en contact"
+      description="Un besoin ? Un problème ? Une question ? Je ferai mon maximum pour vous aider. Après presque 10 ans d'expérience dans le domaine du numérique, j'ai pu accompagner des plus ou moins grandes entreprises dans des problématiques techniques ou humaines."
+    >
       <Nav />
       <section className="hero">
         <div className="hero-body">
