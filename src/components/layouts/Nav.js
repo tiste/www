@@ -60,6 +60,14 @@ export function Nav() {
               className="navbar-item"
               activeClassName="has-text-primary"
               partiallyActive={true}
+              to="/projects"
+            >
+              Mes projets
+            </Link>
+            <Link
+              className="navbar-item"
+              activeClassName="has-text-primary"
+              partiallyActive={true}
               to="/missions"
             >
               Mes missions

@@ -31,6 +31,30 @@ h2 strong {
   }
 }
 
+.projects-page {
+  .carousel {
+    flex-wrap: wrap;
+
+    .column {
+      width: 50%;
+      margin-bottom: 0;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-image {
+      padding: 1rem;
+    }
+  }
+}
+
 $projectCardSize: 350;
 .carousel {
   flex-wrap: nowrap;
