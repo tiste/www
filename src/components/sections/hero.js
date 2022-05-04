@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { InfoCircle } from "../InfoCircle";
 
 export function HeroSection() {
-  const knowledgeEngineering = (
+  const knowledgeEngineeringInfo = (
     <>
       (
       <a
@@ -31,11 +31,24 @@ export function HeroSection() {
     </>
   );
 
+  const nodeJsInfo = (
+    <>
+      (
+      <a
+        className="emphase has-text-underlined"
+        href="https://www.credly.com/badges/4a38a7d8-dab5-45de-b27e-00a8937be3b9/public_url"
+      >
+        OpenJS Node.js Services Developer – JSNSD
+      </a>
+      )
+    </>
+  );
+
   return (
     <section className="hero">
       <div className="hero-body">
         <div className="container content">
-          <div className="columns is-vcentered">
+          <div className="columns">
             <div className="column is-7">
               <h1 className="title">
                 Bonjour, je suis
@@ -58,15 +71,20 @@ export function HeroSection() {
               </p>
 
               <p className="is-greater">
-                Je suis certifié{" "}
+                Je suis certifié aux{" "}
                 <a
                   className="emphase has-text-underlined"
                   href="https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite"
                 >
-                  Pratiques du développement logiciel de qualité
+                  pratiques du développement logiciel de qualité
                 </a>
-                , aux technologies du Knowledge Engineering{" "}
-                <InfoCircle content={knowledgeEngineering} /> et{" "}
+                , aux technologies du{" "}
+                <InfoCircle
+                  title="Knowledge Engineering"
+                  content={knowledgeEngineeringInfo}
+                />
+                , au développement{" "}
+                <InfoCircle title="Node.js" content={nodeJsInfo} /> et{" "}
                 <a
                   className="emphase has-text-underlined"
                   href="https://www.credly.com/badges/87112e73-4dcc-43be-8560-3355ba4e298b"

@@ -3,7 +3,7 @@ import React, { useCallback, useState } from "react";
 import PropTypes from "prop-types";
 import { debounce } from "lodash";
 
-export function InfoCircle({ content }) {
+export function InfoCircle({ title, content }) {
   const [display, setDisplay] = useState(false);
   const [hover, _setHover] = useState(false);
 
@@ -22,6 +22,8 @@ export function InfoCircle({ content }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
+      <span>{title}</span>
+
       <InfoCircleSvg />
 
       <span className={display || hover ? "" : "is-hidden"}>{content}</span>
@@ -30,5 +32,6 @@ export function InfoCircle({ content }) {
 }
 
 InfoCircle.propTypes = {
+  title: PropTypes.string,
   content: PropTypes.element,
 };

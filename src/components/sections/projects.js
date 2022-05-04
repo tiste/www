@@ -11,7 +11,7 @@ export function ProjectsSection() {
         </h2>
       </div>
 
-      <div className="columns is-mobile is-vcentered has-text-justified carousel">
+      <div className="columns is-mobile is-vcentered has-text-justified carousel mx-0">
         <div className="column">
           <Card title="Yahtzee" link="https://yahtzee.game">
             <StaticImage
