@@ -36,6 +36,13 @@ export function HeroSection() {
       (
       <a
         className="emphase has-text-underlined"
+        href="https://www.credly.com/badges/9c737ece-accd-4c5f-b868-17f716bad980/public_url"
+      >
+        OpenJS Node.js Application Developer – JSNAD
+      </a>
+      ,{" "}
+      <a
+        className="emphase has-text-underlined"
         href="https://www.credly.com/badges/4a38a7d8-dab5-45de-b27e-00a8937be3b9/public_url"
       >
         OpenJS Node.js Services Developer – JSNSD
