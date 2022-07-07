@@ -111,6 +111,14 @@ $projectCardSize: 350;
       background-color: $primary;
     }
   }
+
+  h4 {
+    margin-bottom: 0;
+
+    & + small + div {
+      margin-top: 0.8em;
+    }
+  }
 }
 
 .section-gray {

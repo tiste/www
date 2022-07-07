@@ -15,13 +15,9 @@ export function ResumeSection({ crop }) {
             {CV.map((mission, index) => (
               <li key={index}>
                 <h4>
-                  {mission.title}{" "}
-                  <small>
-                    – {mission.customer}
-                    <br />
-                    {mission.date}
-                  </small>
+                  {mission.title} <small>– {mission.customer}</small>
                 </h4>
+                <small>{mission.date}</small>
                 <div
                   dangerouslySetInnerHTML={{
                     __html: mission.description
