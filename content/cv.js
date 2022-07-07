@@ -1,6 +1,6 @@
 module.exports.CV = [
   {
-    title: "Freelance Software Engineer",
+    title: "Technical Leader",
     customer: "Adeo",
     date: "Mars 2020 - À présent",
     description: `
@@ -14,7 +14,7 @@ module.exports.CV = [
     customer: "Cyclavet",
     date: "September 2021 - À présent",
     description: `
-  Création de l'application mobile
+  Développement de l'application mobile permettant aux transporteurs d'être conforme au transport TrackDéchets. Cette application React Native suit les règles d'une expérience utilisateur simple et un mode hors-connexion, dans le but de garder le geste métier fluide en toutes conditions.
 `,
   },
   {
