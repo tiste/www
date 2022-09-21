@@ -12,7 +12,7 @@ module.exports.CV = [
   {
     title: "Freelance Software Engineer",
     customer: "Cyclavet",
-    date: "September 2021 - À présent",
+    date: "Septembre 2021 - À présent",
     description: `
   Développement de l'application mobile permettant aux transporteurs d'être conforme au transport TrackDéchets. Cette application React Native suit les règles d'une expérience utilisateur simple et un mode hors-connexion, dans le but de garder le geste métier fluide en toutes conditions.
 `,
@@ -20,7 +20,7 @@ module.exports.CV = [
   {
     title: "Freelance Software Engineer",
     customer: "Pumpkin",
-    date: "Juillet 2020 - Octobre 2021",
+    date: "Juillet 2020 - Septembre 2022",
     description: `
   Construction du site institutionnel Pumpkin, permettant de mettre en avant les offres et avantages du service. Sur un socle Gatsby/Prismic, le site respecte les principes d'accessibilité, rapidité, et d'expérience utilisateur fluide.
 `,
