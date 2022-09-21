@@ -13,6 +13,26 @@ export function ProjectsSection() {
 
       <div className="columns is-mobile is-vcentered has-text-justified carousel mx-0">
         <div className="column">
+          <Card title="Pousse Pousse" link="https://poussepous.se">
+            <StaticImage
+              src="../../images/projects/poussepousse.jpg"
+              alt="Pousse Pousse"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
+
+            <p>
+              Le jeu du puzzle où les cases glissent pour former une image,
+              chaque jour. Oui, c'est votre ancien jeu, dans lequel vous
+              poussiez des tuiles pendant des minutes (ou des heures).
+              Maintenant, essayez de trouver l'image du jour !
+            </p>
+
+            <p>React</p>
+          </Card>
+        </div>
+        <div className="column">
           <Card title="Yahtzee" link="https://yahtzee.game">
             <StaticImage
               src="../../images/projects/yahtzee.png"
