@@ -54,7 +54,7 @@ export function ProjectsSection() {
         <div className="column">
           <Card
             title="Convertisseur temps course"
-            link="/projects/swunitch"
+            link="https://convertisseur-temps-course.tiste.io"
             isApp={true}
           >
             <StaticImage
