@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "../Card";
 import { StaticImage } from "gatsby-plugin-image";
+import IosDownloadSvg from "../../images/ios-download.svg";
 
 export function ProjectsSection() {
   return (
@@ -85,6 +86,24 @@ export function ProjectsSection() {
               </a>
               .
             </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a href="https://apps.apple.com/fr/app/swunitch/id1488948143">
+                  <IosDownloadSvg height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
+                  <StaticImage
+                    src="../../images/android-download.png"
+                    alt="Get it on Google Play"
+                    placeholder="blurred"
+                    layout="fixed"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
 
             <p>React Native, iOS, App Store, Android</p>
           </Card>
@@ -109,6 +128,24 @@ export function ProjectsSection() {
               vous pouvez lire votre tablature préférée ! Dès que le morceau
               change, tout le monde change !
             </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a href="https://apps.apple.com/fr/app/setlist-live/id1558899571">
+                  <IosDownloadSvg height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.lecocqconsulting.setlist">
+                  <StaticImage
+                    src="../../images/android-download.png"
+                    alt="Get it on Google Play"
+                    placeholder="blurred"
+                    layout="fixed"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
 
             <p>React Native, iOS, App Store, Android</p>
           </Card>
@@ -130,6 +167,24 @@ export function ProjectsSection() {
               la note est haute, plus c'est difficile, mais plus tu gagnes de
               points !
             </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a href="https://apps.apple.com/fr/app/1-%C3%A0-10/id1555319145">
+                  <IosDownloadSvg height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a href="https://play.google.com/store/apps/details?id=io.onetoten.onetoten">
+                  <StaticImage
+                    src="../../images/android-download.png"
+                    alt="Get it on Google Play"
+                    placeholder="blurred"
+                    layout="fixed"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
 
             <p>React Native, iOS, App Store, Android</p>
           </Card>

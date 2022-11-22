@@ -73,7 +73,7 @@ $projectCardSize: 350;
     padding-right: list.nth($section-padding, 2);
   }
 
-  .column {
+  > .column {
     flex: 0 0 auto;
     width: #{$projectCardSize}px;
     margin-bottom: 2rem;
@@ -128,6 +128,14 @@ $projectCardSize: 350;
 
   @include prefers-scheme(dark) {
     background-color: #292929;
+  }
+}
+
+.app-stores {
+  flex-direction: row;
+
+  @include mobile {
+    flex-direction: column;
   }
 }
 
