@@ -90,7 +90,7 @@ export function ProjectsSection() {
           </Card>
         </div>
         <div className="column">
-          <Card title="Yahtzee" link="https://yahtzee.game">
+          <Card title="Yahtzee" link="https://yahtzeeapp.com">
             <StaticImage
               src="../../images/projects/yahtzee.png"
               alt="Yahtzee"
