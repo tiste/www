@@ -16,7 +16,7 @@ export function ProjectsSection() {
         <div className="column">
           <Card
             title="Convertisseur temps course"
-            link="https://convertisseur-temps-course.tiste.io"
+            link="https://convertisseurtempscourse.fr"
             isApp={true}
           >
             <StaticImage
@@ -42,10 +42,7 @@ export function ProjectsSection() {
                 Android
               </a>
               , ou tester la{" "}
-              <a href="https://convertisseur-temps-course.tiste.io">
-                version web
-              </a>
-              .
+              <a href="https://convertisseurtempscourse.fr">version web</a>.
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">

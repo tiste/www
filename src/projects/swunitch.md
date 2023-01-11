@@ -4,7 +4,7 @@ title: Convertisseur temps course
 type: project
 ios: https://apps.apple.com/fr/app/swunitch/id1488948143
 android: https://play.google.com/store/apps/details?id=io.tiste.Swunitch
-web: https://convertisseur-temps-course.tiste.io
+web: https://convertisseurtempscourse.fr
 featuredImage: ../projects/swunitch.jpeg
 ---
 
@@ -16,7 +16,7 @@ Vous pouvez aussi moduler votre allure en pourcentage, afin d'estimer vos temps 
 
 Nouveauté : vous pouvez désormais, à partir d'un temps, visualiser le rythme et la vitesse nécessaires !
 
-Vous pouvez téléchargez la version [iOS](https://apps.apple.com/fr/app/swunitch/id1488948143) et [Android](https://play.google.com/store/apps/details?id=io.tiste.Swunitch), ou tester la [version web](https://convertisseur-temps-course.tiste.io).
+Vous pouvez téléchargez la version [iOS](https://apps.apple.com/fr/app/swunitch/id1488948143) et [Android](https://play.google.com/store/apps/details?id=io.tiste.Swunitch), ou tester la [version web](https://convertisseurtempscourse.fr).
 
 ---
 
