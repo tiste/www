@@ -1,10 +1,12 @@
-import React from "react";
+import * as React from "react";
 import { Layout } from "../components/layouts/Layout";
 import { Nav } from "../components/layouts/Nav";
+import { HeadProps, PageProps } from "gatsby";
+import { Seo } from "../components/Seo";
 
-export default function _404Page() {
+export default function _404Page(props: PageProps) {
   return (
-    <Layout title="Page non trouvée">
+    <Layout>
       <Nav />
       <section className="hero">
         <div className="hero-body">
@@ -19,4 +21,8 @@ export default function _404Page() {
       </section>
     </Layout>
   );
+}
+
+export function Head(props: HeadProps) {
+  return <Seo title="Page non trouvée" />;
 }

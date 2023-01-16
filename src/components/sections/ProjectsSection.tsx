@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Card } from "../Card";
 import { StaticImage } from "gatsby-plugin-image";
 import IosDownloadSvg from "../../images/ios-download.svg";
@@ -46,12 +46,18 @@ export function ProjectsSection() {
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">
-                <a href="https://apps.apple.com/fr/app/swunitch/id1488948143">
+                <a
+                  href="https://apps.apple.com/fr/app/swunitch/id1488948143"
+                  aria-label="iOS"
+                >
                   <IosDownloadSvg height={40} />
                 </a>
               </div>
               <div className="column is-6-mobile">
-                <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
+                <a
+                  href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch"
+                  aria-label="Android"
+                >
                   <StaticImage
                     src="../../images/android-download.png"
                     alt="Get it on Google Play"
@@ -127,12 +133,18 @@ export function ProjectsSection() {
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">
-                <a href="https://apps.apple.com/fr/app/setlist-live/id1558899571">
+                <a
+                  href="https://apps.apple.com/fr/app/setlist-live/id1558899571"
+                  aria-label="iOS"
+                >
                   <IosDownloadSvg height={40} />
                 </a>
               </div>
               <div className="column is-6-mobile">
-                <a href="https://play.google.com/store/apps/details?id=com.lecocqconsulting.setlist">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.lecocqconsulting.setlist"
+                  aria-label="Android"
+                >
                   <StaticImage
                     src="../../images/android-download.png"
                     alt="Get it on Google Play"
@@ -166,12 +178,18 @@ export function ProjectsSection() {
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">
-                <a href="https://apps.apple.com/fr/app/1-%C3%A0-10/id1555319145">
+                <a
+                  href="https://apps.apple.com/fr/app/1-%C3%A0-10/id1555319145"
+                  aria-label="iOS"
+                >
                   <IosDownloadSvg height={40} />
                 </a>
               </div>
               <div className="column is-6-mobile">
-                <a href="https://play.google.com/store/apps/details?id=io.onetoten.onetoten">
+                <a
+                  href="https://play.google.com/store/apps/details?id=io.onetoten.onetoten"
+                  aria-label="Android"
+                >
                   <StaticImage
                     src="../../images/android-download.png"
                     alt="Get it on Google Play"

@@ -1,13 +1,19 @@
-import React from "react";
+import * as React from "react";
 import { Layout } from "../components/layouts/Layout";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
-import { graphql } from "gatsby";
-import { getCustomers } from "../components/sections/customers";
+import { graphql, HeadProps, PageProps } from "gatsby";
+import { getCustomers } from "../components/sections/CustomersSection";
+import { Seo } from "../components/Seo";
+import { CVItem } from "../components/CV";
+import { FileNode } from "gatsby-plugin-image/dist/src/components/hooks";
 
-export default function MissionPage({ pageContext, data }) {
+export default function MissionPage({
+  pageContext,
+  data,
+}: PageProps<MissionQuery, CVItem>) {
   return (
-    <Layout title={`${pageContext.customer} / ${pageContext.title}`}>
+    <Layout>
       <Nav />
       <section className="section mt-6">
         <div className="container content">
@@ -50,11 +56,25 @@ export default function MissionPage({ pageContext, data }) {
   );
 }
 
+export function Head(props: HeadProps<MissionQuery, CVItem>) {
+  return (
+    <Seo title={`${props.pageContext.customer} / ${props.pageContext.title}`} />
+  );
+}
+
+export interface MissionQuery {
+  allFile: {
+    edges: {
+      node: FileNode & { name: string };
+    }[];
+  };
+}
+
 export const query = graphql`
   query Mission {
     allFile(
       filter: { relativePath: { glob: "customers/*" } }
-      sort: { fields: name }
+      sort: { name: ASC }
     ) {
       edges {
         node {

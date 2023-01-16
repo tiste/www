@@ -1,9 +1,14 @@
+import React, { ReactElement, useCallback, useState } from "react";
 import InfoCircleSvg from "../images/info-circle.svg";
-import React, { useCallback, useState } from "react";
-import PropTypes from "prop-types";
 import { debounce } from "lodash";
 
-export function InfoCircle({ title, content }) {
+export function InfoCircle({
+  title,
+  content,
+}: {
+  title?: string;
+  content: ReactElement;
+}) {
   const [display, setDisplay] = useState(false);
   const [hover, _setHover] = useState(false);
 
@@ -30,8 +35,3 @@ export function InfoCircle({ title, content }) {
     </span>
   );
 }
-
-InfoCircle.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.element,
-};

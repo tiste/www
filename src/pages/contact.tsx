@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Layout } from "../components/layouts/Layout";
-import { CustomersSection } from "../components/sections/customers";
+import { CustomersSection } from "../components/sections/CustomersSection";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
-import { post } from "axios";
+import axios from "axios";
 import { hasErrors } from "../services/has-errors";
+import { HeadProps, PageProps } from "gatsby";
+import { Seo } from "../components/Seo";
 
-function getInitialState() {
+function getInitialState(): {
+  fullName: string;
+  message: string;
+  email: string;
+  errors: Record<string, string | null>;
+} {
   return {
     fullName: "",
     email: "",
@@ -15,11 +22,11 @@ function getInitialState() {
   };
 }
 
-export default function ContactPage() {
+export default function ContactPage(props: PageProps) {
   const [isPristine, setIsPristine] = useState(true);
   const [state, setState] = useState(getInitialState());
 
-  function handleChange(name, value) {
+  function handleChange(name: string, value: string) {
     if (value.length) {
       state.errors[name] = null;
     } else {
@@ -33,24 +40,23 @@ export default function ContactPage() {
     });
   }
 
-  function handleSubmit(event) {
+  function handleSubmit(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
 
-    post("https://formspree.io/f/mjvjybdl", {
-      fullName: state.fullName,
-      email: state.email,
-      body: state.message,
-    }).then(() => {
-      setIsPristine(true);
-      setState(getInitialState());
-    });
+    axios
+      .post("https://formspree.io/f/mjvjybdl", {
+        fullName: state.fullName,
+        email: state.email,
+        body: state.message,
+      })
+      .then(() => {
+        setIsPristine(true);
+        setState(getInitialState());
+      });
   }
 
   return (
-    <Layout
-      title="On entre en contact"
-      description="Un besoin ? Un problème ? Une question ? Je ferai mon maximum pour vous aider. Après presque 10 ans d'expérience dans le domaine du numérique, j'ai pu accompagner des plus ou moins grandes entreprises dans des problématiques techniques ou humaines."
-    >
+    <Layout>
       <Nav />
       <section className="hero">
         <div className="hero-body">
@@ -120,7 +126,7 @@ export default function ContactPage() {
                         name="message"
                         className="textarea"
                         placeholder="Votre message"
-                        rows="4"
+                        rows={4}
                         value={state.message}
                         onChange={({ target: { value } }) =>
                           handleChange("message", value)
@@ -160,5 +166,14 @@ export default function ContactPage() {
       <CustomersSection />
       <Footer />
     </Layout>
+  );
+}
+
+export function Head(props: HeadProps) {
+  return (
+    <Seo
+      title="On entre en contact"
+      description="Un besoin ? Un problème ? Une question ? Je ferai mon maximum pour vous aider. Après presque 10 ans d'expérience dans le domaine du numérique, j'ai pu accompagner des plus ou moins grandes entreprises dans des problématiques techniques ou humaines."
+    />
   );
 }

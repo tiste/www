@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: "Baptiste Lecocq, ingénieur logiciel indépendant à Lille",
     description:
@@ -13,7 +15,6 @@ module.exports = {
         anonymize: true,
       },
     },
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -57,3 +58,5 @@ module.exports = {
     "gatsby-plugin-offline",
   ],
 };
+
+export default config;

@@ -1,12 +1,16 @@
-const path = require("path");
-const slugify = require("slugify");
-const { CV } = require("./content/cv");
+import { GatsbyNode } from "gatsby";
+import { CV } from "./src/components/CV";
+import path from "path";
+import slugify from "slugify";
 
-exports.createPages = async ({ actions, graphql }) => {
+export const createPages: GatsbyNode["createPages"] = async ({
+  actions,
+  graphql,
+}) => {
   const { createPage } = actions;
 
   // CV
-  const createdCustomers = [];
+  const createdCustomers: string[] = [];
 
   CV.forEach((mission, index) => {
     const customer = mission.customer.split(" (")[0];
@@ -16,7 +20,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
     createPage({
       path: `/missions/${slugify(slug)}`,
-      component: path.resolve(__dirname, "src/templates/mission.js"),
+      component: path.resolve(__dirname, "src/templates/mission.tsx"),
       context: { ...mission },
     });
 
@@ -38,10 +42,11 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `);
 
+  // @ts-ignore
   projects.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
-      component: path.resolve(__dirname, "src/templates/project.js"),
+      component: path.resolve(__dirname, "src/templates/project.tsx"),
       context: {
         slug: node.frontmatter.slug,
       },

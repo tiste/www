@@ -56,6 +56,7 @@ h2 strong {
 }
 
 $projectCardSize: 350;
+$numberOfCards: 8;
 .carousel {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -63,7 +64,7 @@ $projectCardSize: 350;
   padding-left: list.nth($section-padding-desktop, 1);
   padding-right: list.nth($section-padding-desktop, 1);
 
-  @include from(#{$projectCardSize * 6}px) {
+  @include from(#{$projectCardSize * $numberOfCards}px) {
     justify-content: center;
   }
 
@@ -158,6 +159,10 @@ footer svg {
   width: 200px;
 }
 
+main {
+  padding-top: $navbar-height;
+}
+
 @include prefers-scheme(light) {
   .is-dark-mode {
     display: none !important;
@@ -165,7 +170,7 @@ footer svg {
 }
 
 @include prefers-scheme(dark) {
-  svg path {
+  .info-circle svg path {
     fill: $primary !important;
   }
 
