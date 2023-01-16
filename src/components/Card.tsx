@@ -1,7 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
+import { ReactElement } from "react";
 
-export function Card(props) {
+export const Card: React.FC<{
+  title: string;
+  link: string;
+  isApp?: boolean;
+  children: ReactElement[];
+}> = (props) => {
   const { title, link, children, isApp } = props;
   const [image, ...rest] = children;
   const footer = rest.pop();
@@ -47,19 +52,15 @@ export function Card(props) {
         </div>
         <div className="tags">
           {footer &&
-            footer.props.children.split(", ").map((tag, i) => (
-              <span key={i} className="tag is-light">
-                {tag}
-              </span>
-            ))}
+            footer.props.children
+              .split(", ")
+              .map((tag: ReactElement, i: number) => (
+                <span key={i} className="tag is-light">
+                  {tag}
+                </span>
+              ))}
         </div>
       </div>
     </div>
   );
-}
-
-Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  isApp: PropTypes.bool,
 };

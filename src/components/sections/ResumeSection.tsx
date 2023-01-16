@@ -1,8 +1,8 @@
-import React from "react";
-import { CV } from "../../../content/cv";
+import * as React from "react";
+import { CV } from "../CV";
 import { Link } from "gatsby";
 
-export function ResumeSection({ crop }) {
+export function ResumeSection({ crop }: { crop?: boolean }) {
   return (
     <section className="section">
       <div className="container content">

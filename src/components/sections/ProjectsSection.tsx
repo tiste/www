@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Card } from "../Card";
 import { StaticImage } from "gatsby-plugin-image";
 import IosDownloadSvg from "../../images/ios-download.svg";

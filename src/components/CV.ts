@@ -1,4 +1,11 @@
-module.exports.CV = [
+export interface CVItem {
+  date: string;
+  description: string;
+  title: string;
+  customer: string;
+}
+
+export const CV: CVItem[] = [
   {
     title: "Technical Leader",
     customer: "Adeo",

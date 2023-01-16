@@ -1,16 +1,17 @@
-import React from "react";
+import * as React from "react";
 import { Layout } from "../components/layouts/Layout";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
-import { graphql } from "gatsby";
+import { graphql, HeadProps, PageProps } from "gatsby";
 import { GatsbyImage, getSrc } from "gatsby-plugin-image";
+import { Seo } from "../components/Seo";
 
-export default function ProjectPage({ data }) {
+export default function ProjectPage({ data }: PageProps<any>) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <Layout title={frontmatter.title}>
+    <Layout>
       <Nav />
       <section
         className="hero"
@@ -20,12 +21,12 @@ export default function ProjectPage({ data }) {
         <div
           className="hero-body"
           itemProp="applicationCategory"
-          content="MobileApplication"
+          {...{ content: "MobileApplication" }}
         >
           <div
             className="container content"
             itemProp="operatingSystem"
-            content="iOS, ANDROID"
+            {...{ content: "iOS, ANDROID" }}
           >
             <div className="has-text-centered">
               <h2 className="title" itemProp="name">
@@ -34,7 +35,7 @@ export default function ProjectPage({ data }) {
 
               <div
                 itemProp="image"
-                content={getSrc(frontmatter.featuredImage)}
+                {...{ content: getSrc(frontmatter.featuredImage) }}
               />
 
               <div>
@@ -103,6 +104,9 @@ export default function ProjectPage({ data }) {
       <Footer />
     </Layout>
   );
+}
+export function Head(props: HeadProps<any>) {
+  return <Seo title={props.data.markdownRemark.frontmatter.title} />;
 }
 
 export const query = graphql`

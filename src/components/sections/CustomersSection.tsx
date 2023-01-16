@@ -1,13 +1,14 @@
-import React from "react";
-import { graphql, Link, StaticQuery } from "gatsby";
+import * as React from "react";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { MissionQuery } from "../../templates/mission";
 
 export function CustomersSection() {
-  const staticQuery = graphql`
+  const data = useStaticQuery(graphql`
     {
       allFile(
         filter: { relativePath: { glob: "customers/*" } }
-        sort: { fields: name }
+        sort: { name: ASC }
       ) {
         edges {
           node {
@@ -23,35 +24,8 @@ export function CustomersSection() {
         }
       }
     }
-  `;
+  `);
 
-  return (
-    <StaticQuery
-      query={`${staticQuery}`}
-      render={(data) => <CustomersComponent data={data} />}
-    />
-  );
-}
-
-export function getCustomers(data, colorMode, filter = "") {
-  return data.allFile.edges
-    .filter(({ node }) => node.name.endsWith(colorMode))
-    .filter(({ node }) =>
-      node.name.toLowerCase().includes(filter.substr(0, 4).toLowerCase())
-    )
-    .map(({ node }, i) => (
-      <div key={i} className="column is-4-mobile is-2-tablet">
-        <Link to={`/missions/${node.name.split(".")[0]}`}>
-          <GatsbyImage
-            image={node.childImageSharp.gatsbyImageData}
-            alt={node.name}
-          />
-        </Link>
-      </div>
-    ));
-}
-
-function CustomersComponent({ data }) {
   return (
     <section className="section">
       <div className="container content">
@@ -65,4 +39,26 @@ function CustomersComponent({ data }) {
       </div>
     </section>
   );
+}
+
+export function getCustomers(
+  data: MissionQuery,
+  colorMode: string,
+  filter = ""
+) {
+  return data.allFile.edges
+    .filter(({ node }) => node.name.endsWith(colorMode))
+    .filter(({ node }) =>
+      node.name.toLowerCase().includes(filter.substr(0, 4).toLowerCase())
+    )
+    .map(({ node }, i: number) => (
+      <div key={i} className="column is-4-mobile is-2-tablet">
+        <Link to={`/missions/${node.name.split(".")[0]}`}>
+          <GatsbyImage
+            image={node.childImageSharp!.gatsbyImageData}
+            alt={node.name}
+          />
+        </Link>
+      </div>
+    ));
 }
