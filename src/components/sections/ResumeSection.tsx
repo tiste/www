@@ -6,7 +6,7 @@ export function ResumeSection({ crop }: { crop?: boolean }) {
   return (
     <section className="section">
       <div className="container content">
-        <h2>
+        <h2 className="no-print">
           Mon parcours <strong>professionnel</strong>
         </h2>
 

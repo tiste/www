@@ -11,7 +11,7 @@ export function Nav() {
 
   return (
     <nav
-      className="navbar is-fixed-top"
+      className="navbar is-fixed-top no-print"
       role="navigation"
       aria-label="main navigation"
     >

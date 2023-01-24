@@ -6,11 +6,15 @@ import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
 import { HeadProps, PageProps } from "gatsby";
 import { Seo } from "../components/Seo";
+import { Bio } from "../components/Bio";
 
 export default function MissionsPage(props: PageProps) {
   return (
     <Layout>
       <Nav />
+      <div className="only-print">
+        <Bio />
+      </div>
       <ResumeSection />
       <CustomersSection />
       <Footer />
