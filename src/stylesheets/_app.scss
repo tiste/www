@@ -85,7 +85,7 @@ $numberOfCards: 8;
   }
 }
 
-.resume ul {
+ul.resume-items {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +161,12 @@ footer svg {
 
 main {
   padding-top: $navbar-height;
+}
+
+.social-media-list {
+  li {
+    display: inline-block;
+  }
 }
 
 @include prefers-scheme(light) {

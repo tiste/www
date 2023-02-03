@@ -11,7 +11,7 @@ export function Nav() {
 
   return (
     <nav
-      className="navbar is-fixed-top no-print"
+      className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
@@ -71,6 +71,14 @@ export function Nav() {
               to="/missions"
             >
               Mes missions
+            </Link>
+            <Link
+              className="navbar-item"
+              activeClassName="has-text-primary"
+              partiallyActive={true}
+              to="/cv"
+            >
+              CV
             </Link>
             <Link
               className="navbar-item"

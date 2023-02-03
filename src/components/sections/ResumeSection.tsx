@@ -1,33 +1,17 @@
 import * as React from "react";
-import { CV } from "../CV";
 import { Link } from "gatsby";
+import { Resume } from "../Resume";
 
 export function ResumeSection({ crop }: { crop?: boolean }) {
   return (
     <section className="section">
       <div className="container content">
-        <h2 className="no-print">
+        <h2>
           Mon parcours <strong>professionnel</strong>
         </h2>
 
-        <div className={"resume " + (crop ? "is-cropped" : "")}>
-          <ul>
-            {CV.map((mission, index) => (
-              <li key={index}>
-                <h4>
-                  {mission.title} <small>– {mission.customer}</small>
-                </h4>
-                <small>{mission.date}</small>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: mission.description
-                      .replace("\n", "")
-                      .replace(/\n/g, "<br />"),
-                  }}
-                />
-              </li>
-            ))}
-          </ul>
+        <div className={crop ? "is-cropped" : ""}>
+          <Resume />
         </div>
       </div>
       {crop && (

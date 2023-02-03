@@ -27,7 +27,7 @@ export function CustomersSection() {
   `);
 
   return (
-    <section className="section customers-section no-print">
+    <section className="section customers-section">
       <div className="container content">
         <div className="columns is-vcentered is-multiline is-mobile is-light-mode">
           {getCustomers(data, "light")}

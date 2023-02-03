@@ -51,10 +51,11 @@ export function Bio() {
   );
 
   return (
-    <>
+    <div className="content">
       <h1 className="title">
-        Bonjour, je suis
-        <br />
+        <span>
+          Bonjour, je suis <br />
+        </span>
         <strong>Baptiste Lecocq</strong>
       </h1>
 
@@ -98,13 +99,13 @@ export function Bio() {
 
       <Link
         to="/contact"
-        className="button is-primary is-light is-outlined is-rounded mb-5 mt-3 no-print"
+        className="button is-primary is-light is-outlined is-rounded mb-5 mt-3 contact-me"
       >
         <span>On travaille ensemble ?</span>
         <span className="icon" role="img" aria-label="handshake">
           🤝
         </span>
       </Link>
-    </>
+    </div>
   );
 }
