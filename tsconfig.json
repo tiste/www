@@ -16,7 +16,6 @@
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
-    "./gatsby-ssr.ts",
     "./plugins/**/*"
   ]
 }

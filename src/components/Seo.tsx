@@ -73,6 +73,7 @@ export function Seo({
 
   return (
     <>
+      <html lang="fr" />
       <title>{metaTitle}</title>
       {metaMeta.map((m) => (
         <meta
@@ -83,6 +84,12 @@ export function Seo({
           content={m.content}
         />
       ))}
+
+      <script
+        defer
+        data-domain="tiste.io"
+        src="https://plausible.io/js/script.js"
+      ></script>
 
       <script type="application/ld+json">
         {JSON.stringify({

@@ -8,13 +8,6 @@ const config: GatsbyConfig = {
     siteUrl: "https://tiste.io",
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-42477577-1",
-        anonymize: true,
-      },
-    },
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
