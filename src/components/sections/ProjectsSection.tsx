@@ -13,6 +13,49 @@ export function ProjectsSection() {
       </div>
 
       <div className="columns is-mobile is-vcentered has-text-justified carousel mx-0">
+        {/* UPDATE $numberOfCards */}
+        <div className="column">
+          <Card title="Valeur Sûre" link="https://valeursure.com" isApp={true}>
+            <StaticImage
+              src="../../images/projects/valeursure.png"
+              alt="Valeur Sûre"
+              placeholder="blurred"
+              layout="constrained"
+              width={400}
+            />
+
+            <p>
+              Découvrez les restaurants les plus fiables pour savourer des
+              expériences culinaires exceptionnelles !
+            </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a
+                  href="https://apps.apple.com/fr/app/valeursure/6447271551"
+                  aria-label="iOS"
+                >
+                  <IosDownloadSvg height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a
+                  href="https://play.google.com/store/apps/details?id=io.tiste.valeursure"
+                  aria-label="Android"
+                >
+                  <StaticImage
+                    src="../../images/android-download.png"
+                    alt="Get it on Google Play"
+                    placeholder="blurred"
+                    layout="fixed"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>React Native, iOS, App Store, Android</p>
+          </Card>
+        </div>
         <div className="column">
           <Card
             title="Convertisseur temps course"
@@ -73,7 +116,7 @@ export function ProjectsSection() {
           </Card>
         </div>
         <div className="column">
-          <Card title="Pousse Pousse" link="https://poussepous.se">
+          <Card title="Pousse Pousse" link="https://poussepousse.tiste.io">
             <StaticImage
               src="../../images/projects/poussepousse.jpg"
               alt="Pousse Pousse"
