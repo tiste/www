@@ -44,9 +44,11 @@ h2 strong {
       }
     }
 
-    .card {
-      display: flex;
-      align-items: center;
+    @include desktop {
+      .card {
+        display: flex;
+        align-items: center;
+      }
     }
 
     .card-image {
@@ -172,9 +174,8 @@ main {
 }
 
 @include prefers-scheme(dark) {
-  // TODO
-  .info-circle svg path {
-    fill: $primary !important;
+  .info-circle img {
+    filter: invert(1);
   }
 
   .is-light-mode {

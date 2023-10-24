@@ -20,7 +20,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/valeursure.png")}
               alt="Valeur Sûre"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -64,7 +65,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/swunitch.png")}
               alt="Convertisseur temps course"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -117,7 +119,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/poussepousse.jpg")}
               alt="Pousse Pousse"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -136,7 +139,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/yahtzee.png")}
               alt="Yahtzee"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -154,7 +158,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/setlist-live.png")}
               alt="Setlist Live"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -200,7 +205,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/1a10.png")}
               alt="1 à 10"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -243,7 +249,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/pumpkin.png")}
               alt="Pumpkin"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
               style={{
                 border: "5px solid #34b3e6",
                 borderBottom: 0,
@@ -267,7 +274,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/javro.png")}
               alt="Javro"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>
@@ -288,7 +296,8 @@ export function ProjectsSection() {
               src={require("@/public/images/projects/scrum.png")}
               alt="Scrum"
               placeholder="blur"
-              width={400}
+              width={300}
+              sizes="(min-width: 769px) 100vw, 33vw"
             />
 
             <p>

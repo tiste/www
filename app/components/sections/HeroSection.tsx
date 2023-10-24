@@ -17,7 +17,8 @@ export function HeroSection() {
                 src={require("@/public/images/me.jpeg")}
                 alt="Baptiste Lecocq"
                 placeholder="blur"
-                width={700}
+                priority={true}
+                sizes="(min-width: 769px) 100vw, 30vw"
               />
             </div>
           </div>

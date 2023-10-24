@@ -1,7 +1,6 @@
 "use client";
 
 import React, { ReactElement, useCallback, useState } from "react";
-import InfoCircleSvg from "@/public/images/info-circle.svg";
 import { debounce } from "lodash";
 import Image from "next/image";
 
@@ -32,7 +31,7 @@ export function InfoCircle({
     >
       <span>{title}</span>
 
-      <Image src={InfoCircleSvg} alt="Info" />
+      <Image src={require("@/public/images/info-circle.svg")} alt="Info" />
 
       <span className={display || hover ? "" : "is-hidden"}>{content}</span>
     </span>

@@ -58,8 +58,9 @@ export function displayCustomers(
           <Image
             src={customer.imagePath}
             alt={customer.name}
+            sizes="(min-width: 769px) 100vw, 33vw"
             width={250}
-            height={250}
+            height={110}
           />
         </Link>
       </div>
