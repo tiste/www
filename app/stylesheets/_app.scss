@@ -53,6 +53,10 @@ h2 strong {
 
     .card-image {
       padding: 1rem;
+
+      @include desktop {
+        min-width: 33%;
+      }
     }
   }
 }
