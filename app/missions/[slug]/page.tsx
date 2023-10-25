@@ -2,10 +2,7 @@ import * as React from "react";
 import { Metadata } from "next";
 import { CV } from "@/app/components/CV";
 import { Nav } from "@/app/components/layouts/Nav";
-import {
-  displayCustomers,
-  getCustomers,
-} from "@/app/components/sections/CustomersSection";
+import { displayCustomers } from "@/app/components/sections/CustomersSection";
 import { Footer } from "@/app/components/layouts/Footer";
 
 type Props = {
@@ -31,7 +28,6 @@ export async function generateStaticParams() {
 }
 
 export default async function MissionPage({ params }: Props) {
-  const customers = await getCustomers();
   const mission = CV.find((mission) => mission.slug === params.slug);
   if (!mission) {
     return null;
@@ -45,11 +41,11 @@ export default async function MissionPage({ params }: Props) {
           <div className="columns">
             <div className="column is-half is-offset-one-quarter">
               <div className="is-light-mode">
-                {displayCustomers(customers, "light", mission.customer)}
+                {displayCustomers("light", mission.customer)}
               </div>
 
               <div className="is-dark-mode">
-                {displayCustomers(customers, "dark", mission.customer)}
+                {displayCustomers("dark", mission.customer)}
               </div>
 
               <h2 className="title">{mission.customer}</h2>

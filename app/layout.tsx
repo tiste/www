@@ -3,6 +3,8 @@ import "./stylesheets/main.scss";
 import Script from "next/script";
 import React from "react";
 
+export const runtime = "edge";
+
 const description =
   "Consultant informatique Lille. J'aide les personnes et équipes à définir et répondre à leurs besoins. J' y parviens en travaillant pour et avec ces personnes en mettant en place un environnement favorisant les échanges et l'excellence technique. Je considère réussir cette mission en suivant des indicateurs liés à la satisfaction client et la qualité logicielle.";
 const title = "Baptiste Lecocq, ingénieur logiciel indépendant à Lille";
