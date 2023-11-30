@@ -30,7 +30,7 @@ export function displayCustomers(mode: "dark" | "light", filter = "") {
           <Image
             src={`/images/customers/${customer.slug}.${mode}.png`}
             alt={customer.name}
-            sizes="(min-width: 769px) 100vw, 33vw"
+            sizes="(min-width: 769px) 20vw, 30vw"
             width={250}
             height={110}
           />

@@ -18,7 +18,7 @@ export function HeroSection() {
                 alt="Baptiste Lecocq"
                 placeholder="blur"
                 priority={true}
-                sizes="(min-width: 769px) 100vw, 30vw"
+                sizes="(min-width: 769px) 30vw, 80vw"
               />
             </div>
           </div>

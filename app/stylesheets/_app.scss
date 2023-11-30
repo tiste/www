@@ -49,14 +49,18 @@ h2 strong {
         display: flex;
         align-items: center;
       }
+
+      .card-image {
+        flex: 1;
+      }
+
+      .card-content {
+        flex: 2;
+      }
     }
 
     .card-image {
       padding: 1rem;
-
-      @include desktop {
-        min-width: 33%;
-      }
     }
   }
 }

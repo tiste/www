@@ -21,7 +21,7 @@ export function ProjectsSection() {
               alt="Valeur Sûre"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -66,7 +66,7 @@ export function ProjectsSection() {
               alt="Convertisseur temps course"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -120,7 +120,7 @@ export function ProjectsSection() {
               alt="Pousse Pousse"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -140,7 +140,7 @@ export function ProjectsSection() {
               alt="Yahtzee"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -159,7 +159,7 @@ export function ProjectsSection() {
               alt="Setlist Live"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -206,7 +206,7 @@ export function ProjectsSection() {
               alt="1 à 10"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -250,7 +250,7 @@ export function ProjectsSection() {
               alt="Pumpkin"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
               style={{
                 border: "5px solid #34b3e6",
                 borderBottom: 0,
@@ -275,7 +275,7 @@ export function ProjectsSection() {
               alt="Javro"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
@@ -297,7 +297,7 @@ export function ProjectsSection() {
               alt="Scrum"
               placeholder="blur"
               width={300}
-              sizes="(min-width: 769px) 100vw, 33vw"
+              sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
