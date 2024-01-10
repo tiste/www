@@ -56,14 +56,10 @@ export function ProjectsSection() {
           </Card>
         </div>
         <div className="column">
-          <Card
-            title="Convertisseur temps course"
-            link="https://convertisseurtempscourse.fr"
-            isApp={true}
-          >
+          <Card title="Pacevisor" link="https://pacevisor.com" isApp={true}>
             <Image
               src={require("@/public/images/projects/swunitch.png")}
-              alt="Convertisseur temps course"
+              alt="Pacevisor, votre convertisseur temps course"
               placeholder="blur"
               width={300}
               sizes="(min-width: 769px) 25vw, 80vw"
@@ -83,8 +79,7 @@ export function ProjectsSection() {
               <a href="https://play.google.com/store/apps/details?id=io.tiste.Swunitch">
                 Android
               </a>
-              , ou tester la{" "}
-              <a href="https://convertisseurtempscourse.fr">version web</a>.
+              , ou tester la <a href="https://pacevisor.com">version web</a>.
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">

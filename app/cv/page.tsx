@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "CV",
   description:
     "Mon expérience dans le monde du web dans des missions très diverses, m'a convaincu que la fluidité de la communication et qu'un code bien designé sont des clés nécessaires dans la réussite d’un projet. Je maîtrise principalement les langages et frameworks du monde Javascript.",
+  alternates: {
+    canonical: "/cv/",
+  },
 };
 
 export default function ResumePage() {

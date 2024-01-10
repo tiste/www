@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "On entre en contact",
   description:
     "Un besoin ? Un problème ? Une question ? Je ferai mon maximum pour vous aider. Après presque 10 ans d'expérience dans le domaine du numérique, j'ai pu accompagner des plus ou moins grandes entreprises dans des problématiques techniques ou humaines.",
+  alternates: {
+    canonical: "/contact/",
+  },
 };
 
 export default function ContactPage() {
