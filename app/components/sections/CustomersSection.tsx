@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import { customers } from "@/app/components/sections/customers";
 
 export async function CustomersSection() {

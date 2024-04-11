@@ -2,7 +2,7 @@
 
 import React, { ReactElement, useCallback, useState } from "react";
 import { debounce } from "lodash";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 
 export function InfoCircle({
   title,

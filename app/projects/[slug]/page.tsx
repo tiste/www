@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { Nav } from "@/app/components/layouts/Nav";
 import { Footer } from "@/app/components/layouts/Footer";
 import { projects } from "@/app/components/projects";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 
 type Props = {
   params: { slug: string };

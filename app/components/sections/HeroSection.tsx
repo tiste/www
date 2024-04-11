@@ -1,5 +1,5 @@
 import * as React from "react";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import { Bio } from "@/app/components/Bio";
 
 export function HeroSection() {

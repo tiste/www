@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import { usePathname } from "next/navigation";
 
 export function Nav() {

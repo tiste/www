@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Card } from "../Card";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import IosDownloadSvg from "@/public/images/ios-download.svg";
 
 export function ProjectsSection() {
