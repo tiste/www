@@ -19,6 +19,19 @@ export const CV: Mission[] = [
 `,
   },
   {
+    title: "Freelance Software Engineer",
+    customer: "Bardahl",
+    slug: "bardahl",
+    date: "Janvier 2024 - À présent",
+    description: `
+  Création d'un système d'information intégré pour gérer et exploiter les données de transmission de véhicules automatiques, dans le but de proposer des services de maintenance aux garages professionnels.
+
+  Le système est basé sur une architecture microservices permettant de gérer les différentes plateformes de communication (web, machine physique, mobile) et de garantir une scalabilité et une robustesse du système.
+
+  Gestion du projet en méthode agile, nouveauté chez Bardahl, avec un accompagnement des équipes en proximité.
+`,
+  },
+  {
     title: "Technical Leader",
     customer: "Adeo",
     slug: "adeo-kg",

@@ -5,6 +5,10 @@ export interface Customer {
 
 export const customers: Customer[] = [
   {
+    name: "Bardahl",
+    slug: "bardahl",
+  },
+  {
     name: "Adeo",
     slug: "adeo",
   },
@@ -15,10 +19,6 @@ export const customers: Customer[] = [
   {
     name: "OCTO",
     slug: "octo",
-  },
-  {
-    name: "Pumpkin",
-    slug: "pumpkin",
   },
   {
     name: "Roquette Frères",
