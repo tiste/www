@@ -4,6 +4,7 @@ import { Nav } from "@/app/components/layouts/Nav";
 import { Footer } from "@/app/components/layouts/Footer";
 import { projects } from "@/app/components/projects";
 import Image from "next-export-optimize-images/image";
+import { redirect } from "next/navigation";
 
 type Props = {
   params: { slug: string };
@@ -34,6 +35,10 @@ export default async function ProjectPage({ params }: Props) {
   const project = projects.find((project) => project.slug === params.slug);
   if (!project) {
     return null;
+  }
+
+  if (project.slug === "swunitch") {
+    return redirect("https://pacevisor.com");
   }
 
   return (
