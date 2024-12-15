@@ -20,6 +20,25 @@ export function HeroSection() {
                 priority={true}
                 sizes="(min-width: 769px) 30vw, 80vw"
               />
+
+              <div className="box">
+                <a
+                  href="https://youtu.be/CjIB-HmZL00"
+                  className="emphase has-text-underlined"
+                >
+                  Regardez ma dernière conférence sur YouTube.
+                </a>
+
+                <a href="https://youtu.be/CjIB-HmZL00">
+                  <Image
+                    src={require("@/public/images/last-conf.jpg")}
+                    alt="Conférence"
+                    priority={true}
+                    placeholder="blur"
+                    sizes="(min-width: 769px) 30vw, 80vw"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
