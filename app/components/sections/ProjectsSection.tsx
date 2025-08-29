@@ -15,23 +15,28 @@ export function ProjectsSection() {
       <div className="columns is-mobile is-vcentered has-text-justified carousel mx-0">
         {/* UPDATE $numberOfCards */}
         <div className="column">
-          <Card title="Valeur Sûre" link="https://valeursure.com" isApp={true}>
+          <Card title="Rally Call" link="https://rallycall.fr" isApp={true}>
             <Image
-              src={require("@/public/images/projects/valeursure.png")}
-              alt="Valeur Sûre"
+              src={require("@/public/images/projects/rallycall.jpg")}
+              alt="Application copilote de rallye : notes, roadbook, pace notes et outils pratiques pour copilotes amateurs et pros."
               placeholder="blur"
               width={300}
               sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
-              Découvrez les restaurants les plus fiables pour savourer des
-              expériences culinaires exceptionnelles !
+              L'application <strong>Rally Call</strong> est conçue pour
+              accompagner les pilotes et copilotes dans leur préparation et
+              leurs reconnaissances de parcours.
+            </p>
+            <p>
+              Elle permet d'enregistrer, visualiser et partager chaque
+              information clé de vos reconnaissances en rallye.
             </p>
             <div className="columns is-gapless is-flex app-stores">
               <div className="column is-6-mobile">
                 <a
-                  href="https://apps.apple.com/fr/app/valeursure/6447271551"
+                  href="https://apps.apple.com/fr/app/rally-call/id6748931500"
                   aria-label="iOS"
                 >
                   <Image src={IosDownloadSvg} alt="iOS download" height={40} />
@@ -39,7 +44,54 @@ export function ProjectsSection() {
               </div>
               <div className="column is-6-mobile">
                 <a
-                  href="https://play.google.com/store/apps/details?id=io.tiste.valeursure"
+                  href="https://play.google.com/store/apps/details?id=io.tiste.RallyCall"
+                  aria-label="Android"
+                >
+                  <Image
+                    src={require("@/public/images/android-download.png")}
+                    alt="Get it on Google Play"
+                    placeholder="blur"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>React Native, iOS, App Store, Android</p>
+          </Card>
+        </div>
+        <div className="column">
+          <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
+            <Image
+              src={require("@/public/images/projects/setlist-live.png")}
+              alt="Setlist Live"
+              placeholder="blur"
+              width={300}
+              sizes="(min-width: 769px) 25vw, 80vw"
+            />
+
+            <p>
+              Setlist Live est une application permettant à votre groupe de
+              musique de partager votre catalogue musical, et d'en construire
+              des setlists à parcourir EN LIVE pendant les concerts.
+            </p>
+            <p>
+              Si vous êtes chanteur, le morceau affichera les paroles, sinon,
+              vous pouvez lire votre tablature préférée ! Dès que le morceau
+              change, tout le monde change !
+            </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a
+                  href="https://apps.apple.com/fr/app/setlist-live/id1558899571"
+                  aria-label="iOS"
+                >
+                  <Image src={IosDownloadSvg} alt="iOS download" height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.lecocqconsulting.setlist"
                   aria-label="Android"
                 >
                   <Image
@@ -58,7 +110,7 @@ export function ProjectsSection() {
         <div className="column">
           <Card title="Pacevisor" link="https://pacevisor.com" isApp={true}>
             <Image
-              src={require("@/public/images/projects/swunitch.png")}
+              src={require("@/public/images/projects/swunitch.jpeg")}
               alt="Pacevisor, votre convertisseur temps course"
               placeholder="blur"
               width={300}
@@ -109,23 +161,44 @@ export function ProjectsSection() {
           </Card>
         </div>
         <div className="column">
-          <Card title="Pousse Pousse" link="https://poussepousse.tiste.io">
+          <Card title="Valeur Sûre" link="https://valeursure.com" isApp={true}>
             <Image
-              src={require("@/public/images/projects/poussepousse.jpg")}
-              alt="Pousse Pousse"
+              src={require("@/public/images/projects/valeursure.png")}
+              alt="Valeur Sûre"
               placeholder="blur"
               width={300}
               sizes="(min-width: 769px) 25vw, 80vw"
             />
 
             <p>
-              Le jeu du puzzle où les cases glissent pour former une image,
-              chaque jour. Oui, c'est votre ancien jeu, dans lequel vous
-              poussiez des tuiles pendant des minutes (ou des heures).
-              Maintenant, essayez de trouver l'image du jour !
+              Découvrez les restaurants les plus fiables pour savourer des
+              expériences culinaires exceptionnelles !
             </p>
+            <div className="columns is-gapless is-flex app-stores">
+              <div className="column is-6-mobile">
+                <a
+                  href="https://apps.apple.com/fr/app/valeursure/6447271551"
+                  aria-label="iOS"
+                >
+                  <Image src={IosDownloadSvg} alt="iOS download" height={40} />
+                </a>
+              </div>
+              <div className="column is-6-mobile">
+                <a
+                  href="https://play.google.com/store/apps/details?id=io.tiste.valeursure"
+                  aria-label="Android"
+                >
+                  <Image
+                    src={require("@/public/images/android-download.png")}
+                    alt="Get it on Google Play"
+                    placeholder="blur"
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
 
-            <p>React</p>
+            <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
         <div className="column">
@@ -145,53 +218,6 @@ export function ProjectsSection() {
             </p>
 
             <p>React, Three.js</p>
-          </Card>
-        </div>
-        <div className="column">
-          <Card title="Setlist Live" link="https://setlist.live" isApp={true}>
-            <Image
-              src={require("@/public/images/projects/setlist-live.png")}
-              alt="Setlist Live"
-              placeholder="blur"
-              width={300}
-              sizes="(min-width: 769px) 25vw, 80vw"
-            />
-
-            <p>
-              Setlist Live est une application permettant à votre groupe de
-              musique de partager votre catalogue musical, et d'en construire
-              des setlists à parcourir EN LIVE pendant les concerts.
-            </p>
-            <p>
-              Si vous êtes chanteur, le morceau affichera les paroles, sinon,
-              vous pouvez lire votre tablature préférée ! Dès que le morceau
-              change, tout le monde change !
-            </p>
-            <div className="columns is-gapless is-flex app-stores">
-              <div className="column is-6-mobile">
-                <a
-                  href="https://apps.apple.com/fr/app/setlist-live/id1558899571"
-                  aria-label="iOS"
-                >
-                  <Image src={IosDownloadSvg} alt="iOS download" height={40} />
-                </a>
-              </div>
-              <div className="column is-6-mobile">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.lecocqconsulting.setlist"
-                  aria-label="Android"
-                >
-                  <Image
-                    src={require("@/public/images/android-download.png")}
-                    alt="Get it on Google Play"
-                    placeholder="blur"
-                    height={40}
-                  />
-                </a>
-              </div>
-            </div>
-
-            <p>React Native, iOS, App Store, Android</p>
           </Card>
         </div>
         <div className="column">
