@@ -16,6 +16,8 @@ export const CV: Mission[] = [
   Face à une équipe confrontée à des difficultés méthodologiques et de développement (délais de livraison prolongés, revues de code superficielles, manque de cohésion et de communication), mon intervention a été axée sur la refonte des pratiques de développement et l'implantation de méthodes agiles. 
 
   Les résultats sont probants : réduction des temps de delivery par 2, prise en considération et traitement de la dette, instauration d'une culture de bienveillance et de communication efficace, et un recentrage des corps business sur le management de produit. L'intégration de pratiques de développement modernes et d'un suivi personnalisé en mentoring pour les membres de l'équipe a permis d'améliorer significativement la performance et l'agilité du groupe.
+
+  Création du RAG produit (notices d'utilisation des produits, variants, caractéristiques, etc.) dans le but de fournir une expérience utilisateur augmentée sur les plateformes e-commerce du groupe.
 `,
   },
   {
