@@ -8,6 +8,30 @@ interface Mission {
 
 export const CV: Mission[] = [
   {
+    title: "Freelance Software Engineer",
+    customer: "Esthima",
+    slug: "esthima",
+    date: "Mars 2026 - À présent",
+    description: `
+  Conception et développement de l'espace client particulier, un portail dédié à l'accompagnement des familles dans le suivi du parcours funéraire de leur animal.
+
+  L'enjeu majeur était d'offrir une transparence totale pour rassurer les clients, tout en désengorgeant le support téléphonique et les processus internes. Le système repose sur la création d'une architecture de microservices assurant une authentification unifiée entre le site e-commerce (WordPress/WooCommerce), le CRM (Salesforce) et l'espace client. La plateforme intègre le suivi en temps réel de la traçabilité, la gestion des documents dématérialisés et un parcours de paiement en ligne sécurisé.
+`,
+  },
+  {
+    title: "Freelance Software Engineer",
+    customer: "Veternity",
+    slug: "veternity",
+    date: "Mars 2025 - Mars 2026",
+    description: `
+  Développement de l'application métier Vet'Mobile destinée aux chauffeurs, dans le cadre du projet global d'optimisation des tournées.
+
+  L'enjeu majeur était de digitaliser et de sécuriser l'ensemble du processus de collecte sur le terrain (scan des conventions, traçabilité des corps, restitution des urnes et gestion du matériel). Développée en React Native, l'application intègre un moteur de scan couplé à un système de détection et de gestion d'anomalies en temps réel (corps manquants, erreurs de conventions), garantissant un geste métier fluide face aux aléas de la tournée.
+
+  Ce nouvel outil a permis de fiabiliser complètement la traçabilité, de dématérialiser les tickets de collecte, et de réduire drastiquement les erreurs de saisie grâce à une synchronisation robuste avec le système d'information central.
+`,
+  },
+  {
     title: "Technical Leader",
     customer: "Adeo",
     slug: "adeo",
@@ -48,10 +72,13 @@ export const CV: Mission[] = [
     title: "Freelance Software Engineer",
     customer: "Cyclavet",
     slug: "cyclavet",
-    date: "Septembre 2021 - À présent",
+    date: "Septembre 2021 - Septembre 2023",
     description: `
-  Développement de l'application mobile permettant aux transporteurs d'être conforme au transport TrackDéchets. Cette application React Native suit les règles d'une expérience utilisateur simple et un mode hors-connexion, dans le but de garder le geste métier fluide en toutes conditions.
-`,
+  Développement de l'application mobile permettant aux transporteurs d'être conforme au transport TrackDéchets.
+
+  L'enjeu majeur était de digitaliser l'ensemble du processus de collecte (génération et signature électronique des Bordereaux de Suivi des Déchets) sans ralentir les opérations sur le terrain. Cette application React Native suit une architecture "offline-first", intégrant un moteur de scan de codes-barres, afin de garantir un geste métier fluide et résilient, même dans les zones sans couverture réseau.
+
+  Ce nouvel outil a permis d'assurer une conformité légale totale, de supprimer la gestion papier, et de fiabiliser la traçabilité des déchets (DASRI, MNU) grâce à une synchronisation sécurisée et transparente avec le système d'information central.`,
   },
   {
     title: "Freelance Software Engineer",
