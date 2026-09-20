@@ -190,3 +190,204 @@ main {
     display: none !important;
   }
 }
+
+.stats-highlights {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  ul.stats-tiles:not(:last-child) {
+    margin: 1.5rem 0;
+  }
+
+  .stats-value {
+    font-size: clamp(2rem, 3.4vw, 2.75rem);
+  }
+}
+
+.stats-overline {
+  font-weight: 600;
+  opacity: 0.65;
+}
+
+#stats {
+  scroll-margin-top: $navbar-height;
+}
+
+.stats-section,
+.stats-highlights {
+  small {
+    display: block;
+    opacity: 0.65;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.stats-section .columns {
+  margin-top: 2rem;
+}
+
+ul.stats-tiles:not(:last-child) {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+
+  @include touch {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  li {
+    position: relative;
+    padding-top: 1.5rem;
+    margin-top: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 50px;
+      height: 6px;
+      background-color: $primary;
+    }
+  }
+}
+
+.stats-value {
+  display: block;
+  font-size: clamp(2.25rem, 4.2vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.stats-label {
+  display: block;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+$statsBar: $text;
+$statsBarDark: $primary;
+
+figure.stats-chart {
+  margin: 0;
+  text-align: left;
+
+  figcaption {
+    font-style: normal;
+    font-size: 0.875rem;
+    opacity: 0.65;
+    margin-top: 1rem;
+  }
+}
+
+.stats-chart-plot,
+.stats-chart-axis {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.stats-chart-plot {
+  height: 240px;
+  padding-top: 1.75rem;
+  border-bottom: 1px solid rgba(18, 36, 67, 0.2);
+
+  @include prefers-scheme(dark) {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.stats-chart-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+}
+
+.stats-chart-value {
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.75rem;
+  margin-top: -1.75rem;
+  white-space: nowrap;
+}
+
+.stats-chart-bar {
+  display: block;
+  width: 100%;
+  max-width: 32px;
+  border-radius: 4px 4px 0 0;
+  background-color: $statsBar;
+
+  @include prefers-scheme(dark) {
+    background-color: $statsBarDark;
+  }
+
+  &.is-partial {
+    background-color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      $statsBar 0 2px,
+      rgba($statsBar, 0.15) 2px 7px
+    );
+
+    @include prefers-scheme(dark) {
+      background-color: transparent;
+      background-image: repeating-linear-gradient(
+        135deg,
+        $statsBarDark 0 2px,
+        rgba($statsBarDark, 0.15) 2px 7px
+      );
+    }
+  }
+}
+
+.stats-chart-axis {
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.stats-table {
+  background-color: transparent !important;
+  font-variant-numeric: tabular-nums;
+
+  th,
+  td {
+    white-space: nowrap;
+    border-width: 0 0 1px !important;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .stats-rating {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+
+    small {
+      display: inline;
+      font-size: inherit;
+    }
+  }
+}
+
+.stats-footnote {
+  font-size: 0.875rem;
+  opacity: 0.65;
+  margin-top: 2rem;
+}
