@@ -1,0 +1,140 @@
+:root {
+  --navy: #122443;
+  --yellow: #ffce00;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: #fff;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  color: var(--yellow);
+  font-weight: inherit;
+}
+
+.overline {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.stats {
+  display: flex;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-top: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 5px;
+      background: var(--yellow);
+    }
+  }
+
+  b {
+    display: block;
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  span {
+    display: block;
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+}
+
+/* Header : 1584 × 396. Le bas gauche reste vide, LinkedIn y pose la photo de profil. */
+.header {
+  width: 1584px;
+  height: 396px;
+
+  .brand {
+    position: absolute;
+    top: 36px;
+    left: 48px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 22px;
+    font-weight: 600;
+
+    svg {
+      width: 52px;
+    }
+  }
+
+  main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 410px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 12px 0 26px;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .caption {
+    margin-bottom: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  .stats {
+    gap: 52px;
+
+    b {
+      font-size: 38px;
+    }
+
+    span {
+      margin-top: 4px;
+      font-size: 17px;
+    }
+  }
+
+  .mark {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    width: 500px;
+    fill: #fff;
+    opacity: 0.05;
+  }
+}

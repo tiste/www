@@ -194,8 +194,8 @@ main {
 }
 
 .stats-highlights {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   ul.stats-tiles:not(:last-child) {
     margin: 1.5rem 0;
@@ -217,6 +217,23 @@ main {
 
 .stats-section,
 .stats-highlights {
+  background-color: $text;
+
+  &,
+  .content,
+  h2,
+  h3,
+  table,
+  th,
+  td {
+    color: $white !important;
+  }
+
+  th,
+  td {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
   small {
     display: block;
     opacity: 0.65;
@@ -273,9 +290,6 @@ ul.stats-tiles:not(:last-child) {
   margin: 0.25rem 0;
 }
 
-$statsBar: $text;
-$statsBarDark: $primary;
-
 figure.stats-chart {
   margin: 0;
   text-align: left;
@@ -297,11 +311,7 @@ figure.stats-chart {
 .stats-chart-plot {
   height: 240px;
   padding-top: 1.75rem;
-  border-bottom: 1px solid rgba(18, 36, 67, 0.2);
-
-  @include prefers-scheme(dark) {
-    border-bottom-color: rgba(255, 255, 255, 0.2);
-  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .stats-chart-column {
@@ -326,28 +336,15 @@ figure.stats-chart {
   width: 100%;
   max-width: 32px;
   border-radius: 4px 4px 0 0;
-  background-color: $statsBar;
-
-  @include prefers-scheme(dark) {
-    background-color: $statsBarDark;
-  }
+  background-color: $primary;
 
   &.is-partial {
     background-color: transparent;
     background-image: repeating-linear-gradient(
       135deg,
-      $statsBar 0 2px,
-      rgba($statsBar, 0.15) 2px 7px
+      $primary 0 2px,
+      rgba($primary, 0.18) 2px 7px
     );
-
-    @include prefers-scheme(dark) {
-      background-color: transparent;
-      background-image: repeating-linear-gradient(
-        135deg,
-        $statsBarDark 0 2px,
-        rgba($statsBarDark, 0.15) 2px 7px
-      );
-    }
   }
 }
 
