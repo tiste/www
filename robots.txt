@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tiste.io
+
+# Sitemaps
+Sitemap: https://tiste.io/sitemap.xml
