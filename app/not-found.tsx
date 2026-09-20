@@ -4,6 +4,7 @@ import { Nav } from "@/app/components/layouts/Nav";
 
 export const metadata: Metadata = {
   title: "Page non trouvée",
+  robots: { index: false, follow: true },
 };
 
 export default function NotFound() {

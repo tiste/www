@@ -1,18 +1,16 @@
 import React from "react";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
-import { Metadata } from "next";
+import { pageMetadata } from "@/app/services/metadata";
 import { ContactForm } from "@/app/contact/ContactForm";
 import { CustomersSection } from "@/app/components/sections/CustomersSection";
 
-export const metadata: Metadata = {
-  title: "On entre en contact",
+export const metadata = pageMetadata({
+  title: "Contact",
   description:
-    "Un besoin ? Un problème ? Une question ? Je ferai mon maximum pour vous aider. Après presque 10 ans d'expérience dans le domaine du numérique, j'ai pu accompagner des plus ou moins grandes entreprises dans des problématiques techniques ou humaines.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
+    "Un besoin, un problème, une question ? Parlez-moi de votre projet web ou mobile : je réponds dans la journée.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

@@ -9,6 +9,7 @@ strong,
 }
 
 .title strong,
+h1 strong,
 h2 strong {
   background-color: $primary;
   background: -webkit-linear-gradient(135deg, darken($primary, 7%), $primary);
@@ -26,6 +27,7 @@ h2 strong {
   padding-left: 0;
   padding-right: 0;
 
+  h1,
   h2 {
     margin-left: list.nth($section-padding, 2);
   }

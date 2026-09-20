@@ -2,23 +2,21 @@ import React from "react";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
-import { Metadata } from "next";
+import { pageMetadata } from "@/app/services/metadata";
 
-export const metadata: Metadata = {
-  title: "Mes projets phares",
+export const metadata = pageMetadata({
+  title: "Projets et applications mobiles",
   description:
-    "J'ai pu contribuer dans plus d'une dizaine de projets dans le monde du numérique, mais j'ai aussi pu en concevoir dès la phase l'idéation. À côté de missions de conseil, j'aime réaliser des idées qui permettent d'aider et de faciliter la vie des personnes.",
-  alternates: {
-    canonical: "/projects",
-  },
-};
+    "Mes projets personnels : applications mobiles React Native (1 à 10, Pacevisor, Rally Call, Setlist Live), sites web, outils open source et conférences.",
+  path: "/projects",
+});
 
 export default function ProjectsPage() {
   return (
     <>
       <Nav />
       <div className="projects-page">
-        <ProjectsSection />
+        <ProjectsSection isPage={true} />
       </div>
       <Footer />
     </>

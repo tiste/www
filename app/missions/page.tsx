@@ -2,23 +2,21 @@ import React from "react";
 import { ResumeSection } from "../components/sections/ResumeSection";
 import { Footer } from "../components/layouts/Footer";
 import { Nav } from "../components/layouts/Nav";
-import { Metadata } from "next";
+import { pageMetadata } from "@/app/services/metadata";
 import { CustomersSection } from "@/app/components/sections/CustomersSection";
 
-export const metadata: Metadata = {
-  title: "Expérience professionnelle",
+export const metadata = pageMetadata({
+  title: "Missions et expérience professionnelle",
   description:
-    "Mon expérience dans le monde du web dans des missions très diverses, m'a convaincu que la fluidité de la communication et qu'un code bien designé sont des clés nécessaires dans la réussite d’un projet. Je maîtrise principalement les langages et frameworks du monde Javascript.",
-  alternates: {
-    canonical: "/missions",
-  },
-};
+    "Mes missions de développeur, tech lead et coach agile : Adeo, Leroy Merlin, OCTO, Bardahl, Roquette… Contexte, enjeux et résultats de chaque mission.",
+  path: "/missions",
+});
 
 export default function MissionsPage() {
   return (
     <>
       <Nav />
-      <ResumeSection />
+      <ResumeSection isPage={true} />
       <CustomersSection />
       <Footer />
     </>

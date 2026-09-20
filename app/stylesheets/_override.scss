@@ -77,10 +77,12 @@ svg {
     }
   }
 
-  h2 {
+  h2,
+  h1.is-h2 {
     font-size: 3em;
 
     @include mobile {
+      padding-top: 0;
       font-size: 2em;
     }
   }

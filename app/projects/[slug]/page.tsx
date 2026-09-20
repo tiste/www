@@ -5,6 +5,7 @@ import { Footer } from "@/app/components/layouts/Footer";
 import { projects } from "@/app/components/projects";
 import Image from "next-export-optimize-images/image";
 import { redirect } from "next/navigation";
+import { pageMetadata, truncate } from "@/app/services/metadata";
 
 type Props = {
   params: { slug: string };
@@ -19,12 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  return {
+  return pageMetadata({
     title: project.title,
-    alternates: {
-      canonical: `/projects/${project.slug}`,
-    },
-  };
+    description: truncate(project.description),
+    path: `/projects/${project.slug}`,
+  });
 }
 
 export async function generateStaticParams() {
@@ -60,9 +60,9 @@ export default async function ProjectPage({ params }: Props) {
             {...{ content: "iOS, ANDROID" }}
           >
             <div className="has-text-centered">
-              <h2 className="title" itemProp="name">
+              <h1 className="title is-h2" itemProp="name">
                 {project.title}
-              </h2>
+              </h1>
 
               <div>
                 <a

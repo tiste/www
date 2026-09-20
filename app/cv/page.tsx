@@ -1,16 +1,14 @@
 import React from "react";
 import { Bio } from "../components/Bio";
 import { Resume } from "../components/Resume";
-import { Metadata } from "next";
+import { pageMetadata } from "@/app/services/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "CV",
   description:
-    "Mon expérience dans le monde du web dans des missions très diverses, m'a convaincu que la fluidité de la communication et qu'un code bien designé sont des clés nécessaires dans la réussite d’un projet. Je maîtrise principalement les langages et frameworks du monde Javascript.",
-  alternates: {
-    canonical: "/cv",
-  },
-};
+    "CV de Baptiste Lecocq, ingénieur logiciel indépendant à Lille : missions, compétences JavaScript, React, React Native, Node.js et certifications.",
+  path: "/cv",
+});
 
 export default function ResumePage() {
   return (

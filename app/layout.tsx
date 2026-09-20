@@ -2,26 +2,64 @@ import type { Metadata } from "next";
 import "./stylesheets/main.scss";
 import Script from "next/script";
 import React from "react";
-
-const description =
-  "Consultant informatique Lille. J'aide les personnes et équipes à définir et répondre à leurs besoins. J' y parviens en travaillant pour et avec ces personnes en mettant en place un environnement favorisant les échanges et l'excellence technique. Je considère réussir cette mission en suivant des indicateurs liés à la satisfaction client et la qualité logicielle.";
-const title = "Baptiste Lecocq, ingénieur logiciel indépendant à Lille";
+import {
+  siteDescription,
+  siteName,
+  siteTitle,
+  siteUrl,
+} from "@/app/services/metadata";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tiste.io"),
-  title,
-  description,
-  openGraph: {
-    description,
-    title,
-    type: "website",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: `%s | ${siteName}`,
   },
-  twitter: {
-    site: "@tiste",
-    card: "summary",
-    title,
-    description,
-  },
+  description: siteDescription,
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: `${siteUrl}/`,
+      name: siteName,
+      headline: siteTitle,
+      inLanguage: "fr-FR",
+      publisher: { "@id": `${siteUrl}/#person` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: siteName,
+      url: `${siteUrl}/`,
+      image: `${siteUrl}/images/og.jpg`,
+      jobTitle: "Ingénieur logiciel indépendant",
+      description: siteDescription,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Lille",
+        addressCountry: "FR",
+      },
+      knowsAbout: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "React Native",
+        "Node.js",
+        "Agilité",
+        "Software craftsmanship",
+      ],
+      sameAs: [
+        "https://twitter.com/tiste",
+        "https://www.linkedin.com/in/baptistelecocq",
+        "https://github.com/tiste",
+        "https://keybase.io/tiste",
+      ],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -32,32 +70,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <Script
-          id="jsonld"
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@type": "WebSite",
-              headline:
-                "Baptiste Lecocq, ingénieur logiciel indépendant à Lille",
-              sameAs: [
-                "https://twitter.com/tiste",
-                "https://www.linkedin.com/in/baptistelecocq",
-                "https://github.com/tiste",
-                "https://keybase.io/tiste",
-              ],
-              url: "https://tiste.io/",
-              publisher: {
-                "@type": "Organization",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://tiste.io/favicon.svg",
-                },
-              },
-              name: "Baptiste Lecocq",
-              "@context": "https://schema.org",
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
         <Script

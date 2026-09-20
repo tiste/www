@@ -4,6 +4,7 @@ import { CV } from "@/app/components/CV";
 import { Nav } from "@/app/components/layouts/Nav";
 import { displayCustomers } from "@/app/components/sections/CustomersSection";
 import { Footer } from "@/app/components/layouts/Footer";
+import { pageMetadata, truncate } from "@/app/services/metadata";
 
 type Props = {
   params: { slug: string };
@@ -18,12 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  return {
-    title: `${mission.customer} / ${mission.title}`,
-    alternates: {
-      canonical: `/missions/${mission.slug}`,
-    },
-  };
+  return pageMetadata({
+    title: `${mission.title} chez ${mission.customer}`,
+    description: truncate(mission.description),
+    path: `/missions/${mission.slug}`,
+  });
 }
 
 export async function generateStaticParams() {
@@ -51,7 +51,7 @@ export default async function MissionPage({ params }: Props) {
                 {displayCustomers("dark", mission.customer)}
               </div>
 
-              <h2 className="title">{mission.customer}</h2>
+              <h1 className="title is-h2">{mission.customer}</h1>
               <p className="is-4 subtitle">{mission.title}</p>
               <p className="is-5 subtitle">{mission.date}</p>
             </div>

@@ -15,7 +15,7 @@ export function HeroSection() {
             <div className="column">
               <Image
                 src={require("@/public/images/me.jpeg")}
-                alt="Baptiste Lecocq"
+                alt="Baptiste Lecocq, ingénieur logiciel indépendant à Lille"
                 placeholder="blur"
                 priority={true}
                 sizes="(min-width: 769px) 30vw, 80vw"
@@ -32,7 +32,7 @@ export function HeroSection() {
                 <a href="https://youtu.be/CjIB-HmZL00">
                   <Image
                     src={require("@/public/images/last-conf.jpg")}
-                    alt="Conférence"
+                    alt="Baptiste Lecocq en conférence, vidéo YouTube"
                     priority={true}
                     placeholder="blur"
                     sizes="(min-width: 769px) 30vw, 80vw"

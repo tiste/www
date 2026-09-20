@@ -10,13 +10,13 @@ export function Footer() {
             <Image
               className="is-light-mode"
               src={require("@/public/images/logo.svg")}
-              alt="Full logo"
+              alt="Baptiste Lecocq, ingénieur logiciel indépendant"
               width={250}
             />
             <Image
               className="is-dark-mode"
               src={require("@/public/images/logo-white.svg")}
-              alt="Full logo"
+              alt="Baptiste Lecocq, ingénieur logiciel indépendant"
               width={250}
             />
           </div>

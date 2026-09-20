@@ -9,12 +9,19 @@ import {
   StatsSection,
 } from "@/app/components/sections/StatsSection";
 import { CustomersSection } from "@/app/components/sections/CustomersSection";
-import { Metadata } from "next";
+import {
+  pageMetadata,
+  siteDescription,
+  siteTitle,
+} from "@/app/services/metadata";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "",
-  },
+export const metadata = {
+  ...pageMetadata({
+    title: siteTitle,
+    description: siteDescription,
+    path: "/",
+  }),
+  title: { absolute: siteTitle },
 };
 
 export default function Home() {

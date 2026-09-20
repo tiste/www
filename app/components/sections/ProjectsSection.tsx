@@ -3,13 +3,15 @@ import { Card } from "../Card";
 import Image from "next-export-optimize-images/image";
 import IosDownloadSvg from "@/public/images/ios-download.svg";
 
-export function ProjectsSection() {
+export function ProjectsSection({ isPage }: { isPage?: boolean }) {
+  const Heading = isPage ? "h1" : "h2";
+
   return (
     <section className="section section-gray projects-section">
-      <div className="container content is-hidden-tablet">
-        <h2>
+      <div className={`container content ${isPage ? "" : "is-hidden-tablet"}`}>
+        <Heading className="is-h2">
           Mes projets <strong>phares</strong>
-        </h2>
+        </Heading>
       </div>
 
       <div className="columns is-mobile is-vcentered has-text-justified carousel mx-0">

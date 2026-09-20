@@ -2,13 +2,21 @@ import * as React from "react";
 import Link from "next/link";
 import { Resume } from "../Resume";
 
-export function ResumeSection({ crop }: { crop?: boolean }) {
+export function ResumeSection({
+  crop,
+  isPage,
+}: {
+  crop?: boolean;
+  isPage?: boolean;
+}) {
+  const Heading = isPage ? "h1" : "h2";
+
   return (
     <section className="section">
       <div className="container content">
-        <h2>
+        <Heading className="is-h2">
           Mon parcours <strong>professionnel</strong>
-        </h2>
+        </Heading>
 
         <div className={crop ? "is-cropped" : ""}>
           <Resume />

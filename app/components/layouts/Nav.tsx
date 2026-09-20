@@ -25,14 +25,14 @@ export function Nav() {
             <Image
               className="is-light-mode"
               src={require("@/public/images/favicon.svg")}
-              alt="Logo"
+              alt="Baptiste Lecocq – accueil"
               width={68}
               height={68}
             />
             <Image
               className="is-dark-mode"
               src={require("@/public/images/favicon-white.svg")}
-              alt="Logo"
+              alt="Baptiste Lecocq – accueil"
               width={68}
               height={68}
             />
