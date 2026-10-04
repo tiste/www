@@ -4,5 +4,10 @@ module.exports = {
   output: "export",
   generateRobotsTxt: true,
   changefreq: "monthly",
-  exclude: ["/projects/swunitch", "/icon.svg", "/manifest.webmanifest"],
+  exclude: [
+    "/missions",
+    "/projects/swunitch",
+    "/icon.svg",
+    "/manifest.webmanifest",
+  ],
 };

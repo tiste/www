@@ -69,14 +69,6 @@ export function Nav() {
             </Link>
             <Link
               className={`navbar-item ${
-                pathname.startsWith("/missions") ? "has-text-primary" : ""
-              }`}
-              href="/missions"
-            >
-              Mes missions
-            </Link>
-            <Link
-              className={`navbar-item ${
                 pathname.startsWith("/cv") ? "has-text-primary" : ""
               }`}
               href="/cv"

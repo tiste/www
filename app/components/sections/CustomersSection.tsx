@@ -26,7 +26,7 @@ export function displayCustomers(mode: "dark" | "light", filter = "") {
     )
     .map((customer, i) => (
       <div key={i} className="column is-4-mobile is-2-tablet">
-        <Link href={`/missions/${customer.slug}`}>
+        <Link href={`/missions/${customer.missionSlug ?? customer.slug}`}>
           <Image
             src={`/images/customers/${customer.slug}.${mode}.png`}
             alt={customer.name}

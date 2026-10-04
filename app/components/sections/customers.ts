@@ -1,12 +1,14 @@
 export interface Customer {
   name: string;
   slug: string;
+  missionSlug?: string;
 }
 
 export const customers: Customer[] = [
   {
     name: "Bardahl",
     slug: "bardahl",
+    missionSlug: "bardahl-centre-expert",
   },
   {
     name: "Adeo",

@@ -127,10 +127,10 @@ ul.resume-items {
 
   h4 {
     margin-bottom: 0;
+  }
 
-    & + small + div {
-      margin-top: 0.8em;
-    }
+  header + div {
+    margin-top: 0.8em;
   }
 }
 

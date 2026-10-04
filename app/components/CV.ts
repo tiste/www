@@ -1,4 +1,4 @@
-interface Mission {
+export interface Mission {
   date: string;
   description: string;
   title: string;
@@ -7,6 +7,32 @@ interface Mission {
 }
 
 export const CV: Mission[] = [
+  {
+    title: "Freelance Software Engineer",
+    customer: "Bardahl",
+    slug: "bardahl-centre-expert",
+    date: "Juillet 2026 - À présent",
+    description: `
+  Refonte de l'application SAV Centre Expert, utilisée par les techniciens terrain et le siège pour suivre les machines Bardahl installées chez les garages, les interventions et les garanties.
+
+  Construite en trois ans sur Microsoft PowerApps, l'application existante reposait sur des fichiers Excel, sans API ni gestion des accès, et n'était plus maintenable. Après un cadrage sur site avec le SAV et la DSI, proposition d'une application unique qui s'adapte au rôle de chacun, menée en agile avec des livraisons régulières.
+
+  La nouvelle version fonctionne sur mobile comme sur PC, s'appuie sur les comptes Microsoft 365 de Bardahl, remplace l'édition des fichiers à la main par un backoffice et calcule automatiquement les garanties. Mise en production prévue en janvier 2027.
+`,
+  },
+  {
+    title: "Technical Leader",
+    customer: "Adeo",
+    slug: "adeo-discovery",
+    date: "Juillet 2026 - À présent",
+    description: `
+  Reprise de l'assistant conversationnel Discovery, qui aide les clients des enseignes du groupe à trouver le bon produit. La première version, pensée d'abord comme un objet technique, laissait trop souvent le client face à un refus sec. Avec l'équipe, nous sommes repartis du métier : un bon conseiller de vente pose des questions et reformule avant de proposer des produits.
+
+  Chaque évolution part désormais du besoin, spécifié avant d'être développé, et des évaluations automatisées sécurisent le comportement de l'assistant. Le mode agent de la première version a été repensé pour mêler agentique et workflow, ce qui a réduit le temps de réponse. Mise en production six semaines après la reprise.
+
+  Résultats : questions laissées sans réponse utile divisées par 10, couverture des besoins clients de 37 % à 50 %, erreurs divisées par 2 et temps de réponse réduit de 30 %.
+`,
+  },
   {
     title: "Freelance Software Engineer",
     customer: "Esthima",
@@ -35,26 +61,28 @@ export const CV: Mission[] = [
     title: "Technical Leader",
     customer: "Adeo",
     slug: "adeo",
-    date: "Octobre 2022 - À présent",
+    date: "Octobre 2022 - Juin 2026",
     description: `
   Face à une équipe confrontée à des difficultés méthodologiques et de développement (délais de livraison prolongés, revues de code superficielles, manque de cohésion et de communication), mon intervention a été axée sur la refonte des pratiques de développement et l'implantation de méthodes agiles. 
 
   Les résultats sont probants : réduction des temps de delivery par 2, prise en considération et traitement de la dette, instauration d'une culture de bienveillance et de communication efficace, et un recentrage des corps business sur le management de produit. L'intégration de pratiques de développement modernes et d'un suivi personnalisé en mentoring pour les membres de l'équipe a permis d'améliorer significativement la performance et l'agilité du groupe.
 
-  Création du RAG produit (notices d'utilisation des produits, variants, caractéristiques, etc.) dans le but de fournir une expérience utilisateur augmentée sur les plateformes e-commerce du groupe.
+  Création du RAG produit, qui répond instantanément aux questions des clients sur une fiche produit à partir des caractéristiques, variants et notices. Piloté par A/B test du POC à la production, il est activé dans 6 BU et traite 100 000 questions par jour, avec un panier moyen en hausse de 10 % chez les clients qui l'utilisent.
+
+  Conception de l'application Leroy Merlin dans ChatGPT (serveur MCP) : recherche et comparaison de produits, prix et magasins à proximité, sur 5 pays, pour être présent là où les clients commencent désormais leurs recherches.
 `,
   },
   {
     title: "Freelance Software Engineer",
     customer: "Bardahl",
     slug: "bardahl",
-    date: "Janvier 2024 - À présent",
+    date: "Janvier 2024 - Avril 2026",
     description: `
   Création d'un système d'information intégré pour gérer et exploiter les données de transmission de véhicules automatiques, dans le but de proposer des services de maintenance aux garages professionnels.
 
-  Le système est basé sur une architecture microservices permettant de gérer les différentes plateformes de communication (web, machine physique, mobile) et de garantir une scalabilité et une robustesse du système.
+  Un backoffice permet aux experts Bardahl de construire les procédures d'entretien, exposées par API sur le site B2B des garages et directement sur les machines installées en atelier.
 
-  Gestion du projet en méthode agile, nouveauté chez Bardahl, avec un accompagnement des équipes en proximité.
+  Gestion du projet en méthode agile, nouveauté chez Bardahl, avec un accompagnement des équipes en proximité, jusqu'à la passation à l'équipe informatique de Bardahl en avril 2026.
 `,
   },
   {
@@ -65,7 +93,7 @@ export const CV: Mission[] = [
     description: `
   Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
 
-  Tech lead de la brique transverse Knowledge Graph.
+  Tech lead de la brique transverse Knowledge Graph, pour mettre en ligne l'expertise d'un conseiller en magasin : relier les produits aux concepts du bricolage (natures de produit, espaces de la maison, chantiers) dans un graphe maintenu par les experts métier. Priorisé par la valeur, il améliore la pertinence de la recherche et le cross-sell, qui propose les produits nécessaires à la mise en œuvre plutôt que ceux souvent achetés ensemble.
 `,
   },
   {
