@@ -52,7 +52,10 @@ export default async function MissionPage({ params }: Props) {
               </div>
 
               <h1 className="title is-h2">{mission.customer}</h1>
-              <p className="is-4 subtitle">{mission.title}</p>
+              <p className="is-4 subtitle">
+                {mission.title}
+                {mission.freelance && " (freelance)"}
+              </p>
               <p className="is-5 subtitle">{mission.date}</p>
             </div>
           </div>

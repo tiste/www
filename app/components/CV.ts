@@ -4,13 +4,15 @@ export interface Mission {
   title: string;
   slug: string;
   customer: string;
+  freelance?: boolean;
 }
 
 export const CV: Mission[] = [
   {
-    title: "Freelance Software Engineer",
+    title: "Tech Lead",
     customer: "Bardahl",
     slug: "bardahl-centre-expert",
+    freelance: true,
     date: "Juillet 2026 - À présent",
     description: `
   Refonte de l'application SAV Centre Expert, utilisée par les techniciens terrain et le siège pour suivre les machines Bardahl installées chez les garages, les interventions et les garanties.
@@ -21,9 +23,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Technical Leader",
+    title: "Lead AI Engineer",
     customer: "Adeo",
     slug: "adeo-discovery",
+    freelance: true,
     date: "Juillet 2026 - À présent",
     description: `
   Reprise de l'assistant conversationnel Discovery, qui aide les clients des enseignes du groupe à trouver le bon produit. La première version, pensée d'abord comme un objet technique, laissait trop souvent le client face à un refus sec. Avec l'équipe, nous sommes repartis du métier : un bon conseiller de vente pose des questions et reformule avant de proposer des produits.
@@ -34,9 +37,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Freelance Software Engineer",
+    title: "Software Engineer",
     customer: "Esthima",
     slug: "esthima",
+    freelance: true,
     date: "Mars 2026 - À présent",
     description: `
   Conception et développement de l'espace client particulier, un portail dédié à l'accompagnement des familles dans le suivi du parcours funéraire de leur animal.
@@ -45,9 +49,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Technical Leader",
+    title: "Lead AI Engineer",
     customer: "Adeo",
     slug: "adeo",
+    freelance: true,
     date: "Juillet 2025 - Juin 2026",
     description: `
   Création du RAG produit, qui répond instantanément aux questions des clients à partir des caractéristiques, variants et notices de chaque fiche produit. Piloté par A/B test du POC à la production : 5 pays, 100 000 questions par jour et +10 % de panier moyen chez ses utilisateurs. 21,5 millions de documents vectorisés, et une recherche 4 fois plus rapide grâce à la quantization. Un workflow agentique plutôt qu'un agent autonome, pour garder la maîtrise des réponses et des coûts : choix du modèle selon l'étape, plafonnement des tokens, et observabilité des coûts et de la latence dans Datadog.
@@ -56,9 +61,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Freelance Software Engineer",
+    title: "Mobile Software Engineer",
     customer: "Veternity",
     slug: "veternity",
+    freelance: true,
     date: "Mars 2025 - Mars 2026",
     description: `
   Développement de l'application métier Vet'Mobile destinée aux chauffeurs, dans le cadre du projet global d'optimisation des tournées.
@@ -69,9 +75,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Technical Leader",
+    title: "Tech Lead & Agile Coach",
     customer: "Adeo",
     slug: "adeo-tech-lead",
+    freelance: true,
     date: "Octobre 2022 - Juin 2025",
     description: `
   Face à une équipe confrontée à des difficultés méthodologiques et de développement (délais de livraison prolongés, revues de code superficielles, manque de cohésion et de communication), mon intervention a été axée sur la refonte des pratiques de développement et l'implantation de méthodes agiles. 
@@ -80,9 +87,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Freelance Software Engineer",
+    title: "Tech Lead",
     customer: "Bardahl",
     slug: "bardahl",
+    freelance: true,
     date: "Janvier 2024 - Avril 2026",
     description: `
   Création d'un système d'information intégré pour gérer et exploiter les données de transmission de véhicules automatiques, dans le but de proposer des services de maintenance aux garages professionnels.
@@ -93,9 +101,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Technical Leader",
+    title: "Knowledge Graph Tech Lead",
     customer: "Adeo",
     slug: "adeo-kg",
+    freelance: true,
     date: "Mars 2020 - Septembre 2022",
     description: `
   Accompagnement des équipes dans un environnement Javascript sur l'acculturation aux pratiques de dev (TDD, pair programming, code reviews, pyramide des tests, etc.) et aux pratiques devops.
@@ -104,9 +113,10 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Freelance Software Engineer",
+    title: "Mobile Software Engineer",
     customer: "Cyclavet",
     slug: "cyclavet",
+    freelance: true,
     date: "Septembre 2021 - Septembre 2023",
     description: `
   Développement de l'application mobile permettant aux transporteurs d'être conforme au transport TrackDéchets.
@@ -116,16 +126,17 @@ export const CV: Mission[] = [
   Ce nouvel outil a permis d'assurer une conformité légale totale, de supprimer la gestion papier, et de fiabiliser la traçabilité des déchets (DASRI, MNU) grâce à une synchronisation sécurisée et transparente avec le système d'information central.`,
   },
   {
-    title: "Freelance Software Engineer",
+    title: "Software Engineer",
     customer: "Pumpkin",
     slug: "pumpkin",
+    freelance: true,
     date: "Juillet 2020 - Septembre 2022",
     description: `
   Construction du site institutionnel Pumpkin, permettant de mettre en avant les offres et avantages du service. Sur un socle Gatsby/Prismic, le site respecte les principes d'accessibilité, rapidité, et d'expérience utilisateur fluide.
 `,
   },
   {
-    title: "Ingénieur Études et Développement",
+    title: "Senior Software Engineer",
     customer: "Adeo (via OCTO)",
     slug: "adeo-octo",
     date: "Septembre 2018 - Février 2020",
@@ -145,7 +156,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Consultant confirmé",
+    title: "Senior Consultant",
     customer: "OCTO",
     slug: "octo",
     date: "Septembre 2018 - Février 2020",
@@ -176,7 +187,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Ingénieur Études et Développement",
+    title: "Software Engineer & Scrum Master",
     customer: "Adeo (via Ineat)",
     slug: "adeo-ineat",
     date: "Septembre 2016 - Septembre 2018",
@@ -190,14 +201,14 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Ingénieur Études et Développement",
+    title: "Software Engineer",
     customer: "Ineat",
     slug: "ineat",
     date: "Août 2016 - Septembre 2018",
     description: ``,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Vékia (via Ineat)",
     slug: "vekia",
     date: "Avril 2016 - Septembre 2016",
@@ -210,7 +221,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Ineat",
     slug: "ineat-2",
     date: "Octobre 2014 - Août 2016",
@@ -219,7 +230,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Zodio (via Ineat)",
     slug: "zodio",
     date: "Février 2016 - Avril 2016",
@@ -232,7 +243,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "La Compagnie des Vétérinaires (via Ineat)",
     slug: "la-compagnie-des-veterinaires",
     date: "Août 2015 - Janvier 2016",
@@ -246,7 +257,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Ineat",
     slug: "ineat-3",
     date: "Mars 2015 - Juillet 2015",
@@ -259,7 +270,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Leroy Merlin (via Ineat)",
     slug: "leroy-merlin",
     date: "Juin 2015 - Juin 2015",
@@ -270,7 +281,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "CITC-EuraRFID (via Ineat)",
     slug: "citc-eurarfid",
     date: "Février 2015 - Février 2015",
@@ -282,7 +293,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Scrum master",
+    title: "Scrum Master",
     customer: "Ineat",
     slug: "ineat-4",
     date: "Octobre 2014 - Février 2015",
@@ -295,7 +306,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Codegent",
     slug: "codegent",
     date: "Juin 2014 - Octobre 2014",
@@ -306,7 +317,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Silicon Salad",
     slug: "silicon-salad",
     date: "Mai 2013 - Août 2013",
@@ -317,7 +328,7 @@ export const CV: Mission[] = [
 `,
   },
   {
-    title: "Développeur",
+    title: "Software Developer",
     customer: "Roquette Frères",
     slug: "roquette-freres",
     date: "Mai 2012 - Août 2012",

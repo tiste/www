@@ -14,7 +14,11 @@ export function Resume({
         const heading = (
           <>
             <h4>
-              {mission.title} <small>– {mission.customer}</small>
+              {mission.title}{" "}
+              <small>
+                – {mission.customer}
+                {mission.freelance && " (freelance)"}
+              </small>
             </h4>
             <small>{mission.date}</small>
           </>
