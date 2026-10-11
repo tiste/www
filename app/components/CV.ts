@@ -67,7 +67,7 @@ export const CV: Mission[] = [
 
   Les résultats sont probants : réduction des temps de delivery par 2, prise en considération et traitement de la dette, instauration d'une culture de bienveillance et de communication efficace, et un recentrage des corps business sur le management de produit. L'intégration de pratiques de développement modernes et d'un suivi personnalisé en mentoring pour les membres de l'équipe a permis d'améliorer significativement la performance et l'agilité du groupe.
 
-  Création du RAG produit, qui répond instantanément aux questions des clients sur une fiche produit à partir des caractéristiques, variants et notices. Piloté par A/B test du POC à la production, il est activé dans 6 BU et traite 100 000 questions par jour, avec un panier moyen en hausse de 10 % chez les clients qui l'utilisent.
+  Création du RAG produit, qui répond instantanément aux questions des clients à partir des caractéristiques, variants et notices de chaque fiche produit. Piloté par A/B test du POC à la production : 5 pays, 100 000 questions par jour et +10 % de panier moyen chez ses utilisateurs. 21,5 millions de documents vectorisés, et une recherche 4 fois plus rapide grâce à la quantization. Un workflow agentique plutôt qu'un agent autonome, pour garder la maîtrise des réponses et des coûts : choix du modèle selon l'étape, plafonnement des tokens, et observabilité des coûts et de la latence dans Datadog.
 
   Conception de l'application Leroy Merlin dans ChatGPT (serveur MCP) : recherche et comparaison de produits, prix et magasins à proximité, sur 5 pays, pour être présent là où les clients commencent désormais leurs recherches.
 `,
