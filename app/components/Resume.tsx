@@ -10,25 +10,41 @@ export function Resume({
 }) {
   return (
     <ul className={`resume-items content${compact ? " is-compact" : ""}`}>
-      {missions.map((mission, index) => (
-        <li key={index}>
-          <header>
+      {missions.map((mission, index) => {
+        const heading = (
+          <>
             <h4>
               {mission.title} <small>– {mission.customer}</small>
             </h4>
             <small>{mission.date}</small>
-          </header>
-          {!compact && (
-            <div
-              dangerouslySetInnerHTML={{
-                __html: mission.description
-                  .replace("\n", "")
-                  .replace(/\n/g, "<br />"),
-              }}
-            />
-          )}
-        </li>
-      ))}
+          </>
+        );
+        const description = (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: mission.description
+                .replace("\n", "")
+                .replace(/\n/g, "<br />"),
+            }}
+          />
+        );
+
+        return (
+          <li key={index}>
+            {compact ? (
+              <details>
+                <summary>{heading}</summary>
+                {description}
+              </details>
+            ) : (
+              <>
+                <header>{heading}</header>
+                {description}
+              </>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 }

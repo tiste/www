@@ -35,8 +35,7 @@ export default function ResumePage() {
         Vous pouvez imprimer cette page
       </span>
 
-      <p className="resume-headline">Ingénieur logiciel indépendant à Lille</p>
-      <Bio />
+      <Bio subtitle="Ingénieur logiciel indépendant à Lille" />
       <ul className="social-media-list resume-contact">
         <li>
           <a href="tel:+33634254534">+33 6 34 25 45 34</a>

@@ -12,17 +12,8 @@
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 
-  .resume-headline {
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-  }
-
   .title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 
     span {
       display: none;
@@ -33,6 +24,13 @@
       background: transparent;
       color: inherit !important;
     }
+  }
+
+  .bio-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    opacity: 0.7;
+    margin: 0 0 1.25rem;
   }
 
   .is-greater {
@@ -75,7 +73,8 @@
         border-top: 1px solid rgba(128, 128, 128, 0.3);
       }
 
-      header {
+      header,
+      summary {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
@@ -109,6 +108,38 @@
       h4 {
         font-size: 0.9rem;
         font-weight: 600;
+      }
+
+      summary {
+        cursor: pointer;
+        list-style: none;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        h4::before {
+          content: "";
+          display: inline-block;
+          width: 0.4em;
+          height: 0.4em;
+          margin: 0 0.6em 0.1em 0.1em;
+          border-right: 2px solid currentColor;
+          border-bottom: 2px solid currentColor;
+          transform: rotate(-45deg);
+          opacity: 0.5;
+          transition: transform 0.15s;
+        }
+      }
+
+      details[open] summary h4::before {
+        transform: rotate(45deg);
+      }
+
+      details > div {
+        margin: 0.4rem 0 0.6rem 1em;
+        font-size: 0.9rem;
+        line-height: 1.5;
       }
     }
   }
@@ -172,6 +203,16 @@
 
     .title {
       font-size: 2rem;
+    }
+
+    ul.resume-items.is-compact {
+      summary h4::before {
+        display: none;
+      }
+
+      details > div {
+        display: none !important;
+      }
     }
   }
 }

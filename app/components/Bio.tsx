@@ -2,7 +2,7 @@ import { InfoCircle } from "./InfoCircle";
 import Link from "next/link";
 import * as React from "react";
 
-export function Bio() {
+export function Bio({ subtitle }: { subtitle?: React.ReactNode }) {
   const knowledgeEngineeringInfo = (
     <>
       (
@@ -58,6 +58,7 @@ export function Bio() {
         </span>
         <strong>Baptiste Lecocq</strong>
       </h1>
+      {subtitle && <p className="bio-subtitle">{subtitle}</p>}
 
       <p className="is-greater">
         J'aide les personnes et équipes à définir et répondre à{" "}
