@@ -7,6 +7,7 @@ import { pageMetadata } from "@/app/services/metadata";
 // Page de support et politique de confidentialité de l'app iOS Nocturne.
 // App Store Connect : support → https://tiste.io/nocturne, confidentialité → https://tiste.io/nocturne#privacy
 const appStoreUrl = ""; // à renseigner une fois l'app créée dans App Store Connect
+const supportEmail = "baptiste.lecocq@gmail.com";
 
 export const metadata = pageMetadata({
   title: "Nocturne : respirer, dormir",
@@ -66,6 +67,24 @@ export default function NocturnePage() {
         <div className="container content">
           <div className="columns is-flex-direction-row-reverse">
             <div className="column mt-6">
+              <div className="box" id="support" lang="en">
+                <h3 className="mt-0">Support</h3>
+                <p>
+                  A question, a problem with the app or with a purchase? Email{" "}
+                  <a href={`mailto:${supportEmail}?subject=Nocturne`}>
+                    {supportEmail}
+                  </a>
+                  . I usually reply within two days.
+                </p>
+                <p lang="fr" className="mb-0">
+                  Une question, un souci avec l&apos;app ou un achat ? Écris à{" "}
+                  <a href={`mailto:${supportEmail}?subject=Nocturne`}>
+                    {supportEmail}
+                  </a>
+                  .
+                </p>
+              </div>
+
               <p>
                 Nocturne est une app de respiration lente pour la fin de
                 journée, quand les pensées tournent en boucle et que le sommeil
@@ -81,10 +100,10 @@ export default function NocturnePage() {
 
               <h3>Aide</h3>
               <p>
-                <strong>Comment restaurer mon achat ?</strong> Touche une carte
-                « Sur mesure » verrouillée sur l&apos;écran d&apos;accueil, puis
-                « Restaurer un achat ». L&apos;achat revient aussi tout seul sur
-                tout appareil connecté au même compte Apple.
+                <strong>Comment restaurer mon achat ?</strong> Touche la roue
+                crantée à côté du titre, puis « Restaurer un achat ».
+                L&apos;achat revient aussi tout seul sur tout appareil connecté
+                au même compte Apple.
               </p>
               <p>
                 <strong>Je ne sens aucune vibration.</strong> Vérifie Réglages ›
@@ -98,7 +117,11 @@ export default function NocturnePage() {
                 immobile, volontairement.
               </p>
               <p>
-                Une autre question ? <a href="/contact">Écris-moi</a>.
+                Une autre question ? Écris à{" "}
+                <a href={`mailto:${supportEmail}?subject=Nocturne`}>
+                  {supportEmail}
+                </a>
+                .
               </p>
 
               <hr />
@@ -124,6 +147,13 @@ export default function NocturnePage() {
                   Store. Nocturne n&apos;a jamais accès à tes informations de
                   paiement.
                 </li>
+                <li>
+                  Santé, seulement si tu l&apos;actives dans les réglages :
+                  chaque chemin y est ajouté comme une séance de pleine
+                  conscience. Nocturne n&apos;écrit que ce type de donnée, ne
+                  lit jamais rien dans Santé, et ces données restent dans
+                  l&apos;app Santé, sous ton contrôle.
+                </li>
               </ul>
 
               <div lang="en">
@@ -136,19 +166,26 @@ export default function NocturnePage() {
                   street. One breath, one streetlamp, all the way home.
                 </p>
                 <p>
-                  <strong>Restore a purchase:</strong> tap a locked
-                  &quot;Custom&quot; card on the welcome screen, then
-                  &quot;Restore purchase&quot;. <strong>No vibration:</strong>{" "}
-                  check Settings › Sounds &amp; Haptics › System Haptics.{" "}
-                  <strong>Nothing moves:</strong> Reduce Motion is probably on.
-                  Any other question? <a href="/contact">Get in touch</a>.
+                  <strong>Restore a purchase:</strong> tap the gear icon next to
+                  the title, then &quot;Restore purchase&quot;.{" "}
+                  <strong>No vibration:</strong> check Settings › Sounds &amp;
+                  Haptics › System Haptics. <strong>Nothing moves:</strong>{" "}
+                  Reduce Motion is probably on. Any other question? Email{" "}
+                  <a href={`mailto:${supportEmail}?subject=Nocturne`}>
+                    {supportEmail}
+                  </a>
+                  .
                 </p>
                 <p>
                   <strong>Privacy.</strong> Nocturne does not collect, store or
                   share any personal data. No account, no analytics, no
                   advertising, no tracking. Your settings stay on your device.
                   Purchases are handled entirely by Apple; Nocturne never sees
-                  your payment details.
+                  your payment details. If you turn on Apple Health in the
+                  settings, each path is saved to Health as a mindful session:
+                  Nocturne only writes this one type of data, never reads
+                  anything from Health, and the data stays in the Health app,
+                  under your control.
                 </p>
               </div>
             </div>
