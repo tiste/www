@@ -1,8 +1,8 @@
 import React from "react";
-import { Footer } from "../components/layouts/Footer";
-import { Nav } from "../components/layouts/Nav";
+import { Footer } from "@/app/components/layouts/Footer";
+import { Nav } from "@/app/components/layouts/Nav";
 import { pageMetadata } from "@/app/services/metadata";
-import { ContactForm } from "@/app/contact/ContactForm";
+import { ContactForm } from "@/app/(site)/contact/ContactForm";
 import { CustomersSection } from "@/app/components/sections/CustomersSection";
 
 export const metadata = pageMetadata({

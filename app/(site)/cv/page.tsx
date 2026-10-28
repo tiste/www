@@ -1,7 +1,7 @@
 import React from "react";
-import { Bio } from "../components/Bio";
-import { Resume } from "../components/Resume";
-import { CV, Mission } from "../components/CV";
+import { Bio } from "@/app/components/Bio";
+import { Resume } from "@/app/components/Resume";
+import { CV, Mission } from "@/app/components/CV";
 import { pageMetadata } from "@/app/services/metadata";
 
 export const metadata = pageMetadata({

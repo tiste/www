@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer } from "../components/layouts/Footer";
-import { Nav } from "../components/layouts/Nav";
-import { ProjectsSection } from "../components/sections/ProjectsSection";
+import { Footer } from "@/app/components/layouts/Footer";
+import { Nav } from "@/app/components/layouts/Nav";
+import { ProjectsSection } from "@/app/components/sections/ProjectsSection";
 import { pageMetadata } from "@/app/services/metadata";
 
 export const metadata = pageMetadata({

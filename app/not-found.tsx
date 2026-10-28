@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Metadata } from "next";
 import { Nav } from "@/app/components/layouts/Nav";
+import "@/app/stylesheets/main.scss";
 
 export const metadata: Metadata = {
   title: "Page non trouvée",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <>
+    <main>
       <Nav />
       <section className="hero">
         <div className="hero-body">
@@ -22,6 +23,6 @@ export default function NotFound() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
